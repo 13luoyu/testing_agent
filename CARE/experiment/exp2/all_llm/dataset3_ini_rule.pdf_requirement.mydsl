@@ -1,0 +1,283 @@
+rule 3.1
+sourceId 3
+if 最低申报数量 is 00美元的价格购买一份期权合约 and 交易品种 is 标的外币期权
+then 最小增量 is 0.01美元
+
+rule 3.2
+sourceId 3
+if 交易品种 is 外币期权 and 操作部分 is 所有买入或卖出
+then 约束 is 每单位标的外币美元数额 and 操作 is 表示 and 最低申报数量 is 00美元的价格购买一份期权合约
+
+rule 1.1
+sourceId 1
+if 最低申报数量 is 1份 and 交易品种 is 70美元的期权的溢价
+then 最低申报数量 is 1份 and 价格 is 325美元 and 操作 is 支付 and 操作部分 is 325美元的出价
+
+rule 1001.1
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作部分 is 所有报价
+then 价格 is 最后一个NBB
+
+rule 1001.2
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作部分 is 所有报价
+then 价格 is 最后一个NBO
+
+rule 1001.3
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作部分 is 所有报价 and 操作主体 is 相关交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.4
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作部分 is 所有报价 and 操作主体 is 相关交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.5
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.6
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.7
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.8
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.9
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.10
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.11
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.12
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.13
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.14
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.15
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.16
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.17
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.18
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.19
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.20
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.21
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.22
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.23
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.24
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.25
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.26
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.27
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.28
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.29
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.30
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.31
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.32
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.33
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.34
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.35
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.36
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBO
+
+rule 1001.37
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易对手方 and 操作 is 提交 and 操作部分 is 报价
+then 价格 is 最后一个NBB
+
+rule 1001.38
+sourceId 1001
+if 操作部分 is 适用的期权系列 and 事件 is 在至少一个其他期权交易所有有效交易 and 操作主体 is 交易
+
+rule 2.00.1
+sourceId 2.00
+if
+then 最低申报数量 is 至5.00美元1.25美元
+
+rule 5.00.1
+sourceId 5.00
+if
+then 约束 is 美元以上至10.00美元1.50美元
+
+rule 10.00.1
+sourceId 10.00
+if 约束 is 美元以上至20.00美元
+then 约束 is 美元 and 金额 is 2.50美元
+
+rule 20.00.1
+sourceId 20.00
+if
+then 约束 is 美元以上至50.00美元 and 约束 is 3.00美元
+
+rule 2.00.1
+sourceId 2.00
+if
+then 最低申报数量 is 至5.00美元0.40美元
+
+rule 5.00.1
+sourceId 5.00
+if
+then 约束 is 美元以上至10.00美元 and 约束 is 0.50美元
+
+rule 10.00.1
+sourceId 10.00
+if 约束 is 美元以上至20.00美元
+then 最低申报数量 is 0.80美元
+
+rule 20.00.1
+sourceId 20.00
+if 交易品种 is 美元
+then 约束 is 至50.00美元 and 操作部分 is 1.00美元
+
+rule 2.00.1
+sourceId 2.00
+if
+then 最低申报数量 is 至5.00美元1.00美元
+
+rule 5.00.1
+sourceId 5.00
+if
+then 约束 is 美元以上至10.00美元1.50美元
+
+rule 10.00.1
+sourceId 10.00
+if 约束 is 美元以上至20.00美元
+then 约束 is 美元20.00美元 and 操作部分 is 2.00美元
+
+rule 20.00.1
+sourceId 20.00
+if 约束 is 美元以上至50.00美元
+then 收费 is 2.50美元
+
+rule 2.00.1
+sourceId 2.00
+if
+then
+
+rule 5.00.1
+sourceId 5.00
+if
+then
+
+rule 10.00.1
+sourceId 10.00
+if
+then
+
+rule 20.00.1
+sourceId 20.00
+if
+then

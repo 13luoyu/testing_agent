@@ -1,0 +1,24 @@
+New York Stock Exchange Stocks Trading Rule (2025)
+
+7.1 Except as may be otherwise determined by the Board of Directors as to particular days, the Exchange shall be open for the transaction of business on every business day. The hours at which trading sessions shall open and close shall be during such hours as may be specified by Exchange rule or established by the Board of Directors. Dealings upon the Exchange shall be limited to the hours during which the Exchange is open for the transaction of business. No member organization shall make any bid, offer, or transaction through the facilities of the Exchange before or after those hours.
+
+7.2 The Exchange will not be open for business on New Year's Day, Martin Luther King Jr. Day, Presidents' Day, Good Friday, Memorial Day, Juneteenth National Independence Day, Independence Day, Labor Day, Thanksgiving Day and Christmas Day.
+
+7.5 The unit of trading in stocks is 1 share. A "round lot" is 100 shares, unless specified by the primary listing market to be fewer than 100 shares. Any amount less than a round lot will constitute an "odd lot," and any amount greater than a round lot that is not a multiple of a round lot will constitute a "mixed lot."
+
+7.6 The minimum price variation ("MPV") for quoting and entry of orders in securities traded on the Exchange is $0.01, with the exception of securities that are priced less than $1.00 for which the MPV for quoting and entry of orders is $0.0001.
+
+7.8 Bids and offers will be considered to be "regular way."
+
+7.12 The Exchange shall halt trading in all stocks and shall not reopen for the time periods specified in this Rule if there is a Level 1, 2, or 3 Market Decline. For purposes of this Rule, a Market Decline means a decline in price of the S&P 500 Index between 9:30 a.m. and 4:00 p.m. on a trading day as compared to the closing price of the S&P 500® Index for the immediately preceding trading day. The Level 1, Level 2, and Level 3 Market Declines that will be applicable for the trading day will be publicly disseminated before 9:30 a.m.
+(i)A “Level 1 Market Decline” means a Market Decline of 7%.
+(ii)A “Level 2 Market Decline” means a Market Decline of 13%.
+(iii)A “Level 3 Market Decline” means a Market Decline of 20%.
+(iv)If a Level 1 Market Decline or a Level 2 Market Decline occurs after 9:30 a.m. and up to and including 3:25 p.m. or in the case of an early scheduled close, 12:25 p.m., the Exchange shall halt trading in all stocks for 15 minutes after a Level 1 or Level 2 Market Decline. The Exchange shall halt trading based on a Level 1 or Level 2 Market Decline only once per trading day. The Exchange will not halt trading if a Level 1 Market Decline or a Level 2 Market Decline occurs after 3:25 p.m., or in the case of an early scheduled close, 12:25 p.m.
+(v)If a Level 3 Market Decline occurs at any time during the trading day, the Exchange shall halt trading in all stocks for the remainder of the trading day.
+
+7.13 The CEO, or the officer designee of the CEO, shall have the power to suspend trading in any and all securities trading on the Exchange whenever in his or her opinion such suspension would be in the public interest. No such action shall continue longer than a period of two days, or as soon thereafter as a quorum of Directors can be assembled, unless the Board approves the continuation of such suspension.
+
+7.16 Exchange systems will not execute or display a short sale order with respect to a covered security at a price that is less than or equal to the current NBB if the price of that security decreases by 10% or more, as determined by the listing market for the security, from the Official Closing Price on the Exchange as of the end of regular trading hours on the prior day ("Trigger Price").
+
+7.17 No member organization shall submit to the Exchange an order to buy from or sell to any person any security at a stated price and/or size unless such member organization is prepared to, and, upon submission of an appropriate contra-side order, does, purchase or sell, as the case may be, at such price and/or size and under such conditions as are stated at the time of submission of such order to buy or sell.

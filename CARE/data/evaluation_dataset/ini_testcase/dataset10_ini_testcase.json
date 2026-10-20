@@ -1,0 +1,4192 @@
+[
+[
+{
+"rule": "10002.1",
+"testid": "10002.1_1",
+"Operating Section": "Low-voltage Electrical Installations",
+"Outcome Constraints": "National and Local Regulations",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10003.1",
+"testid": "10003.1_1",
+"Event": "Any hardware failure occurred",
+"Result Operation": "Disconnect",
+"Result": "Success"
+},
+{
+"rule": "10003.1",
+"testid": "10003.1_2",
+"Event": "Any hardware failure occurred",
+"Result Operation": "Non-disconnect",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10006.1",
+"testid": "10006.1_1",
+"Operation Section": "Micro-generators",
+"Result Operation": "Perform overcurrent protection",
+"Result Constraint": "HD",
+"Result Constraint 2": "Requirements of the 60364 series of standards",
+"Result": "Success"
+},
+{
+"rule": "10006.1",
+"testid": "10006.1_2",
+"Operation Section": "Micro-generators",
+"Result Operation": "Do not perform overcurrent protection",
+"Result Constraint": "HD",
+"Result Constraint 2": "Requirements of the 60364 series of standards",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10006.2",
+"testid": "10006.2_1",
+"Operating Section": "Overcurrent Protection Devices in Residential Installations",
+"Result Operation": "Ensure",
+"Results Operation Section": "Achieving correct selective coordination with the protection equipment of the Distribution Network Operator (DSO)",
+"Result": "Success"
+},
+{
+"rule": "10006.2",
+"testid": "10006.2_2",
+"Operating Section": "Overcurrent Protection Devices in Residential Installations",
+"Result Operation": "Non-guaranteed",
+"Results Operation Section": "Achieving correct selective coordination with the protection equipment of the Distribution Network Operator (DSO)",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10008.1",
+"testid": "10008.1_1",
+"Operating Section": "Grounding",
+"Result Constraint": "HD",
+"Result Constraint 2": "Requirements of 60364-5-551 and related national standards",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10009.1",
+"testid": "10009.1_1",
+"Event": "Parallel Operation",
+"Operating Entity": "Micro Generator",
+"Result Operation": "Do not directly join",
+"Result-related operating entity": "Distribution Network Operator (DSO)",
+"Results Operation Section": "Generator Winding (or Main Energy Electrode of DC Micro Generator)",
+"Result Operation Section 2": "Grounding Terminal",
+"Result": "Success"
+},
+{
+"rule": "10009.1",
+"testid": "10009.1_2",
+"Event": "Parallel Operation",
+"Operating Entity": "Micro Generator",
+"Result Operation": "Direct Join",
+"Result-related operating entity": "Distribution Network Operator (DSO)",
+"Results Operation Section": "Generator Winding (or Main Energy Electrode of DC Micro Generator)",
+"Result Operation Section 2": "Grounding Terminal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10009.2",
+"testid": "10009.2_1",
+"Event": "Parallel Operation",
+"Operating Entity": "Micro Generator",
+"Operating Entity 2": "User",
+"Operation": "Provide by yourself",
+"Operating Section": "Grounding terminal device (such as device connected to TT system)",
+"Result Operation": "Avoid",
+"Result Operation Section": "Connect the generator winding to the grounding terminal",
+"Result": "Success"
+},
+{
+"rule": "10009.2",
+"testid": "10009.2_2",
+"Event": "Parallel Operation",
+"Operating Entity": "Micro Generator",
+"Operating Entity 2": "User",
+"Operation": "Provide by yourself",
+"Operating Section": "Grounding terminal device (such as device connected to TT system)",
+"Result Operation": "Non-Avoidance",
+"Result Operation Section": "Connect the generator winding to the grounding terminal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10011.1",
+"testid": "10011.1_1",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Success"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_2",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome Constraint 2": "Unacceptable Damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_3",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_4",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome Constraint 2": "Unacceptable Damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_5",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_6",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_7",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_8",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Execution Subject": "Installer/Manufacturer",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10011.2",
+"testid": "10011.2_1",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Success"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_2",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_3",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_4",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Take",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_5",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_6",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_7",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will not suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_8",
+"Equipment": "Micro-generation equipment (such as photovoltaic arrays or stationary fuel cell power generation systems) designed to operate in parallel with the power distribution network but connected via an inverter.",
+"Trading Instrument": "Inverter",
+"Constraint": "Insulation exists between the AC and DC sides of the inverter.",
+"Operation": "Allow",
+"Operation Section": "Connect one pole of the inverter's DC side to the power distribution network.",
+"Result Operation": "Non-Taking",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Will suffer",
+"Results Operation Section": "All reasonable precautions",
+"Resulting Equipment": "Miniature Power Generation Equipment",
+"Outcome constraints": "All credible operating conditions (including distribution network faults)",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Outcome constraint 2": "Unacceptable damage",
+"Result Operation Subject": "Manufacturer",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10016.1",
+"testid": "10016.1_1",
+"Voltage at the access point": "Maintained within the range of 0.85Uₙ to 1.1Uₙ",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Do not disconnect",
+"Resulting event": "Voltage cause",
+"Result": "Success"
+},
+{
+"rule": "10016.1",
+"testid": "10016.1_2",
+"Voltage at the access point": "Maintained within the range of 0.85Uₙ to 1.1Uₙ",
+"Operating Entity": "Power Generation Facilities",
+"Result action": "Disconnect.",
+"Resulting event": "Voltage cause",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10017.1",
+"testid": "10017.1_1",
+"Operating Entity": "Owner of Power Generation Facilities",
+"Operation": "Consider",
+"Operation Section": "A wider operating range for the generator unit itself",
+"Result Operation": "Consider",
+"Results Operation Section": "Voltage Increase and Voltage Drop Inside the Device",
+"Result": "Success"
+},
+{
+"rule": "10017.1",
+"testid": "10017.1_2",
+"Operating Entity": "Owner of Power Generation Facilities",
+"Operation": "Consider",
+"Operation Section": "A wider operating range for the generator unit itself",
+"Result Operation": "Not Considered",
+"Results Operation Section": "Voltage Increase and Voltage Drop Inside the Device",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10020.1",
+"testid": "10020.1_1",
+"Access point frequency": "49Hz to 51Hz",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Continue Running",
+"Result": "Success"
+},
+{
+"rule": "10020.1",
+"testid": "10020.1_2",
+"Access point frequency": "49Hz to 51Hz",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Non-continuous execution",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10021.1",
+"testid": "10021.1_1",
+"Operation": "Directly synchronize and couple to",
+"Operating Section": "Power grid, linear generator driven by a free-piston Stirling engine",
+"Result action": "Disconnect.",
+"Resulting event": "When the frequency is below 49.5Hz or above 50.5Hz",
+"Result": "Success"
+},
+{
+"rule": "10021.1",
+"testid": "10021.1_2",
+"Operation": "Directly synchronize and couple to",
+"Operating Section": "Power grid, linear generator driven by a free-piston Stirling engine",
+"Result Operation": "Non-disconnection",
+"Resulting event": "When the frequency is below 49.5Hz or above 50.5Hz",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10024.1",
+"testid": "10024.1_1",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Able to Tolerate",
+"Result Operation 2": "Minimize as much as possible",
+"Results Operation Section": "Reduction of Access Point Frequency",
+"Results Operation Section 2": "Decrease in Maximum Power",
+"Result": "Success"
+},
+{
+"rule": "10024.1",
+"testid": "10024.1_2",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Able to Tolerate",
+"Result Operation 2": "Minimize as much as possible",
+"Results Operation Section": "Reduction of Access Point Frequency",
+"Results Operation Section 2": "Decrease in Maximum Power",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10024.1",
+"testid": "10024.1_3",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Unacceptable",
+"Result Operation 2": "Minimize as much as possible",
+"Results Operation Section": "Reduction of Access Point Frequency",
+"Results Operation Section 2": "Decrease in Maximum Power",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10024.1",
+"testid": "10024.1_4",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Unacceptable",
+"Result Operation 2": "Minimize as much as possible",
+"Results Operation Section": "Reduction of Access Point Frequency",
+"Results Operation Section 2": "Decrease in Maximum Power",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10025.1",
+"testid": "10025.1_1",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Do not disconnect from the power grid",
+"Result Operation 2": "Successfully Run",
+"Result Operation Section": "Shortest Time",
+"Result": "Success"
+},
+{
+"rule": "10025.1",
+"testid": "10025.1_2",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Do not disconnect from the power grid",
+"Result Operation 2": "Cannot run",
+"Result Operation Section": "Shortest Time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10025.1",
+"testid": "10025.1_3",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Disconnect from power grid",
+"Result Operation 2": "Successfully Run",
+"Result Operation Section": "Shortest Time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10025.1",
+"testid": "10025.1_4",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Disconnect from power grid",
+"Result Operation 2": "Cannot run",
+"Result Operation Section": "Shortest Time",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10029.1",
+"testid": "10029.1_1",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10031.1",
+"testid": "10031.1_1",
+"Frequency": "Below 49.5Hz",
+"Event": "Reduction in permissible active power due to underfrequency",
+"Result Frequency": "Per 1Hz decrease",
+"Resulting instantaneous power": "P ₘ is",
+"Outcome constraint": "Reduce by 10%",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10032.1",
+"testid": "10032.1_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Coordination",
+"Result-related operating entity": "Transmission System Operator (TSO)",
+"Results Operation Section": "More stringent power reduction characteristics",
+"Result": "Success"
+},
+{
+"rule": "10032.1",
+"testid": "10032.1_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Non-coordinated",
+"Result-related operating entity": "Transmission System Operator (TSO)",
+"Results Operation Section": "More stringent power reduction characteristics",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10032.2",
+"testid": "10032.2_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Restriction",
+"Result frequency": "Below 49.0Hz",
+"Results decrease by": "1Hz",
+"Resulting instantaneous power Pₘ": "decreased",
+"Result constraint": "2%",
+"Result": "Success"
+},
+{
+"rule": "10032.2",
+"testid": "10032.2_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Unrestricted",
+"Result frequency": "Below 49.0Hz",
+"Results decrease by": "1Hz",
+"Resulting instantaneous power Pₘ": "decreased",
+"Result constraint": "2%",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10036.1",
+"testid": "10036.1_1",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Accept",
+"Results Operation Section": "Access Point Over-Frequency",
+"Result": "Success"
+},
+{
+"rule": "10036.1",
+"testid": "10036.1_2",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Unacceptable",
+"Results Operation Section": "Access Point Over-Frequency",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10037.1",
+"testid": "10037.1_1",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Do not disconnect from the power grid",
+"Result Operation 2": "Successfully Run",
+"Result Operation Section": "Shortest Time",
+"Result": "Success"
+},
+{
+"rule": "10037.1",
+"testid": "10037.1_2",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Do not disconnect from the power grid",
+"Result Operation 2": "Cannot run",
+"Result Operation Section": "Shortest Time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10037.1",
+"testid": "10037.1_3",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Disconnect from power grid",
+"Result Operation 2": "Successfully Run",
+"Result Operation Section": "Shortest Time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10037.1",
+"testid": "10037.1_4",
+"Operations Section": "Power Generation Facilities",
+"Result Operation": "Disconnect from power grid",
+"Result Operation 2": "Cannot run",
+"Result Operation Section": "Shortest Time",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10041.1",
+"testid": "10041.1_1",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10043.1",
+"testid": "10043.1_1",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Start",
+"Number of results submitted": 0,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should be less than 2 seconds",
+"Result": "Success"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_2",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Start",
+"Number of results submitted": 0,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should not be less than 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_3",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Start",
+"Number of results submitted": 11,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should be less than 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_4",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Start",
+"Number of results submitted": 11,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should not be less than 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_5",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Non-Startup",
+"Number of results submitted": 0,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should be less than 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_6",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Non-Startup",
+"Number of results submitted": 0,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should not be less than 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_7",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Non-Startup",
+"Number of results submitted": 11,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of the resulting active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should be less than 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10043.1",
+"testid": "10043.1_8",
+"Operating Entity": "Micro-generator",
+"Event": "Unless otherwise required by the Distribution Network Operator (DSO)",
+"Result Operation": "Non-Startup",
+"Number of results submitted": 11,
+"Result Constraints": "Programmable frequency threshold f₁ ( at least between 50.2Hz and 52Hz)",
+"Results Operation Section": "Active Power Frequency Response",
+"Result Derating Factor": "Based on the actual AC output power Pₘ when the frequency reaches the threshold f₁",
+"Result after": "After a programmable intentional delay",
+"Output accuracy of active power frequency response": "Should reach ±10%P ₙ .",
+"Result stabilization time": "Should not be less than 2 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10046.1",
+"testid": "10046.1_1",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Result Time": "Assuming technical feasibility",
+"Result": "Success"
+},
+{
+"rule": "10046.1",
+"testid": "10046.1_2",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Result Time": "Assuming technical feasibility",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.1",
+"testid": "10046.1_3",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Result Time": "Assuming technical feasibility",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.1",
+"testid": "10046.1_4",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Result Time": "Assuming technical feasibility",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10046.2",
+"testid": "10046.2_1",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Success"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_2",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_3",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_4",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_5",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_6",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_7",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_8",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_9",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_10",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_11",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_12",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_13",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_14",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_15",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_16",
+"Operating Entity": "Generator",
+"Result Action": "Start as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_17",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_18",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_19",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_20",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_21",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_22",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_23",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_24",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Pass",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_25",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_26",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_27",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_28",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Intentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_29",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_30",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_31",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Initial response time to 2 seconds",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10046.2",
+"testid": "10046.2_32",
+"Operating Entity": "Generator",
+"Result Action": "Not to be started as soon as possible",
+"Result Operation 2": "Not Passed",
+"Result Operation 3": "Unintentional Delay",
+"Results Operation Section": "Active Power Frequency Response",
+"Initial delay of result": "Less than 2 seconds",
+"Results Operation Section 2": "Programming Settings",
+"Result Time": "Assuming technical feasibility",
+"Total Response Time": "Non-initial response time to 2 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10047.1",
+"testid": "10047.1_1",
+"Time": "After startup",
+"Operation Section": "Frequency Reduction Function",
+"Result Operation": "Use in Real Time",
+"Results Operation Section": "Actual Frequency",
+"Result": "Success"
+},
+{
+"rule": "10047.1",
+"testid": "10047.1_2",
+"Time": "After startup",
+"Operation Section": "Frequency Reduction Function",
+"Result Operation": "Non-real-time Use",
+"Results Operation Section": "Actual Frequency",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10048.1",
+"testid": "10048.1_1",
+"Operating Entity": "Manufacturer",
+"Initial delay": "Exceeds 2 seconds",
+"Result Operation": "Provide",
+"Result Operation Object": "Distribution Network Operator (DSO)",
+"Results Operation Section": "Reasonable Explanation",
+"Result": "Success"
+},
+{
+"rule": "10048.1",
+"testid": "10048.1_2",
+"Operating Entity": "Manufacturer",
+"Initial delay": "Exceeds 2 seconds",
+"Result Operation": "Not Provided",
+"Result Operation Object": "Distribution Network Operator (DSO)",
+"Results Operation Section": "Reasonable Explanation",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10049.1",
+"testid": "10049.1_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Provide",
+"Result Operation 2": "On-site Adjustment",
+"Results Operation Section": "Threshold Frequency f₁ , Derating Factor, and Intentional Delay Settings",
+"Result": "Success"
+},
+{
+"rule": "10049.1",
+"testid": "10049.1_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Provide",
+"Result Operation 2": "Off-site Adjustment",
+"Results Operation Section": "Threshold Frequency f₁ , Derating Factor, and Intentional Delay Settings",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10049.1",
+"testid": "10049.1_3",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Not Provided",
+"Result Operation 2": "On-site Adjustment",
+"Results Operation Section": "Threshold Frequency f₁ , Derating Factor, and Intentional Delay Settings",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10049.1",
+"testid": "10049.1_4",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Not Provided",
+"Result Operation 2": "Off-site Adjustment",
+"Results Operation Section": "Threshold Frequency f₁ , Derating Factor, and Intentional Delay Settings",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10049.2",
+"testid": "10049.2_1",
+"Event": "No relevant settings provided",
+"Result Operation": "Apply",
+"Results Operation Section": "Default Settings in Table 3",
+"Result": "Success"
+},
+{
+"rule": "10049.2",
+"testid": "10049.2_2",
+"Event": "No relevant settings provided",
+"Result Operation": "Not Used",
+"Results Operation Section": "Default Settings in Table 3",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10050.1",
+"testid": "10050.1_1",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Success"
+},
+{
+"rule": "10050.1",
+"testid": "10050.1_2",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10050.2",
+"testid": "10050.2_1",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Success"
+},
+{
+"rule": "10050.2",
+"testid": "10050.2_2",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10051.1",
+"testid": "10051.1_1",
+"Operation": "Application",
+"Operation Section": "Over-Frequency Active Power Response",
+"Result frequency threshold": "f ₁ is",
+"Result Constraints": "Set between 50.2Hz and 50.5Hz",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10052.1",
+"testid": "10052.1_1",
+"Operation Section": "Frequency Threshold f ₁",
+"Operation": "Set as",
+"Frequency": "52Hz",
+"Result Operation": "Disable",
+"Result Operation Section": "This function",
+"Result": "Success"
+},
+{
+"rule": "10052.1",
+"testid": "10052.1_2",
+"Operation Section": "Frequency Threshold f ₁",
+"Operation": "Set as",
+"Frequency": "52Hz",
+"Result Operation": "Not Disabled",
+"Result Operation Section": "This function",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10056.1",
+"testid": "10056.1_1",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10057.1",
+"testid": "10057.1_1",
+"Resulting reduction coefficient": "5%",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10058.1",
+"testid": "10058.1_1",
+"Result Action": "Intentional Postponement",
+"Result Reporting Unit": "1 Yuan Denomination",
+"Result": "Success"
+},
+{
+"rule": "10058.1",
+"testid": "10058.1_2",
+"Result Action": "Unintentional Delay",
+"Result Reporting Unit": "1 Yuan Denomination",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10058.2",
+"testid": "10058.2_1",
+"Result Reporting Unit": "1 Yuan Denomination",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10060.1",
+"testid": "10060.1_1",
+"Time": "Within the specified time",
+"Event": "Unable to reduce power across the entire derating range",
+"Operating Section": "Generator Output Power",
+"Result Operation": "Start",
+"Results Operation Section": "Active Power Frequency Response",
+"Result": "Success"
+},
+{
+"rule": "10060.1",
+"testid": "10060.1_2",
+"Time": "Within the specified time",
+"Event": "Unable to reduce power across the entire derating range",
+"Operating Section": "Generator Output Power",
+"Result Operation": "Non-Startup",
+"Results Operation Section": "Active Power Frequency Response",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10060.2",
+"testid": "10060.2_1",
+"Event": "reached",
+"Operation Section": "Limits of Fast and Controllable Frequency Response",
+"Result Operation": "Keep",
+"Results Operation Section": "This power level",
+"Result": "Success"
+},
+{
+"rule": "10060.2",
+"testid": "10060.2_2",
+"Event": "reached",
+"Operation Section": "Limits of Fast and Controllable Frequency Response",
+"Result Operation": "Non-hold",
+"Results Operation Section": "This power level",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10060.3",
+"testid": "10060.3_1",
+"Operating Entity": "Generator",
+"Result Operation": "Shutdown",
+"Result Frequency": "Random frequency between frequency thresholds f₁ and fₘₐₓ ( overfrequency disconnection limit provided by the Distribution Network Operator (DSO))",
+"Result": "Success"
+},
+{
+"rule": "10060.3",
+"testid": "10060.3_2",
+"Operating Entity": "Generator",
+"Result Operation": "Non-Stop Operation",
+"Result Frequency": "Random frequency between frequency thresholds f₁ and fₘₐₓ ( overfrequency disconnection limit provided by the Distribution Network Operator (DSO))",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10060.4",
+"testid": "10060.4_1",
+"Event": "Not provided",
+"Operation Section": "Settings for f ₘₐₓ",
+"Result Operation": "Default",
+"Results Operation Section": "51.5Hz",
+"Result": "Success"
+},
+{
+"rule": "10060.4",
+"testid": "10060.4_2",
+"Event": "Not provided",
+"Operation Section": "Settings for f ₘₐₓ",
+"Result Operation": "Non-default",
+"Results Operation Section": "51.5Hz",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10062.1",
+"testid": "10062.1_1",
+"Operation Section": "Multiple units equipped with random frequency disconnection function",
+"Result Operation": "Simulation",
+"Outcome Constraints": "Overall effect at the transmission network level",
+"Results Operation Section": "Reduction Curve Set in Table 1 or Appendix A",
+"Result": "Success"
+},
+{
+"rule": "10062.1",
+"testid": "10062.1_2",
+"Operation Section": "Multiple units equipped with random frequency disconnection function",
+"Result Operation": "Non-simulation",
+"Outcome Constraints": "Overall effect at the transmission network level",
+"Results Operation Section": "Reduction Curve Set in Table 1 or Appendix A",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10063.1",
+"testid": "10063.1_1",
+"Trading Instrument": "Photovoltaic Generator",
+"Result Operation": "Consider it to be met",
+"Results Operation Section": "Ability to reduce power across the entire derating range",
+"Result": "Success"
+},
+{
+"rule": "10063.1",
+"testid": "10063.1_2",
+"Trading Instrument": "Photovoltaic Generator",
+"Result Operation": "Not considered to be present",
+"Results Operation Section": "Ability to reduce power across the entire derating range",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10066.1",
+"testid": "10066.1_1",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Micro-generator",
+"Resulting power": "Increased to P ₘ or higher",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10066.2",
+"testid": "10066.2_1",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Reconnect",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Success"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_2",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Reconnect",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Non-Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_3",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Reconnect",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_4",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Reconnect",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Non-Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_5",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Non-Reconnection",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_6",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Non-Reconnection",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Non-Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_7",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Non-Reconnection",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10066.2",
+"testid": "10066.2_8",
+"Event": "Frequency anomaly",
+"Frequency": "Decreased below the threshold frequency f₁",
+"Operating Entity": "Power Generation Facilities",
+"Result Operation": "Non-Reconnection",
+"Result Operation 2": "Not Specified",
+"Result Operation 3": "Non-Default Settings",
+"The resulting active power": "Does not exceed the specified gradient",
+"Resulting Trading Instrument": "Non-adjustable or partially adjustable power generation facilities",
+"Result Gradient": "Percentage of rated active power per minute of the unit",
+"Result Execution Entity": "Distribution Network Operator (DSO)",
+"Result Operation Section": "This gradient",
+"Results Operation Section 2": "10%P ₙ /min",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10070.1",
+"testid": "10070.1_1",
+"Active power output of the micro generator": "Greater than or equal to 20% of its rated active power",
+"Result-related operating entity": "Distribution Network Operator (DSO)",
+"Results Operation Section": "Characteristic Curve",
+"Resulting active power output of the micro generator": "Greater than or equal to 20% of its rated active power",
+"Result Constraints": "Operate within the range of active factor cosφ = 0.9 (underexcited) to 0.9 (overexcited).",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10071.1",
+"testid": "10071.1_1",
+"Active power output": "Less than 20% of its rated active power",
+"Resulting reactive power exchange": "Not exceeding 10% of the rated active power of the micro generator.",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10075.1",
+"testid": "10075.1_1",
+"Voltage": "Within the legally permissible range of rated voltage",
+"Status": "Under normal steady-state operating conditions",
+"Active power output of micro generators": "More than 20% higher than their rated output power",
+"Resulting power factor": "0.5",
+"Result": "Success"
+},
+{
+"rule": "10075.1",
+"testid": "10075.1_2",
+"Voltage": "Within the legally permissible range of rated voltage",
+"Status": "Under normal steady-state operating conditions",
+"Active power output of micro generators": "More than 20% higher than their rated output power",
+"Resulting power factor": "0.0",
+"Result": "Unsuccessful",
+"Result Status": "Under normal steady-state operating conditions"
+}
+],
+[
+{
+"rule": "10075.2",
+"testid": "10075.2_1",
+"Voltage": "Within the legally permissible range of rated voltage",
+"Status": "Under normal steady-state operating conditions",
+"Active power output of micro generator": "Less than 20% of rated output power",
+"Resulting reactive power exchange": "Not exceeding 10% of its rated active power output",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10081.1",
+"testid": "10081.1_1",
+"Outcome Constraints": "Fixed Control Mode",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10083.1",
+"testid": "10083.1_1",
+"Operation Section": "Control Mode Configuration",
+"Result Operation": "Can be adjusted on-site",
+"Result": "Success"
+},
+{
+"rule": "10083.1",
+"testid": "10083.1_2",
+"Operation Section": "Control Mode Configuration",
+"Result Operation": "Not Allowed for On-Site Adjustment",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10083.2",
+"testid": "10083.2_1",
+"Operation Section": "Activating and Deactivating Control Mode",
+"Result Operation": "Can be adjusted on-site",
+"Result": "Success"
+},
+{
+"rule": "10083.2",
+"testid": "10083.2_2",
+"Operation Section": "Activating and Deactivating Control Mode",
+"Result Operation": "Not Allowed for On-Site Adjustment",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10084.1",
+"testid": "10084.1_1",
+"Operation Section": "Activation/Deactivation of on-site adjustable configuration and control modes",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Success"
+},
+{
+"rule": "10084.1",
+"testid": "10084.1_2",
+"Operation Section": "Activation/Deactivation of on-site adjustable configuration and control modes",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10084.2",
+"testid": "10084.2_1",
+"Operation Section": "Activation/Deactivation of on-site adjustable configuration and control modes",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Success"
+},
+{
+"rule": "10084.2",
+"testid": "10084.2_2",
+"Operation Section": "Activation/Deactivation of on-site adjustable configuration and control modes",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10085.1",
+"testid": "10085.1_1",
+"Accuracy of controllable reactive power": "Less than ±2% of the rated power of the micro generator.",
+"Operating Section": "Controllable Reactive Power",
+"Result operation": "represents",
+"Result Operation 2": "Involves",
+"Result Constraint": "Reactive Power",
+"Accuracy of controllable reactive power results": "Less than ±2% of the rated power of the micro generator.",
+"Result Operation Section": "Control Mode Used",
+"Result Operation Section 2": "Active Factor",
+"Result": "Success"
+},
+{
+"rule": "10085.1",
+"testid": "10085.1_2",
+"Accuracy of controllable reactive power": "Less than ±2% of the rated power of the micro generator.",
+"Operating Section": "Controllable Reactive Power",
+"Result operation": "represents",
+"Result Operation 2": "Not Involved",
+"Result Constraint": "Reactive Power",
+"Accuracy of controllable reactive power results": "Less than ±2% of the rated power of the micro generator.",
+"Result Operation Section": "Control Mode Used",
+"Result Operation Section 2": "Active Factor",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10085.1",
+"testid": "10085.1_3",
+"Accuracy of controllable reactive power": "Less than ±2% of the rated power of the micro generator.",
+"Operating Section": "Controllable Reactive Power",
+"Result operation": "NOT representation",
+"Result Operation 2": "Involves",
+"Result Constraint": "Reactive Power",
+"Accuracy of controllable reactive power results": "Less than ±2% of the rated power of the micro generator.",
+"Result Operation Section": "Control Mode Used",
+"Result Operation Section 2": "Active Factor",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10085.1",
+"testid": "10085.1_4",
+"Accuracy of controllable reactive power": "Less than ±2% of the rated power of the micro generator.",
+"Operating Section": "Controllable Reactive Power",
+"Result operation": "NOT representation",
+"Result Operation 2": "Not Involved",
+"Result Constraint": "Reactive Power",
+"Accuracy of controllable reactive power results": "Less than ±2% of the rated power of the micro generator.",
+"Result Operation Section": "Control Mode Used",
+"Result Operation Section 2": "Active Factor",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10087.1",
+"testid": "10087.1_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Specification",
+"Results Operation Section": "Types of Effects of Reactive Power on Voltage Control",
+"Result": "Success"
+},
+{
+"rule": "10087.1",
+"testid": "10087.1_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Non-standard",
+"Results Operation Section": "Types of Effects of Reactive Power on Voltage Control",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10087.2",
+"testid": "10087.2_1",
+"Operating Entity": "Micro Generator",
+"Resultant active factor cosφ": "1",
+"Result Operation": "Run",
+"Result": "Success"
+},
+{
+"rule": "10087.2",
+"testid": "10087.2_2",
+"Operating Entity": "Micro Generator",
+"Resultant active factor cosφ": "1",
+"Result Operation": "Non-Run",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10087.2",
+"testid": "10087.2_3",
+"Operating Entity": "Micro Generator",
+"Resulting active factor cosφ": "2",
+"Result Operation": "Run",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10087.2",
+"testid": "10087.2_4",
+"Operating Entity": "Micro Generator",
+"Resultant work factor cosφ": "3",
+"Result Operation": "Non-Run",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10087.3",
+"testid": "10087.3_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Not specified",
+"Operation Section": "Characteristic Curves",
+"Resultant active factor cosφ": "1",
+"Result Operation": "Run",
+"Result": "Success"
+},
+{
+"rule": "10087.3",
+"testid": "10087.3_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Not specified",
+"Operation Section": "Characteristic Curves",
+"Resultant active factor cosφ": "1",
+"Result Operation": "Non-Run",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10087.3",
+"testid": "10087.3_3",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Not specified",
+"Operation Section": "Characteristic Curves",
+"Resulting active factor cosφ": "2",
+"Result Operation": "Run",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10087.3",
+"testid": "10087.3_4",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Not specified",
+"Operation Section": "Characteristic Curves",
+"Resultant work factor cosφ": "3",
+"Result Operation": "Non-Run",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10089.1",
+"testid": "10089.1_1",
+"Result Constraints": "Set values set in the control of micro-generators",
+"Result Operation Section": "Its output is the active factor cosφ",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10091.1",
+"testid": "10091.1_1",
+"Control Mode": "Q(U) Voltage-Related Control Mode",
+"Result Operation": "Control",
+"Result Control": "Reactive Power Output",
+"Result Control Section": "Function of Voltage",
+"Result": "Success"
+},
+{
+"rule": "10091.1",
+"testid": "10091.1_2",
+"Control Mode": "Q(U) Voltage-Related Control Mode",
+"Result Operation": "Non-control",
+"Result Control": "Reactive Power Output",
+"Result Control Section": "Function of Voltage",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10095.1",
+"testid": "10095.1_1",
+"Results Operation": "Phase-by-Phase Evaluation",
+"Result Operation 2": "OK",
+"Results Operation Section": "Voltage per Phase",
+"Results Operation Section 2": "Reactive Power per Phase",
+"Result": "Success"
+},
+{
+"rule": "10095.1",
+"testid": "10095.1_2",
+"Results Operation": "Phase-by-Phase Evaluation",
+"Result Operation 2": "Non-deterministic",
+"Results Operation Section": "Voltage per Phase",
+"Results Operation Section 2": "Reactive Power per Phase",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10095.1",
+"testid": "10095.1_3",
+"Results Operation": "Non-Phase-by-Phase Evaluation",
+"Result Operation 2": "OK",
+"Results Operation Section": "Voltage per Phase",
+"Results Operation Section 2": "Reactive Power per Phase",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10095.1",
+"testid": "10095.1_4",
+"Results Operation": "Non-Phase-by-Phase Evaluation",
+"Result Operation 2": "Non-deterministic",
+"Results Operation Section": "Voltage per Phase",
+"Results Operation Section 2": "Reactive Power per Phase",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10096.1",
+"testid": "10096.1_1",
+"Result Operation": "Conforms",
+"Results Operation Section": "Characteristic Curves in Figure 4",
+"Result": "Success"
+},
+{
+"rule": "10096.1",
+"testid": "10096.1_2",
+"Result Operation": "Not Matching",
+"Results Operation Section": "Characteristic Curves in Figure 4",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10098.1",
+"testid": "10098.1_1",
+"Result Constraints": "In addition to the characteristic curves, the dynamic response of the control",
+"Dynamic characteristics of result control": "Equivalent to a first-order filter",
+"Result Time Constant": "In",
+"Result constraint 2": "Within the range of 3 seconds to 60 seconds",
+"Result Event": "After the voltage change, the new set value is reached.",
+"Result is": "95% of the time is",
+"Result Constraint 3": "3 times the time constant",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10100.1",
+"testid": "10100.1_1",
+"Business": "cosφ(P) power-related control mode",
+"Result Operation": "Control",
+"Outcome constraint": "Active factor cosφ of the micro generator output",
+"Result Operation Section": "Function of its active power output",
+"Result": "Success"
+},
+{
+"rule": "10100.1",
+"testid": "10100.1_2",
+"Business": "cosφ(P) power-related control mode",
+"Result Operation": "Non-control",
+"Outcome constraint": "Active factor cosφ of the micro generator output",
+"Result Operation Section": "Function of its active power output",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10101.1",
+"testid": "10101.1_1",
+"Result Operation": "Conforms",
+"Results Operation Section": "Characteristic Curves in Figure 4",
+"Result": "Success"
+},
+{
+"rule": "10101.1",
+"testid": "10101.1_2",
+"Result Operation": "Not Matching",
+"Results Operation Section": "Characteristic Curves in Figure 4",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10102.1",
+"testid": "10102.1_1",
+"Operation Section": "After Changes in Active Power Output",
+"Operation Section 2": "Adjustment of New Settings",
+"Result Operation": "Completed",
+"Result Time": "Within 10 seconds of settling time",
+"Result": "Success"
+},
+{
+"rule": "10102.1",
+"testid": "10102.1_2",
+"Operation Section": "After Changes in Active Power Output",
+"Operation Section 2": "Adjustment of New Settings",
+"Result Operation": "Completed",
+"Result Time": "Within a non-10-second steady-state period",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10102.1",
+"testid": "10102.1_3",
+"Operation Section": "After Changes in Active Power Output",
+"Operation Section 2": "Adjustment of New Settings",
+"Result Operation": "Non-complete",
+"Result Time": "Within 10 seconds of settling time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10102.1",
+"testid": "10102.1_4",
+"Operation Section": "After Changes in Active Power Output",
+"Operation Section 2": "Adjustment of New Settings",
+"Result Operation": "Non-complete",
+"Result Time": "Within a non-10-second steady-state period",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10102.2",
+"testid": "10102.2_1",
+"Operation Section": "Rate of Change of Reactive Power",
+"Result Operation": "Keep Synchronized",
+"Results Operation Section": "Rate of Change of Active Power",
+"Result Time": "Within the same time range",
+"Result": "Success"
+},
+{
+"rule": "10102.2",
+"testid": "10102.2_2",
+"Operation Section": "Rate of Change of Reactive Power",
+"Result Operation": "Keep Synchronized",
+"Results Operation Section": "Rate of Change of Active Power",
+"Result Time": "Not within the same time range",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10102.2",
+"testid": "10102.2_3",
+"Operation Section": "Rate of Change of Reactive Power",
+"Result Operation": "Do Not Maintain Synchronization",
+"Results Operation Section": "Rate of Change of Active Power",
+"Result Time": "Within the same time range",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10102.2",
+"testid": "10102.2_4",
+"Operation Section": "Rate of Change of Reactive Power",
+"Result Operation": "Do Not Maintain Synchronization",
+"Results Operation Section": "Rate of Change of Active Power",
+"Result Time": "Not within the same time range",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10104.1",
+"testid": "10104.1_1",
+"Event": "Avoid disconnection due to overvoltage protection",
+"Operating Entity": "Micro-generator",
+"Result Operation": "Decrease",
+"Result Constraints": "Voltage Increase Conditions",
+"Results Operation Section": "Active Power Output",
+"Result": "Success"
+},
+{
+"rule": "10104.1",
+"testid": "10104.1_2",
+"Event": "Avoid disconnection due to overvoltage protection",
+"Operating Entity": "Micro-generator",
+"Result Operation": "Non-Decrease",
+"Result Constraints": "Voltage Increase Conditions",
+"Results Operation Section": "Active Power Output",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10104.2",
+"testid": "10104.2_1",
+"Event": "Avoid disconnection due to overvoltage protection",
+"Operating Entity": "Micro-generator",
+"Operation Section": "This Function",
+"Result Operation": "Decrease",
+"Outcome Constraints": "Logic of Manufacturer Selection",
+"Results Operation Section": "Active Power",
+"Result": "Success"
+},
+{
+"rule": "10104.2",
+"testid": "10104.2_2",
+"Event": "Avoid disconnection due to overvoltage protection",
+"Operating Entity": "Micro-generator",
+"Operation Section": "This Function",
+"Result Operation": "Non-Decrease",
+"Outcome Constraints": "Logic of Manufacturer Selection",
+"Results Operation Section": "Active Power",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10104.3",
+"testid": "10104.3_1",
+"Event": "Avoid disconnection due to overvoltage protection",
+"Operating Entity": "Micro-generator",
+"Operation Section": "This Logic",
+"Result Operation": "Does not result in",
+"Results Operation Section": "A step change occurred in the output power",
+"Result": "Success"
+},
+{
+"rule": "10104.3",
+"testid": "10104.3_2",
+"Event": "Avoid disconnection due to overvoltage protection",
+"Operating Entity": "Micro-generator",
+"Operation Section": "This Logic",
+"Result Operation": "Results",
+"Results Operation Section": "A step change occurred in the output power",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10108.1",
+"testid": "10108.1_1",
+"Operation Section": "Interface Protection",
+"Result Operation": "Ensure",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Success"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_2",
+"Operation Section": "Interface Protection",
+"Result Operation": "Ensure",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Non-Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_3",
+"Operation Section": "Interface Protection",
+"Result Operation": "Ensure",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_4",
+"Operation Section": "Interface Protection",
+"Result Operation": "Ensure",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Non-Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_5",
+"Operation Section": "Interface Protection",
+"Result Operation": "Non-guaranteed",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_6",
+"Operation Section": "Interface Protection",
+"Result Operation": "Non-guaranteed",
+"Result Operation 2": "No damage",
+"Result Operation 3": "Non-Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_7",
+"Operation Section": "Interface Protection",
+"Result Operation": "Non-guaranteed",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10108.1",
+"testid": "10108.1_8",
+"Operation Section": "Interface Protection",
+"Result Operation": "Non-guaranteed",
+"Result Operation 2": "Will cause damage",
+"Result Operation 3": "Non-Decrease",
+"Results Operation Section": "Connection of Micro Generators",
+"Results Operation Section 2": "Integrity of Distribution Network",
+"Results Operation Section 3": "Security of Distribution Network",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10108.2",
+"testid": "10108.2_1",
+"Operation Section": "Interface Protection",
+"Results Operation Section": "Impact of Voltage and Frequency Variations in Distribution Networks within Specified Voltage and Frequency Ranges",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10109.1",
+"testid": "10109.1_1",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "Integrated in",
+"Results Operation Section": "Control System of Micro Generator",
+"Result": "Success"
+},
+{
+"rule": "10109.1",
+"testid": "10109.1_2",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "Not integrated",
+"Results Operation Section": "Control System of Micro Generator",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10109.2",
+"testid": "10109.2_1",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "Integrated in",
+"Results Operation Section": "Discrete Devices",
+"Result": "Success"
+},
+{
+"rule": "10109.2",
+"testid": "10109.2_2",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "Not integrated",
+"Results Operation Section": "Discrete Devices",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10109.3",
+"testid": "10109.3_1",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "As a discrete device installed independently",
+"Result Operation 2": "Install",
+"Result": "Success"
+},
+{
+"rule": "10109.3",
+"testid": "10109.3_2",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "As a discrete device installed independently",
+"Result Operation 2": "Not Installed",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10109.3",
+"testid": "10109.3_3",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "Discrete device not installed independently",
+"Result Operation 2": "Install",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10109.3",
+"testid": "10109.3_4",
+"Operation Section": "Interface Protection, Monitoring, and Control Functions",
+"Result Operation": "Discrete device not installed independently",
+"Result Operation 2": "Not Installed",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10110.1",
+"testid": "10110.1_1",
+"Operation Section": "Interface Protection Settings",
+"Result Operation": "On-site Adjustment",
+"Result": "Success"
+},
+{
+"rule": "10110.1",
+"testid": "10110.1_2",
+"Operation Section": "Interface Protection Settings",
+"Result Operation": "Off-site Adjustment",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10111.1",
+"testid": "10111.1_1",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Success"
+},
+{
+"rule": "10111.1",
+"testid": "10111.1_2",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10111.2",
+"testid": "10111.2_1",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Success"
+},
+{
+"rule": "10111.2",
+"testid": "10111.2_2",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10112.1",
+"testid": "10112.1_1",
+"Operation Section": "Protection Functions",
+"Result Operation": "At Least Evaluate",
+"Results Operation Section": "All phases connected to the micro-generators covered by this protection system",
+"Result": "Success"
+},
+{
+"rule": "10112.1",
+"testid": "10112.1_2",
+"Operation Section": "Protection Functions",
+"Result Operation": "Not a minimum evaluation",
+"Results Operation Section": "All phases connected to the micro-generators covered by this protection system",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10113.1",
+"testid": "10113.1_1",
+"Operations Section": "Power Generation Units/Facilities",
+"Constraint": "The protection system acts as an external protection system.",
+"Operation Section 2": "Three-phase Power Supply System",
+"Result Operation": "Evaluation",
+"Results Operation Section": "All Phase-to-Phase Voltages",
+"Result": "Success"
+},
+{
+"rule": "10113.1",
+"testid": "10113.1_2",
+"Operations Section": "Power Generation Units/Facilities",
+"Constraint": "The protection system acts as an external protection system.",
+"Operation Section 2": "Three-phase Power Supply System",
+"Result Operation": "Non-Evaluation",
+"Results Operation Section": "All Phase-to-Phase Voltages",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10113.2",
+"testid": "10113.2_1",
+"Operations Section": "Power Generation Units/Facilities",
+"Constraint": "The protection system acts as an external protection system.",
+"Operation Section 2": "Three-phase Power Supply System",
+"Result Operation": "Evaluation",
+"Results Operation Section": "All Relative Neutral Line Voltages",
+"Result": "Success"
+},
+{
+"rule": "10113.2",
+"testid": "10113.2_2",
+"Operations Section": "Power Generation Units/Facilities",
+"Constraint": "The protection system acts as an external protection system.",
+"Operation Section 2": "Three-phase Power Supply System",
+"Result Operation": "Non-Evaluation",
+"Results Operation Section": "All Relative Neutral Line Voltages",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10114.1",
+"testid": "10114.1_1",
+"Result Constraints": "The frequency should be evaluated at least at one of the supply voltages.",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10115.1",
+"testid": "10115.1_1",
+"Operation Section": "Multiple Signals",
+"Operation Section 2": "This function",
+"Result Operation": "Evaluate separately",
+"Results Operations": "All Signals",
+"Result": "Success"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_2",
+"Operation Section": "Multiple Signals",
+"Operation Section 2": "This function",
+"Result Operation": "Non-Separate Evaluation",
+"Results Operations": "All Signals",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10115.2",
+"testid": "10115.2_1",
+"each": "singleevaluation's",
+"output": "Connected using OR logic",
+"A specific protection function": "Multiple signals need to be evaluated",
+"Operation Section": "This Function",
+"Result Operation": "Trigger",
+"Result Operation Section": "Protection Actions",
+"Result Time": "Within the specified time",
+"Result": "Success"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_2",
+"each": "singleevaluation's",
+"output": "Connected using OR logic",
+"A specific protection function": "Multiple signals need to be evaluated",
+"Operation Section": "This Function",
+"Result Operation": "Trigger",
+"Result Operation Section": "Protection Actions",
+"Result Time": "Outside of the specified time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_3",
+"each": "singleevaluation's",
+"output": "Connected using OR logic",
+"A specific protection function": "Multiple signals need to be evaluated",
+"Operation Section": "This Function",
+"Result Operation": "Non-triggered",
+"Result Operation Section": "Protection Actions",
+"Result Time": "Within the specified time",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_4",
+"each": "singleevaluation's",
+"output": "Connected using OR logic",
+"A specific protection function": "Multiple signals need to be evaluated",
+"Operation Section": "This Function",
+"Result Operation": "Non-triggered",
+"Result Operation Section": "Protection Actions",
+"Result Time": "Outside of the specified time",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10117.1",
+"testid": "10117.1_1",
+"Result Frequency Measurement": "0.0",
+"Result": "Success"
+},
+{
+"rule": "10117.1",
+"testid": "10117.1_2",
+"Result Frequency Measurement": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10118.1",
+"testid": "10118.1_1",
+"Resulting voltage measurement": "±1%U ₙ",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10119.1",
+"testid": "10119.1_1",
+"Result Constraints": "The measurement point can be located inside the micro-generator.",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10119.2",
+"testid": "10119.2_1",
+"Result Constraints": "The measurement point can be located anywhere between the terminal of the micro generator and the access point.",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10120.1",
+"testid": "10120.1_1",
+"Interface Protection System": "External Equipment of the Power Generation Unit",
+"Operation": "Voltage rise between the access point and interface protection system measurement input",
+"Result Operation": "Measure as close to the access point as possible",
+"Result Operation 2": "Avoid overvoltage protection malfunction",
+"Result": "Success"
+},
+{
+"rule": "10120.1",
+"testid": "10120.1_2",
+"Interface Protection System": "External Equipment of the Power Generation Unit",
+"Operation": "Voltage rise between the access point and interface protection system measurement input",
+"Result Operation": "Measure as close to the access point as possible",
+"Result Operation 2": "Unavoidable overvoltage protection malfunction",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10120.1",
+"testid": "10120.1_3",
+"Interface Protection System": "External Equipment of the Power Generation Unit",
+"Operation": "Voltage rise between the access point and interface protection system measurement input",
+"Result Operation": "Measurement should not be performed as close to the access point as possible.",
+"Result Operation 2": "Avoid overvoltage protection malfunction",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10120.1",
+"testid": "10120.1_4",
+"Interface Protection System": "External Equipment of the Power Generation Unit",
+"Operation": "Voltage rise between the access point and interface protection system measurement input",
+"Result Operation": "Measurement should not be performed as close to the access point as possible.",
+"Result Operation 2": "Unavoidable overvoltage protection malfunction",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10121.1",
+"testid": "10121.1_1",
+"Operation": "Avoid Interface Protection",
+"Operation Section": "Frequent Start-up and Shutdown of Relays",
+"Result constraint": "Frequency",
+"Result of voltage function exit value": "Should differ from the action value",
+"Results exceed": "2%",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10123.1",
+"testid": "10123.1_1",
+"Operating Section": "Miniature Power Generation Equipment",
+"Result action": "Disconnect.",
+"Result associated with the operating entity": "Power Grid",
+"Result Time": "When interface protection action is performed",
+"Result": "Success"
+},
+{
+"rule": "10123.1",
+"testid": "10123.1_2",
+"Operating Section": "Miniature Power Generation Equipment",
+"Result action": "Disconnect.",
+"Result associated with the operating entity": "Power Grid",
+"Result Time": "When non-interface protection action is performed",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10123.1",
+"testid": "10123.1_3",
+"Operating Section": "Miniature Power Generation Equipment",
+"Result Operation": "Non-disconnection",
+"Result associated with the operating entity": "Power Grid",
+"Result Time": "When interface protection action is performed",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10123.1",
+"testid": "10123.1_4",
+"Operating Section": "Miniature Power Generation Equipment",
+"Result Operation": "Non-disconnection",
+"Result associated with the operating entity": "Power Grid",
+"Result Time": "When non-interface protection action is performed",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10125.1",
+"testid": "10125.1_1",
+"Operation Section": "Interface Protection",
+"Operation": "Integrated in",
+"Operating Section 2": "Internal Part of the Micro Generator",
+"Result Operation": "Implementation",
+"Result": "Success"
+},
+{
+"rule": "10125.1",
+"testid": "10125.1_2",
+"Operation Section": "Interface Protection",
+"Operation": "Integrated in",
+"Operating Section 2": "Internal Part of the Micro Generator",
+"Result operation": "Non-implemented",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10125.2",
+"testid": "10125.2_1",
+"Operation Section": "Interface Protection",
+"Operation": "Integrated in",
+"Operating Section 2": "Independent Device",
+"Result Operation": "Implementation",
+"Result": "Success"
+},
+{
+"rule": "10125.2",
+"testid": "10125.2_2",
+"Operation Section": "Interface Protection",
+"Operation": "Integrated in",
+"Operating Section 2": "Independent Device",
+"Result operation": "Non-implementation",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10125.3",
+"testid": "10125.3_1",
+"Operation Section": "Interface Protection",
+"Result Operation": "Declaration",
+"Result Operation 2": "Satisfied",
+"Result Constraints": "IEC",
+"Result Constraint 2": "Relevant Requirements of 60255-127",
+"Results Operation Section": "Combined Equipment",
+"Results Operation Section 2": "These Requirements",
+"Result": "Success"
+},
+{
+"rule": "10125.3",
+"testid": "10125.3_2",
+"Operation Section": "Interface Protection",
+"Result Operation": "Declaration",
+"Result Operation 2": "Not Satisfied",
+"Result Constraints": "IEC",
+"Result Constraint 2": "Relevant Requirements of 60255-127",
+"Results Operation Section": "Combined Equipment",
+"Results Operation Section 2": "These Requirements",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10125.3",
+"testid": "10125.3_3",
+"Operation Section": "Interface Protection",
+"Result Operation": "Non-Declaration",
+"Result Operation 2": "Satisfied",
+"Result Constraints": "IEC",
+"Result Constraint 2": "Relevant Requirements of 60255-127",
+"Results Operation Section": "Combined Equipment",
+"Results Operation Section 2": "These Requirements",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10125.3",
+"testid": "10125.3_4",
+"Operation Section": "Interface Protection",
+"Result Operation": "Non-Declaration",
+"Result Operation 2": "Not Satisfied",
+"Result Constraints": "IEC",
+"Result Constraint 2": "Relevant Requirements of 60255-127",
+"Results Operation Section": "Combined Equipment",
+"Results Operation Section 2": "These Requirements",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10127.1",
+"testid": "10127.1_1",
+"Constraint": "Only with the written consent of the Distribution Network Operator (DSO)",
+"Operation": "Change",
+"Operations Section": "Interface protection settings selected during debugging or subsequent reconfiguration",
+"Operation Section 2": "Changes",
+"Operation 2": "Strictly follow",
+"Operation Section 3": "Manufacturer's Instructions",
+"Result Operation": "Perform",
+"Outcome constraint": "Only upon obtaining the written consent of the Distribution Network Operator (DSO)",
+"Result": "Success"
+},
+{
+"rule": "10127.1",
+"testid": "10127.1_2",
+"Constraint": "Only with the written consent of the Distribution Network Operator (DSO)",
+"Operation": "Change",
+"Operations Section": "Interface protection settings selected during debugging or subsequent reconfiguration",
+"Operation Section 2": "Changes",
+"Operation 2": "Strictly follow",
+"Operation Section 3": "Manufacturer's Instructions",
+"Result Operation": "Not Performed",
+"Outcome constraint": "Only upon obtaining the written consent of the Distribution Network Operator (DSO)",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10127.2",
+"testid": "10127.2_1",
+"Operating Entity": "User",
+"Result action": "Do not change",
+"Results Operation Section": "Interface Protection Settings",
+"Result": "Success"
+},
+{
+"rule": "10127.2",
+"testid": "10127.2_2",
+"Operating Entity": "User",
+"Result Operation": "Change",
+"Results Operation Section": "Interface Protection Settings",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10131.1",
+"testid": "10131.1_1",
+"Operating Section": "Two or more micro generators",
+"Operation": "Equipped",
+"Operation Section 2": "Interface Device",
+"Operation 2": "Parallel Operation",
+"Result Operation": "Ensure",
+"Results and Operations": "The protective devices are working normally.",
+"Result": "Success"
+},
+{
+"rule": "10131.1",
+"testid": "10131.1_2",
+"Operating Section": "Two or more micro generators",
+"Operation": "Equipped",
+"Operation Section 2": "Interface Device",
+"Operation 2": "Parallel Operation",
+"Result Operation": "Non-guaranteed",
+"Results and Operations": "The protective devices are working normally.",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10132.1",
+"testid": "10132.1_1",
+"Operating Section": "Combined Protection Device",
+"Operation": "Add",
+"Operation Section 2": "Generator",
+"Result Operation Object": "Distribution Network Operator (DSO)",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10134.1",
+"testid": "10134.1_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Provide",
+"Results Operation Section": "Interface Protection Settings",
+"Result": "Success"
+},
+{
+"rule": "10134.1",
+"testid": "10134.1_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Result Operation": "Not Provided",
+"Results Operation Section": "Interface Protection Settings",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10134.2",
+"testid": "10134.2_1",
+"Event": "No relevant settings provided",
+"Result Operation": "Apply",
+"Results Operation Section": "Default Settings",
+"Result": "Success"
+},
+{
+"rule": "10134.2",
+"testid": "10134.2_2",
+"Event": "No relevant settings provided",
+"Result Operation": "Not Used",
+"Results Operation Section": "Default Settings",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10138.1",
+"testid": "10138.1_1",
+"Minimum price fluctuation unit": "230",
+"Result-based price limit": "Overpressure",
+"Result-": "Phase 1a",
+"Result+": "10%",
+"Result": "Success"
+},
+{
+"rule": "10138.1",
+"testid": "10138.1_2",
+"Minimum unit of price change": "2",
+"Result-based price limit": "Overpressure",
+"Result-": "Phase 1a",
+"Result+": "10%",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10138.2",
+"testid": "10138.2_1",
+"Result Time": "3 seconds",
+"Result": "Success"
+},
+{
+"rule": "10138.2",
+"testid": "10138.2_2",
+"Result Time": "Not 3 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10139.1",
+"testid": "10139.1_1",
+"Minimum price fluctuation unit": "230",
+"Result-based price limit": "Overpressure",
+"Result-": "Phase Two",
+"Result+": "15%",
+"Result": "Success"
+},
+{
+"rule": "10139.1",
+"testid": "10139.1_2",
+"Minimum unit of price change": "2",
+"Result-based price limit": "Overpressure",
+"Result-": "Phase Two",
+"Result+": "15%",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10139.2",
+"testid": "10139.2_1",
+"Result Reporting Response Time": "0.1 seconds",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10139.3",
+"testid": "10139.3_1",
+"Result Reporting Response Time": "0.2 seconds",
+"Result": "Success"
+},
+{
+"rule": "10139.3",
+"testid": "10139.3_2",
+"Result Reporting Response Time": "Not 0.2 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10140.1",
+"testid": "10140.1_1",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10140.2",
+"testid": "10140.2_1",
+"Event": "Underpressure",
+"Undervoltage": "230V",
+"-": "15%",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10140.3",
+"testid": "10140.3_1",
+"Result Time": "1.2 seconds",
+"Result": "Success"
+},
+{
+"rule": "10140.3",
+"testid": "10140.3_2",
+"Result Time": "Not 1.2 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10140.4",
+"testid": "10140.4_1",
+"Result Time": "1.5 seconds",
+"Result": "Success"
+},
+{
+"rule": "10140.4",
+"testid": "10140.4_2",
+"Result Time": "Not 1.5 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10141.1",
+"testid": "10141.1_1",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10145.1",
+"testid": "10145.1_1",
+"Overvoltage": "Stage 1",
+"Trading Instrument": "Corresponding EN",
+"Constraint": "10-minute average of 50160",
+"Result Overvoltage": "EN",
+"Result 61000-4-30": "S-level 10-minute aggregation requirement",
+"Result Overpressure 2": "Moving Window Method",
+"Result Overpressure 3": "New 10-minute value",
+"Result Overvoltage 4": "Trip Value",
+"Result Time Tolerance": "±10%",
+"Result Time": "At least every 3 seconds",
+"Result": "Success"
+},
+{
+"rule": "10145.1",
+"testid": "10145.1_2",
+"Overvoltage": "Stage 1",
+"Trading Instrument": "Corresponding EN",
+"Constraint": "10-minute average of 50160",
+"Result Overvoltage": "EN",
+"Result 61000-4-30": "S-level 10-minute aggregation requirement",
+"Result Overpressure 2": "Moving Window Method",
+"Result Overpressure 3": "New 10-minute value",
+"Result Overvoltage 4": "Trip Value",
+"Result Time Tolerance": "±10%",
+"Result Time": "Not at least every 3 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10148.1",
+"testid": "10148.1_1",
+"Operating Section": "Interface protection system consisting of interface protection relays and interface switches",
+"Result operation": "Satisfied",
+"Results Operation Section": "Single Fault Tolerance Requirements",
+"Result": "Success"
+},
+{
+"rule": "10148.1",
+"testid": "10148.1_2",
+"Operating Section": "Interface protection system consisting of interface protection relays and interface switches",
+"Result Operation": "Not Satisfied",
+"Results Operation Section": "Single Fault Tolerance Requirements",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10149.1",
+"testid": "10149.1_1",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operational Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Consider",
+"Result Operation 2": "Display",
+"Result Operation 3": "Results",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Success"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_2",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operation Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Consider",
+"Result Operation 2": "Display",
+"Result Operation 3": "Non-causing",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_3",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operational Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Consider",
+"Result Operation 2": "Not Displayed",
+"Result Operation 3": "Results",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_4",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operation Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Consider",
+"Result Operation 2": "Not Displayed",
+"Result Operation 3": "Non-causing",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_5",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operational Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Not Considered",
+"Result Operation 2": "Display",
+"Result Operation 3": "Results",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_6",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operation Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Not Considered",
+"Result Operation 2": "Display",
+"Result Operation 3": "Non-causing",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_7",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operation Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Not Considered",
+"Result Operation 2": "Not Displayed",
+"Result Operation 3": "Results",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_8",
+"Event": "Single Failure",
+"Operation": "Does not result in",
+"Operational Section": "Safety Function Loss",
+"Event 2": "Common Cause Failure",
+"Probability of occurrence": "relatively high",
+"Result Operation": "Not Considered",
+"Result Operation 2": "Not Displayed",
+"Result Operation 3": "Non-causing",
+"Results Operation Section": "Single Fault",
+"Result Operation Section 2": "Power generation unit or system disconnected",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10151.1",
+"testid": "10151.1_1",
+"Operating Section": "Breakdown Capacity of Individual Series Switches",
+"Result Operation": "Independently Satisfiable",
+"Results Operation Section": "Rated Current and Short-Circuit Current Contribution Requirements of Micro Generators",
+"Result": "Success"
+},
+{
+"rule": "10151.1",
+"testid": "10151.1_2",
+"Operating Section": "Breakdown Capacity of Individual Series Switches",
+"Result Operation": "Non-independent satisfaction",
+"Results Operation Section": "Rated Current and Short-Circuit Current Contribution Requirements of Micro Generators",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10152.1",
+"testid": "10152.1_1",
+"Operating Section": "Short-time withstand current of switching equipment",
+"Result Operation": "Concordance",
+"Result Operation Section": "Maximum Short-Circuit Power of the Access Point",
+"Result": "Success"
+},
+{
+"rule": "10152.1",
+"testid": "10152.1_2",
+"Operating Section": "Short-time withstand current of switching equipment",
+"Result Operation": "Incompatible",
+"Result Operation Section": "Maximum Short-Circuit Power of the Access Point",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10153.1",
+"testid": "10153.1_1",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Section": "Switch",
+"Result Operation": "Yes",
+"Result Operation Section": "Disconnect Switch",
+"Result": "Success"
+},
+{
+"rule": "10153.1",
+"testid": "10153.1_2",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Section": "Switch",
+"Result operation": "Non-existent",
+"Result Operation Section": "Disconnect Switch",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10153.2",
+"testid": "10153.2_1",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Entity": "Single-phase micro generator",
+"Results and Operations": "Both the neutral conductor and the phase conductor must have one contact that conforms to this overvoltage category.",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10153.3",
+"testid": "10153.3_1",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Entity": "Three-phase power supply system",
+"Results and Operations": "Each active conductor must have one contact that conforms to this overvoltage category.",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10153.4",
+"testid": "10153.4_1",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Entity": "Second Switch",
+"Results Operation Section": "Electronic switching elements or other circuits of the inverter bridge",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10153.5",
+"testid": "10153.5_1",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Turn Off",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Success"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_2",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Shut Down",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_3",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Turn Off",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_4",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Turn Off",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_5",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_6",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_7",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_8",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Pass",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_9",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Shut Down",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_10",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Shut Down",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_11",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Shut Down",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_12",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Shut Down",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_13",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_14",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Prevent",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_15",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Latest time upon next reconnection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10153.5",
+"testid": "10153.5_16",
+"Event": "Meets overpressure category 2 requirements",
+"Operating Component": "Electronic Switching Component",
+"Result Operation": "Not Passed",
+"Result Operation 2": "Non-shutdown",
+"Result Operation 3": "Non-prevention",
+"Result Operation Section": "Control Signals",
+"Result Operation Section 2": "Run",
+"Result Time": "Not the latest time of the next reconnection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.1",
+"testid": "10154.1_1",
+"Related Operating Entities": "Power Grid and Photovoltaic Generators",
+"Operation Section": "Photovoltaic Inverter (e.g., a transformerless photovoltaic inverter)",
+"Results for the two switches mentioned above": "Disconnecting switches that meet the relevant requirements",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10154.2",
+"testid": "10154.2_1",
+"Related Operating Entities": "Power Grid and Photovoltaic Generators",
+"Operation Section": "Photovoltaic Inverter (e.g., a transformerless photovoltaic inverter)",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10157.1",
+"testid": "10157.1_1",
+"Voltage and Frequency": "Within the specified permissible range",
+"Event": "Observation period lasting at least the prescribed duration",
+"Operation": "Access",
+"Operation 2": "Start",
+"Operation Section": "Power Generation",
+"Result Operation": "Start",
+"Result": "Success"
+},
+{
+"rule": "10157.1",
+"testid": "10157.1_2",
+"Voltage and Frequency": "Within the specified permissible range",
+"Event": "Observation period lasting at least the prescribed duration",
+"Operation": "Access",
+"Operation 2": "Start",
+"Operation Section": "Power Generation",
+"Result Operation": "Non-Startup",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10157.2",
+"testid": "10157.2_1",
+"Voltage and Frequency": "Within the specified permissible range",
+"Event": "Observation period lasting at least the prescribed duration",
+"Event 2": "Automatic reconnection after interface protection trip.",
+"Result Operation": "Start",
+"Resulting voltage and frequency": "Within the specified allowable range",
+"Result": "Success"
+},
+{
+"rule": "10157.2",
+"testid": "10157.2_2",
+"Voltage and Frequency": "Within the specified permissible range",
+"Event": "Observation period lasting at least the prescribed duration",
+"Event 2": "Automatic reconnection after interface protection trip.",
+"Result Operation": "Non-Startup",
+"Resulting voltage and frequency": "Within the specified allowable range",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10157.3",
+"testid": "10157.3_1",
+"Event": "Automatic reconnection after interface protection trip.",
+"Result Operation": "Start",
+"Result": "Success"
+},
+{
+"rule": "10157.3",
+"testid": "10157.3_2",
+"Event": "Automatic reconnection after interface protection trip.",
+"Result Operation": "Non-Startup",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10158.1",
+"testid": "10158.1_1",
+"Operation Section": "Frequency Range, Voltage Range, Observation Time, and Power Gradient",
+"Result Operation": "Can be adjusted on-site",
+"Result": "Success"
+},
+{
+"rule": "10158.1",
+"testid": "10158.1_2",
+"Operation Section": "Frequency Range, Voltage Range, Observation Time, and Power Gradient",
+"Result Operation": "Not Allowed for On-Site Adjustment",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10159.1",
+"testid": "10159.1_1",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Success"
+},
+{
+"rule": "10159.1",
+"testid": "10159.1_2",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Password Protection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10159.2",
+"testid": "10159.2_1",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "Take Action",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Success"
+},
+{
+"rule": "10159.2",
+"testid": "10159.2_2",
+"Trading Instruments": "Settings that can be adjusted on-site",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Requirements",
+"Result Operation": "No Action Taken",
+"Results Operations": "Preventing Unauthorized Alterations",
+"Result Operation Section 2": "Sealing",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10160.1",
+"testid": "10160.1_1",
+"Status": "After tripping",
+"Result Operation": "Automatic Reconnection",
+"Result": "Success"
+},
+{
+"rule": "10160.1",
+"testid": "10160.1_2",
+"Status": "After tripping",
+"Result Action": "Non-automatic reconnection",
+"Result": "Unsuccessful",
+"Result Status": "After Tripping"
+}
+],
+[
+{
+"rule": "10162.1",
+"testid": "10162.1_1",
+"Result frequency range": "47.5Hz",
+"Result ≤": "f ≤",
+"Result constraint": "50.05Hz",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10163.1",
+"testid": "10163.1_1",
+"Resulting voltage range": "0.85Uₙ",
+"Result≤": "U≤",
+"Result constraint": "1.10U ₙ",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10164.1",
+"testid": "10164.1_1",
+"Minimum observation time for results": "60 seconds",
+"Result": "Success"
+},
+{
+"rule": "10164.1",
+"testid": "10164.1_2",
+"Minimum observation time for results": "Not 60 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10165.1",
+"testid": "10165.1_1",
+"Operation": "Reconnect",
+"Power generation facilities": "Power output",
+"Not exceeding": "The specified gradient (expressed as a percentage of the unit's rated active power per minute)",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10165.2",
+"testid": "10165.2_1",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Not specified",
+"Operational Section": "The gradient",
+"Result Operation": "Default Settings",
+"Results Operation Section": "10%P ₙ /min",
+"Result": "Success"
+},
+{
+"rule": "10165.2",
+"testid": "10165.2_2",
+"Operating Entity": "Distribution Network Operator (DSO)",
+"Operation": "Not specified",
+"Operational Section": "The gradient",
+"Result Operation": "Non-Default Settings",
+"Results Operation Section": "10%P ₙ /min",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10165.3",
+"testid": "10165.3_1",
+"Operating Entity": "Non-adjustable or partially adjustable power generation unit",
+"Result Operation": "Access",
+"Result Time": "1 minute to 10 minutes (random value) or later",
+"Result": "Success"
+},
+{
+"rule": "10165.3",
+"testid": "10165.3_2",
+"Operating Entity": "Non-adjustable or partially adjustable power generation unit",
+"Result Operation": "Access",
+"Result Time": "Time not 1 minute to 10 minutes (random value) or later",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10165.3",
+"testid": "10165.3_3",
+"Operating Entity": "Non-adjustable or partially adjustable power generation unit",
+"Result Operation": "Non-access",
+"Result Time": "1 to 10 minutes (random value) or later",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10165.3",
+"testid": "10165.3_4",
+"Operating Entity": "Non-adjustable or partially adjustable power generation unit",
+"Result Operation": "Non-access",
+"Result Time": "Time not 1 minute to 10 minutes (random value) or later",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10168.1",
+"testid": "10168.1_1",
+"Result frequency range": "47.5Hz",
+"Result ≤": "f ≤",
+"Result constraint": "50.1Hz",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10169.1",
+"testid": "10169.1_1",
+"Resulting voltage range": "0.85Uₙ",
+"Result≤": "U≤",
+"Result constraint": "1.10U ₙ",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10170.1",
+"testid": "10170.1_1",
+"Minimum observation time for results": "60 seconds",
+"Result": "Success"
+},
+{
+"rule": "10170.1",
+"testid": "10170.1_2",
+"Minimum observation time for results": "Not 60 seconds",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10171.1",
+"testid": "10171.1_1",
+"Event": "If applicable",
+"Operating Entity": "Power Gradient",
+"Result Operation": "Not exceeding",
+"Results Operation Section": "Maximum gradient specified by the Distribution Network Operator (DSO) in the access agreement",
+"Result": "Success"
+},
+{
+"rule": "10171.1",
+"testid": "10171.1_2",
+"Event": "If applicable",
+"Operating Entity": "Power Gradient",
+"Result Operation": "Exceeded",
+"Results Operation Section": "Maximum gradient specified by the Distribution Network Operator (DSO) in the access agreement",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10171.2",
+"testid": "10171.2_1",
+"Trading Instrument": "Thermal-Driven Cogeneration Micro Generator Set",
+"Result Operation": "No need to comply",
+"Result Operation Section": "Maximum Gradient",
+"Outcome Factors": "Its activation is influenced by the randomness of heat demand.",
+"Result": "Success"
+},
+{
+"rule": "10171.2",
+"testid": "10171.2_2",
+"Trading Instrument": "Thermal-Driven Cogeneration Micro Generator Set",
+"Result Operation": "Not required to comply",
+"Result Operation Section": "Maximum Gradient",
+"Outcome Factors": "Its activation is influenced by the randomness of heat demand.",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10172.1",
+"testid": "10172.1_1",
+"Operations Section": "Manual operations performed on-site (such as initial startup or maintenance)",
+"Result Operation": "Deviate",
+"Results Operation Section": "Observation Time and Ascent Rate Requirements",
+"Result": "Success"
+},
+{
+"rule": "10172.1",
+"testid": "10172.1_2",
+"Operations Section": "Manual operations performed on-site (such as initial startup or maintenance)",
+"Result Operation": "Non-deviation",
+"Results Operation Section": "Observation Time and Ascent Rate Requirements",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10174.1",
+"testid": "10174.1_1",
+"Operation Section": "Synchronization between Micro Generators and the Distribution Network",
+"Result Operation": "Do not manually close",
+"Result Operation 2": "Achieve Synchronization",
+"Outcome constraint": "Fully automatic",
+"Results Operation Section": "Switch between the two systems",
+"Result": "Success"
+},
+{
+"rule": "10174.1",
+"testid": "10174.1_2",
+"Operation Section": "Synchronization between Micro Generators and the Distribution Network",
+"Result Operation": "Do not manually close",
+"Result Operation 2": "Non-synchronous implementation",
+"Outcome constraint": "Fully automatic",
+"Results Operation Section": "Switch between the two systems",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10174.1",
+"testid": "10174.1_3",
+"Operation Section": "Synchronization between Micro Generators and the Distribution Network",
+"Result Operation": "Manual Closure",
+"Result Operation 2": "Achieve Synchronization",
+"Outcome constraint": "Fully automatic",
+"Results Operation Section": "Switch between the two systems",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10174.1",
+"testid": "10174.1_4",
+"Operation Section": "Synchronization between Micro Generators and the Distribution Network",
+"Result Operation": "Manual Closure",
+"Result Operation 2": "Non-synchronous implementation",
+"Outcome constraint": "Fully automatic",
+"Results Operation Section": "Switch between the two systems",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10177.1",
+"testid": "10177.1_1",
+"Operating Section": "Miniature Power Generation Equipment",
+"Outcome Constraints": "Electromagnetic compatibility requirements in Directive 2004/108/EC",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10178.1",
+"testid": "10178.1_1",
+"Operating Section": "Miniature Power Generation Equipment",
+"Result Operation": "Access",
+"Results Operation Section": "Voltage characteristics of the public grid at the access point as described in section 4.2",
+"Result": "Success"
+},
+{
+"rule": "10178.1",
+"testid": "10178.1_2",
+"Operating Section": "Miniature Power Generation Equipment",
+"Result Operation": "Non-access",
+"Results Operation Section": "Voltage characteristics of the public grid at the access point as described in section 4.2",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10184.1",
+"testid": "10184.1_1",
+"Result Open Time": "Switch Frequency Transmission",
+"Result": "Success"
+},
+{
+"rule": "10184.1",
+"testid": "10184.1_2",
+"Results Open Time": "Non-Switch Frequency Transmission",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10185.1",
+"testid": "10185.1_1",
+"Event": "Voltage sag and short interruption",
+"Result Operation": "Immunity",
+"Result": "Success"
+},
+{
+"rule": "10185.1",
+"testid": "10185.1_2",
+"Event": "Voltage sag and short interruption",
+"Result Operation": "Non-Impact Level",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10191.1",
+"testid": "10191.1_1",
+"Result Immunity": "EN",
+"Outcome Constraints": "61000-6-1 (Residential, Commercial, and Light Industrial Environments)",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10196.1",
+"testid": "10196.1_1",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10197.1",
+"testid": "10197.1_1",
+"Event": "Voltage fluctuations and flicker",
+"Voltage fluctuations and flicker": "≤16A",
+"Result Criteria": "EN",
+"Result constraint": "61000-3-3",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10201.1",
+"testid": "10201.1_1",
+"Operating Entity": "Power Generation Unit",
+"Result Operation": "No Injection",
+"Results Operation Section": "DC Current",
+"Result": "Success"
+},
+{
+"rule": "10201.1",
+"testid": "10201.1_2",
+"Operating Entity": "Power Generation Unit",
+"Result Operation": "Injection",
+"Results Operation Section": "DC Current",
+"Result": "Unsuccessful"
+}
+]
+]

@@ -1,0 +1,11 @@
+{
+    "rule_pre": 1.0,
+    "rule_rec": 0.025,
+    "rule_f1": 0.04878048780487806,
+    "req_pre": 0.0,
+    "req_rec": 0.0,
+    "req_f1": 0,
+    "sce_pre": 0.0,
+    "sce_rec": 0.0,
+    "sce_f1": 0
+}

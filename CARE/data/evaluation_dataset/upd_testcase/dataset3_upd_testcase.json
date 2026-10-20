@@ -1,0 +1,2391 @@
+[
+[
+{
+"rule": "Section 2.1.1",
+"testid": "Section 2.1.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Resulting Trading Unit": "The trading unit established by the clearinghouse for this series in accordance with clearinghouse rules and the agreement between Nasdaq and the clearinghouse .",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.1.2",
+"testid": "Section 2.1.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Resulting Trading Unit": "The trading unit established by the clearinghouse for this series in accordance with clearinghouse rules and the agreement between Nasdaq and the clearinghouse .",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.2.1",
+"testid": "Section 2.2.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "Except as provided in paragraph (c)",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Results Operation Section": "Orders",
+"Transaction Unit": "USD Amount per Unit of Underlying Security",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.2.2",
+"testid": "Section 2.2.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "Except as provided in paragraph (c)",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Results Operation Section": "Orders",
+"Transaction Unit": "USD Amount per Unit of Underlying Security",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.3.1",
+"testid": "Section 2.3.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Results Operation Section": "Orders",
+"Resulting Transaction Unit": "Each 1/100 of the total securities and/or other assets constituting this adjusted transaction unit",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.3.2",
+"testid": "Section 2.3.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Results Operation Section": "Orders",
+"Resulting Transaction Unit": "Each 1/100 of the total securities and/or other assets constituting this adjusted transaction unit",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.4.1",
+"testid": "Section 2.4.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$500",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.4.2",
+"testid": "Section 2.4.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$500",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.5.1",
+"testid": "Section 2.5.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$550",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.5.2",
+"testid": "Section 2.5.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$550",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.6.1",
+"testid": "Section 2.6.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$300",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.6.2",
+"testid": "Section 2.6.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$300",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.7.1",
+"testid": "Section 2.7.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.7.2",
+"testid": "Section 2.7.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.8.1",
+"testid": "Section 2.8.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.8.2",
+"testid": "Section 2.8.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.9.1",
+"testid": "Section 2.9.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.9.2",
+"testid": "Section 2.9.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.10.1",
+"testid": "Section 2.10.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.10.2",
+"testid": "Section 2.10.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.11.1",
+"testid": "Section 2.11.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.11.2",
+"testid": "Section 2.11.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.12.1",
+"testid": "Section 2.12.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.12.2",
+"testid": "Section 2.12.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.13.1",
+"testid": "Section 2.13.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.13.2",
+"testid": "Section 2.13.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.14.1",
+"testid": "Section 2.14.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.14.2",
+"testid": "Section 2.14.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.15.1",
+"testid": "Section 2.15.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.15.2",
+"testid": "Section 2.15.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.16.1",
+"testid": "Section 2.16.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.16.2",
+"testid": "Section 2.16.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.17.1",
+"testid": "Section 2.17.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.17.2",
+"testid": "Section 2.17.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.18.1",
+"testid": "Section 2.18.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.18.2",
+"testid": "Section 2.18.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.19.1",
+"testid": "Section 2.19.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.19.2",
+"testid": "Section 2.19.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.20.1",
+"testid": "Section 2.20.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.20.2",
+"testid": "Section 2.20.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.21.1",
+"testid": "Section 2.21.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.21.2",
+"testid": "Section 2.21.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.22.1",
+"testid": "Section 2.22.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.22.2",
+"testid": "Section 2.22.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.23.1",
+"testid": "Section 2.23.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.23.2",
+"testid": "Section 2.23.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.24.1",
+"testid": "Section 2.24.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.24.2",
+"testid": "Section 2.24.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.25.1",
+"testid": "Section 2.25.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.26.1",
+"testid": "Section 2.26.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.26.2",
+"testid": "Section 2.26.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.27.1",
+"testid": "Section 2.27.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.27.2",
+"testid": "Section 2.27.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.28.1",
+"testid": "Section 2.28.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.28.2",
+"testid": "Section 2.28.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.29.1",
+"testid": "Section 2.29.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.29.2",
+"testid": "Section 2.29.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.30.2",
+"testid": "Section 2.30.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.31.2",
+"testid": "Section 2.31.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.32.1",
+"testid": "Section 2.32.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.32.2",
+"testid": "Section 2.32.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.33.1",
+"testid": "Section 2.33.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.33.2",
+"testid": "Section 2.33.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.34.1",
+"testid": "Section 2.34.1_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Section 2.34.2",
+"testid": "Section 2.34.2_1",
+"Operating Entity": "Trading Unit",
+"Operation Object": "NOM",
+"Trading instrument": "Options contract",
+"Restriction": "(c) Provisions",
+"Buy Price": 5,
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Transaction Unit": "$325",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "Article 19.1",
+"testid": "Article 19.1_1",
+"Operating Entity": "Participants who batch cancel equity option transactions",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Instrument": "Options",
+"Result Operation": "Request",
+"Result Operation 2": "Household Management",
+"Results Operations Section": "NOM Marketing Operations Personnel",
+"Results Operations Section 2": "Instructions for Option Participants",
+"Result Operation Section 3": "Cancel Operation",
+"Results Operations Section 4": "Any buy, sell, and order in any series of options",
+"Resulting trade direction": "Buy",
+"Result Transaction Direction 2": "Sell",
+"Result": "Success"
+},
+{
+"rule": "Article 19.1",
+"testid": "Article 19.1_2",
+"Operating Entity": "Participants who batch cancel equity option transactions",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Instrument": "Options",
+"Result Operation": "Request",
+"Result Operation 2": "Non-residential",
+"Results Operations Section": "NOM Marketing Operations Personnel",
+"Results Operations Section 2": "Instructions for Option Participants",
+"Result Operation Section 3": "Cancel Operation",
+"Results Operations Section 4": "Any buy, sell, and order in any series of options",
+"Resulting trade direction": "Buy",
+"Result Transaction Direction 2": "Sell",
+"Result": "Unsuccessful"
+},
+{
+"rule": "Article 19.1",
+"testid": "Article 19.1_3",
+"Operating Entity": "Participants who batch cancel equity option transactions",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Instrument": "Options",
+"Result Operation": "Non-request",
+"Result Operation 2": "Household Management",
+"Results Operations Section": "NOM Marketing Operations Personnel",
+"Results Operations Section 2": "Instructions for Option Participants",
+"Result Operation Section 3": "Cancel Operation",
+"Results Operations Section 4": "Any buy, sell, and order in any series of options",
+"Resulting trade direction": "Buy",
+"Result Transaction Direction 2": "Sell",
+"Result": "Unsuccessful"
+},
+{
+"rule": "Article 19.1",
+"testid": "Article 19.1_4",
+"Operating Entity": "Participants who batch cancel equity option transactions",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Instrument": "Options",
+"Result Operation": "Non-request",
+"Result Operation 2": "Non-residential",
+"Results Operations Section": "NOM Marketing Operations Personnel",
+"Results Operations Section 2": "Instructions for Option Participants",
+"Result Operation Section 3": "Cancel Operation",
+"Results Operations Section 4": "Any buy, sell, and order in any series of options",
+"Resulting trade direction": "Buy",
+"Result Transaction Direction 2": "Sell",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_2",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_2",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "5.00.1.1",
+"testid": "5.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraints": "Above US$10.00, up to US$1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "5.00.1.2",
+"testid": "5.00.1.2_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Constraints": "Above US$10.00, up to US$1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Amount": "2.5",
+"Result constraint": "USD",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_2",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Amount": "2.0",
+"Result constraint": "USD",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Amount": "2.5",
+"Result constraint": "USD",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_2",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Amount": "2.0",
+"Result constraint": "USD",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraint": "Above US$50.00",
+"Result constraint 2": "$3.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "50.00.1.1",
+"testid": "50.00.1.1_1",
+"Trading Instrument 2": "Bidding Spreads for Affected Series NBB and NBO",
+"Event 2": "Equal to or greater than",
+"Constraint": "The minimum amount specified in paragraph (A) above",
+"Time": "Within 10 seconds before the transaction",
+"Event 3": "The bid-ask spread is lower than the minimum amount.",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "OK",
+"Results Operation Section": "Theoretical Price",
+"Result": "Success"
+},
+{
+"rule": "50.00.1.1",
+"testid": "50.00.1.1_2",
+"Trading Instrument 2": "Bidding Spreads of NBB and NBO in the Affected Series",
+"Event 2": "Equal to or greater than",
+"Constraint": "The minimum amount specified in paragraph (A) above",
+"Time": "Within 10 seconds before the transaction",
+"Event 3": "The bid-ask spread is lower than the minimum amount.",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-deterministic",
+"Results Operation Section": "Theoretical Price",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.1.2",
+"testid": "50.00.1.2_1",
+"Trading Instrument 2": "Bidding Spreads for Affected Series NBB and NBO",
+"Event 2": "Equal to or greater than",
+"Constraint": "The minimum amount specified in paragraph (A) above",
+"Time": "Within 10 seconds before the transaction",
+"Event 3": "The bid-ask spread is lower than the minimum amount.",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "OK",
+"Results Operation Section": "Theoretical Price",
+"Result": "Success"
+},
+{
+"rule": "50.00.1.2",
+"testid": "50.00.1.2_2",
+"Trading Instrument 2": "Bidding Spreads for Affected Series NBB and NBO",
+"Event 2": "Equal to or greater than",
+"Constraint": "The minimum amount specified in paragraph (A) above",
+"Time": "Within 10 seconds before the transaction",
+"Event 3": "The bid-ask spread is lower than the minimum amount.",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-deterministic",
+"Results Operation Section": "Theoretical Price",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.2.1",
+"testid": "50.00.2.1_1",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "OK",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds of the opening or reopening of the market",
+"Result": "Success"
+},
+{
+"rule": "50.00.2.1",
+"testid": "50.00.2.1_2",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "OK",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds before the opening or reopening of the market",
+"Result": "Unsuccessful"
+},
+{
+"rule": "50.00.2.1",
+"testid": "50.00.2.1_3",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-deterministic",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds of the opening or reopening of the market",
+"Result": "Unsuccessful"
+},
+{
+"rule": "50.00.2.1",
+"testid": "50.00.2.1_4",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-deterministic",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds before the opening or reopening of the market",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.2.2",
+"testid": "50.00.2.2_1",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "OK",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds of the opening or reopening of the market",
+"Result": "Success"
+},
+{
+"rule": "50.00.2.2",
+"testid": "50.00.2.2_2",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "OK",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds before the opening or reopening of the market",
+"Result": "Unsuccessful"
+},
+{
+"rule": "50.00.2.2",
+"testid": "50.00.2.2_3",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-deterministic",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds of the opening or reopening of the market",
+"Result": "Unsuccessful"
+},
+{
+"rule": "50.00.2.2",
+"testid": "50.00.2.2_4",
+"Time": "Within 10 seconds before the transaction",
+"Event": "Does not exist",
+"Constraint": "Buy-sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-deterministic",
+"Result Operation Entity": "Exchange",
+"Results Operation Section": "Theoretical Price",
+"Result Prerequisite": "The bid-ask spread between NBB and NBO in the affected series prior to the client's erroneous transaction",
+"Result equal to or greater than": "Minimum amount specified in paragraph (A) above",
+"Outcome event": "occurs at any time",
+"Outcome constraint": "Buy-sell spread below the minimum amount",
+"Result Time": "Within 10 seconds before the opening or reopening of the market",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.3.1",
+"testid": "50.00.3.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.3.1",
+"testid": "50.00.3.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.3.2",
+"testid": "50.00.3.2_1",
+"Trading Instruments": "Above $100.00: $4.50; Above $100.00: $6.00 (B) Customer transactions occurring within 10 seconds or less after opening or reopening",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.3.2",
+"testid": "50.00.3.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.4.2",
+"testid": "50.00.4.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.4.2",
+"testid": "50.00.4.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.5.1",
+"testid": "50.00.5.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.5.1",
+"testid": "50.00.5.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.5.2",
+"testid": "50.00.5.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.5.2",
+"testid": "50.00.5.2_2",
+"Trading Instruments": "Above $100.00: $4.50; Above $100.00: $6.00 (B) Customer transactions occurring within 10 seconds or less after opening or reopening",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.6.1",
+"testid": "50.00.6.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.6.1",
+"testid": "50.00.6.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.6.2",
+"testid": "50.00.6.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.6.2",
+"testid": "50.00.6.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.7.1",
+"testid": "50.00.7.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.7.1",
+"testid": "50.00.7.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.7.2",
+"testid": "50.00.7.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.7.2",
+"testid": "50.00.7.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.8.1",
+"testid": "50.00.8.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.8.1",
+"testid": "50.00.8.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.8.2",
+"testid": "50.00.8.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.8.2",
+"testid": "50.00.8.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.9.1",
+"testid": "50.00.9.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.9.1",
+"testid": "50.00.9.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.9.2",
+"testid": "50.00.9.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.9.2",
+"testid": "50.00.9.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.10.1",
+"testid": "50.00.10.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.10.1",
+"testid": "50.00.10.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.10.2",
+"testid": "50.00.10.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.10.2",
+"testid": "50.00.10.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.11.1",
+"testid": "50.00.11.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.11.1",
+"testid": "50.00.11.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.11.2",
+"testid": "50.00.11.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.11.2",
+"testid": "50.00.11.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.12.1",
+"testid": "50.00.12.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.12.1",
+"testid": "50.00.12.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.12.2",
+"testid": "50.00.12.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.12.2",
+"testid": "50.00.12.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.13.2",
+"testid": "50.00.13.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.13.2",
+"testid": "50.00.13.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.14.1",
+"testid": "50.00.14.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.14.1",
+"testid": "50.00.14.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.14.2",
+"testid": "50.00.14.2_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.14.2",
+"testid": "50.00.14.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.15.1",
+"testid": "50.00.15.1_1",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.15.1",
+"testid": "50.00.15.1_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "50.00.15.2",
+"testid": "50.00.15.2_1",
+"Trading Instruments": "Above $100.00: $4.50; Above $100.00: $6.00 (B) Customer transactions occurring within 10 seconds or less after opening or reopening",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Success"
+},
+{
+"rule": "50.00.15.2",
+"testid": "50.00.15.2_2",
+"Time": "Within 10 seconds of opening or reopening of the market",
+"Event": "None",
+"Constraint": "Buy/sell spread below the minimum amount",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Result Operation": "Non-Opening",
+"Results and Operations": "Theoretical Prices of Option Series",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_2",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_2",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "5.00.1.1",
+"testid": "5.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraint": "Above US$10.00",
+"Result constraint 2": "$0.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "5.00.1.2",
+"testid": "5.00.1.2_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Constraint": "Above US$10.00",
+"Result constraint 2": "$0.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "0.0",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_2",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "0.0",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_2",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Trading instrument": "US dollar",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Result constraint": "Up to $50.00",
+"Result Operation Section": "$1.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_2",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_2",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "5.00.1.1",
+"testid": "5.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraints": "Above US$10.00, up to US$1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "5.00.1.2",
+"testid": "5.00.1.2_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Constraints": "Above US$10.00, up to US$1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraint": "USD 20.00",
+"Result Operation Section": "$2.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Constraint": "USD 20.00",
+"Result Operation Section": "$2.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Constraint": "Above US$50.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Fee": "$2.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraint": "$2.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Constraint": "$2.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Constraint": "Above US$50.00",
+"Result constraint 2": "$2.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.18.1",
+"testid": "1001.18.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "At least one other options trading session has all valid trades",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.21.1",
+"testid": "1001.21.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "At least one other options trading session has all valid trades",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.27.2",
+"testid": "1001.27.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "At least one other options trading session has all valid trades",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.32.2",
+"testid": "1001.32.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "At least one other options trading session has all valid trades",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.36.1",
+"testid": "1001.36.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "At least one other options trading session has all valid trades",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Amount": "2.5",
+"Result constraint": "USD",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_2",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Amount": "2.0",
+"Result constraint": "USD",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "0.0",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_2",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$20.00",
+"Trading Market": "NASDAQ Stock Exchange",
+"Trading direction": "Sell",
+"Trading Instrument": "Options",
+"Result Constraint": "USD 20.00",
+"Result Operation Section": "$2.00",
+"Result": "Success"
+}
+]
+]

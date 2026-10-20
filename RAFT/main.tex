@@ -1,0 +1,283 @@
+\documentclass[acmsmall,screen,review,anonymous]{acmart}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{pifont}
+\usepackage{pgf}
+\usepackage{booktabs}
+\tcbuselibrary{listings,skins,breakable}  % 关键：支持 listings 和跨页
+
+%\usepackage[draft,commandnameprefix=ifneeded]{changes}
+% \usepackage[final,commandnameprefix=ifneeded]{changes} % draft for revised version, and final for final verision
+
+\usepackage{listings}
+% 自定义 Markdown 语言，避免特殊字符冲突
+\lstdefinelanguage{Markdown}{
+  alsoletter={\#\*\-\+\_},
+  morecomment=[l]{<!--},
+  % morestring=[b]",
+  % morestring=[b]',
+  sensitive=false
+}
+
+\definecolor{MyPicBlue}{HTML}{EBF4FF}
+\definecolor{MyPicBorder}{HTML}{B3D7FF}
+% 定义一个名为 SummaryBox 的新环境
+\newtcolorbox{SummaryBox}{
+    colback=MyPicBlue,       % 框内背景颜色
+    colframe=MyPicBorder,      % 边框颜色
+    arc=2pt,               % 圆角弧度（如果不想要圆角，可以改为 0pt）
+    boxrule=0.5pt,         % 边框粗细
+    left=2pt, right=2pt,   % 左右内边距
+    top=2pt, bottom=2pt,   % 上下内边距
+    % before=\vspace{0.5em},  % 框前垂直间距
+    % after=\vspace{0.5em}    % 框后垂直间距
+}
+
+% 自定义 Markdown 样式
+\lstdefinestyle{markdown-style}{
+  language=Markdown,
+  backgroundcolor=\color{green!2},
+  basicstyle=\ttfamily\scriptsize,
+  keepspaces=true,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  breaklines=true,
+  breakindent=0pt,
+  postbreak=,
+  showstringspaces=false,
+  columns=fullflexible,
+}
+
+\newtcblisting{markdowncode}{
+  breakable,                  % 支持跨页（双栏中也更稳定）
+  enhanced,                   % 支持高级 TikZ 效果
+  colback=green!2,            % 背景色（您原代码块是 green!2，这里统一）
+  colframe=blue!70!black,     % 边框颜色
+  boxrule=1pt,                % 边框粗细（可调整）
+  arc=10pt,                   % 圆角 10pt（所有角）
+  sharp corners=east,         % 右边三个角变方角，只左边圆角（完美匹配您的 leftline=true, rightline=false）
+  % left=4pt, right=4pt, top=4pt, bottom=4pt,  % 内边距（可微调）
+  leftrule=0pt,               
+  toprule=0pt, bottomrule=0pt, rightrule=0pt, % 隐藏上、下、右边线
+  % titlerule=0pt,              % 无标题时隐藏标题线
+  fontlower=\small,           % 内容字体（对应您的 font=\small）
+  % top=2ex, bottom=1ex,        % 框上方/下方间距（对应 skipabove/skipbelow）
+  listing only,               % 只显示 listings 内容
+  listing options={style=markdown-style},
+}
+
+\lstdefinestyle{artifact-style}{
+  language=Markdown,
+  backgroundcolor=\color{yellow!5},
+  basicstyle=\ttfamily\scriptsize,
+  keepspaces=true,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  breaklines=true,
+  breakindent=0pt,
+  postbreak=,
+  showstringspaces=false,
+  columns=fullflexible,
+}
+
+\newtcblisting{artifact}{
+  breakable,                  % 支持跨页（双栏中也更稳定）
+  enhanced,                   % 支持高级 TikZ 效果
+  colback=yellow!5,            % 背景色（您原代码块是 green!2，这里统一）
+  colframe=blue!70!black,     % 边框颜色
+  boxrule=1pt,                % 边框粗细（可调整）
+  arc=10pt,                   % 圆角 10pt（所有角）
+  sharp corners=east,         % 右边三个角变方角，只左边圆角（完美匹配您的 leftline=true, rightline=false）
+  % left=4pt, right=4pt, top=4pt, bottom=4pt,  % 内边距（可微调）
+  leftrule=0pt,               
+  toprule=0pt, bottomrule=0pt, rightrule=0pt, % 隐藏上、下、右边线
+  % titlerule=0pt,              % 无标题时隐藏标题线
+  fontlower=\small,           % 内容字体（对应您的 font=\small）
+  % top=2ex, bottom=1ex,        % 框上方/下方间距（对应 skipabove/skipbelow）
+  listing only,               % 只显示 listings 内容
+  listing options={style=artifact-style},
+}
+\newcommand{\ourtool}{RAFT}
+\newcommand{\strategy}{Adaptive Purification-Aggregation}
+\newcommand{\strategymm}{Purification}
+\newcommand{\strategyrr}{Aggregation}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\citestyle{acmnumeric}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\captionsetup{skip=4pt}
+
+\setcopyright{none}
+\acmDOI{}
+\acmISBN{}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+\begin{document}
+
+
+%\title{Distilling Tacit Regulatory Knowledge from LLMs to Auto-Formalize Requirements for Compliance Test Case Generation}
+
+%\title{Distilling Formal Models from LLMs for Automatic  Model-Based Compliance Testing}
+
+\title{Explicating Implicit Regulatory Knowledge in LLMs for Automatic Compliance Test Case Generation}
+
+
+\author{Anonymous Author(s)}
+% \author{Ben Trovato}
+% \authornote{Both authors contributed equally to this research.}
+% \email{trovato@corporation.com}
+% \orcid{1234-5678-9012}
+% \author{G.K.M. Tobin}
+% \authornotemark[1]
+% \email{webmaster@marysville-ohio.com}
+% \affiliation{%
+%   \institution{Institute for Clarity in Documentation}
+%   \city{Dublin}
+%   \state{Ohio}
+%   \country{USA}
+% }
+
+% \author{Lars Th{\o}rv{\"a}ld}
+% \affiliation{%
+%   \institution{The Th{\o}rv{\"a}ld Group}
+%   \city{Hekla}
+%   \country{Iceland}}
+% \email{larst@affiliation.org}
+
+% \author{Valerie B\'eranger}
+% \affiliation{%
+%   \institution{Inria Paris-Rocquencourt}
+%   \city{Rocquencourt}
+%   \country{France}
+% }
+
+% \author{Aparna Patel}
+% \affiliation{%
+%  \institution{Rajiv Gandhi University}
+%  \city{Doimukh}
+%  \state{Arunachal Pradesh}
+%  \country{India}}
+
+% \author{Huifen Chan}
+% \affiliation{%
+%   \institution{Tsinghua University}
+%   \city{Haidian Qu}
+%   \state{Beijing Shi}
+%   \country{China}}
+
+% \author{Charles Palmer}
+% \affiliation{%
+%   \institution{Palmer Research Laboratories}
+%   \city{San Antonio}
+%   \state{Texas}
+%   \country{USA}}
+% \email{cpalmer@prl.com}
+
+% \author{John Smith}
+% \affiliation{%
+%   \institution{The Th{\o}rv{\"a}ld Group}
+%   \city{Hekla}
+%   \country{Iceland}}
+% \email{jsmith@affiliation.org}
+
+% \author{Julius P. Kumquat}
+% \affiliation{%
+%   \institution{The Kumquat Consortium}
+%   \city{New York}
+%   \country{USA}}
+% \email{jpkumquat@consortium.net}
+
+\begin{abstract}
+Generating regulatory compliance test cases remains labor-intensive because
+regulations must be interpreted and connected to system behavior. Existing
+hybrid LLM and model-based approaches improve automation and structure but
+often require manually engineered domain knowledge. We present RAFT, which
+keeps input regulations authoritative for rule-level semantics while
+explicating implicit regulatory knowledge in LLMs into three reusable
+meta-level artifacts: a domain meta-model, a requirements representation, and
+testability constraints. LLMs construct these
+artifacts from parametric knowledge, optionally supported by a small corpus,
+and RAFT injects them into requirements formalization, testability assessment,
+and test generation. Across 11 financial, road-traffic, and power datasets,
+RAFT attains 91.7\% F1 and 87.1\% business scenario coverage in finance. Its
+observed F1 is 23.6 points above the strongest automated baseline and favors
+RAFT on all six financial datasets. Fully automated RAFT takes 2.53 hours;
+artifact review raises F1 to 96.2\% in 5.03 hours of elapsed time and requires 7.16
+person-hours, versus 42.56 measured person-hours for expert-authored reference
+cases. Together, these results indicate that RAFT provides a practical
+path to scalable, knowledge-guided compliance test generation.
+
+% introduce an Adaptive Purification-Aggregation strategy that, observing that these artifacts exhibit opposite failure modes, adaptively consolidates the LLM outputs to keep them robust and complete.
+
+%To reduce this reliance and minimize human expert intervention, in this paper we propose a novel framework called RAFT, for automated requirements formalization and compliance test generation via .
+
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10011007.10011074.10011099.10011102.10011103</concept_id>
+<concept_desc>Software and its engineering~Software testing and debugging</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10011007.10011074.10011075.10011076</concept_id>
+<concept_desc>Software and its engineering~Requirements analysis</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Software and its engineering~Software testing and debugging}
+\ccsdesc[300]{Software and its engineering~Requirements analysis}
+
+
+\keywords{Software compliance testing, Requirements engineering, Large language models, Model-based testing}
+
+
+% \received{20 February 2007}
+% \received[revised]{12 March 2009}
+% \received[accepted]{5 June 2009}
+
+\maketitle
+
+
+\input{1_introduction}
+\input{2_related_work}
+\input{3_method}
+\input{4_experiment}
+\input{5_conclusion}
+
+\clearpage
+\section{Data Availability}
+An anonymized replication package containing our code, prompts, datasets,
+ground truth, and results is available at
+\url{https://github.com/1774531208/RAFT}.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{ref}
+
+ % \clearpage
+ % \appendix
+ % \input{6_appendix}
+
+\end{document}

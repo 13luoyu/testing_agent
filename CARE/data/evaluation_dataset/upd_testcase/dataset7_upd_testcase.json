@@ -1,0 +1,4464 @@
+[
+[
+{
+"rule": "65.1",
+"testid": "65.1_1",
+"Result action": "Drive on the right",
+"Result": "Success"
+},
+{
+"rule": "65.1",
+"testid": "65.1_2",
+"Result Operation": "Driving not on the right side",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10004.1",
+"testid": "10004.1_1",
+"Speed limit": "25 mph",
+"Operational Section": "School Area, Commercial Area , or Residential Area",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10005.1",
+"testid": "10005.1_1",
+"Speed limit": "35 mph",
+"Operational Section": "Suburban Commercial and Residential Areas",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10006.1",
+"testid": "10006.1_1",
+"Speed limit": "50 mph",
+"Trading Instrument": "Rural roads without speed limit signs",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10007.1",
+"testid": "10007.1_1",
+"Speed limit": "55 mph",
+"Trading Instruments": "Specific state highways (as indicated by the sign ) and interstate highways",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10008.1",
+"testid": "10008.1_1",
+"Speed limit": "65 mph",
+"Operation Section": "Specific Interstate Highways (as indicated by signs )",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10009.1",
+"testid": "10009.1_1",
+"Speeding": "10 mph and above",
+"Violations": "Most other mobile violations",
+"Result Penalty": "Double the penalty",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10011.1",
+"testid": "10011.1_1",
+"Operating Entity": "Driver",
+"Result Operation": "Not exceeding",
+"Results Operation Section": "Safe Speed Permitted by Weather, Road, or Other Conditions",
+"Result": "Success"
+},
+{
+"rule": "10011.1",
+"testid": "10011.1_2",
+"Operating Entity": "Driver",
+"Result Operation": "Exceeded",
+"Results Operation Section": "Safe Speed Permitted by Weather, Road, or Other Conditions",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10011.2",
+"testid": "10011.2_1",
+"Operating Entity": "Driver",
+"Result Operation": "Determine vehicle speed based on actual conditions",
+"Result": "Success"
+},
+{
+"rule": "10011.2",
+"testid": "10011.2_2",
+"Operating Entity": "Driver",
+"Result Operation": "Speed not determined based on actual conditions",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10011.3",
+"testid": "10011.3_1",
+"Operating Entity": "Driver",
+"Violation": "Mobile Violation",
+"Result Operation": "Construct",
+"Results Operation Section": "Moving Violations",
+"Result": "Success"
+},
+{
+"rule": "10011.3",
+"testid": "10011.3_2",
+"Operating Entity": "Driver",
+"Violation": "Mobile Violation",
+"Result Operation": "Not Constituted",
+"Results Operation Section": "Moving Violations",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10019.1",
+"testid": "10019.1_1",
+"Incident": "Vehicle malfunction caused it to be unable to keep up with normal traffic flow",
+"Operating Entity": "Driver",
+"Result Operation": "Depart",
+"Result Operation 2": "Start",
+"Result Operation Section": "Road",
+"Results Operation Section 2": "Hazard Warning Flasher",
+"Result": "Success"
+},
+{
+"rule": "10019.1",
+"testid": "10019.1_2",
+"Incident": "Vehicle malfunction caused it to be unable to keep up with normal traffic flow",
+"Operating Entity": "Driver",
+"Result Operation": "Depart",
+"Result Operation 2": "Not Enabled",
+"Result Operation Section": "Road",
+"Results Operation Section 2": "Hazard Warning Flasher",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10019.1",
+"testid": "10019.1_3",
+"Incident": "Vehicle malfunction caused it to be unable to keep up with normal traffic flow",
+"Operating Entity": "Driver",
+"Result Operation": "Non- Departure",
+"Result Operation 2": "Start",
+"Result Operation Section": "Road",
+"Results Operation Section 2": "Hazard Warning Flasher",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10019.1",
+"testid": "10019.1_4",
+"Incident": "Vehicle malfunction caused it to be unable to keep up with normal traffic flow",
+"Operating Entity": "Driver",
+"Result Operation": "Non- Departure",
+"Result Operation 2": "Not Enabled",
+"Result Operation Section": "Road",
+"Results Operation Section 2": "Hazard Warning Flasher",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10027.1",
+"testid": "10027.1_1",
+"Result Operation": "Disable",
+"Result Operation 2": "Overtaking",
+"Result": "Success"
+},
+{
+"rule": "10027.1",
+"testid": "10027.1_2",
+"Result Operation": "Disable",
+"Result Operation 2": "Non- overtaking",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10027.1",
+"testid": "10027.1_3",
+"Result Operation": "Not Forbidden",
+"Result Operation 2": "Overtaking",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10027.1",
+"testid": "10027.1_4",
+"Result Operation": "Not Forbidden",
+"Result Operation 2": "Non- overtaking",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10028.1",
+"testid": "10028.1_1",
+"Result Single Dashed Line": "Overtaking is permitted only on the side with the dashed line .",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10031.1",
+"testid": "10031.1_1",
+"Ensure safety": "Allow",
+"Line type": "Dashed line",
+"Result Operation": "Overtake",
+"Result": "Success"
+},
+{
+"rule": "10031.1",
+"testid": "10031.1_2",
+"Ensure safety": "Allow",
+"Line type": "Dashed line",
+"Result Operation": "Non- overtaking",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10031.2",
+"testid": "10031.2_1",
+"Line type": "Solid line",
+"Result Action": "Overtaking Prohibited",
+"Result": "Success"
+},
+{
+"rule": "10031.2",
+"testid": "10031.2_2",
+"Line type": "Solid line",
+"Result Operation": "Overtaking is not prohibited",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10031.3",
+"testid": "10031.3_1",
+"Line type": "Double solid line",
+"Result Operation": "Overtaking is strictly prohibited",
+"Result": "Success"
+},
+{
+"rule": "10031.3",
+"testid": "10031.3_2",
+"Line type": "Double solid line",
+"Result Operation": "Overtaking is not strictly prohibited",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10032.1",
+"testid": "10032.1_1",
+"Operation": "Overtaking",
+"Result constraint": "Left side",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10032.2",
+"testid": "10032.2_1",
+"Operation": "Overtaking",
+"Constraints": "Multiple lanes traveling in the same direction , vehicles forming two or more continuous flows , or vehicles ahead turning left with sufficient overtaking space",
+"Result constraint": "Right side",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10032.4",
+"testid": "10032.4_1",
+"Operation": "Overtaking",
+"Result constraint": "Right side",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10040.1",
+"testid": "10040.1_1",
+"Outcome constraint": "Drive on the right",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10041.1",
+"testid": "10041.1_1",
+"Restriction": "New Jersey legal requirements",
+"Operating Entity": "Driver",
+"Result Operation": "Except for overtaking , you must drive on the right side .",
+"Result": "Success"
+},
+{
+"rule": "10041.1",
+"testid": "10041.1_2",
+"Restriction": "New Jersey legal requirements",
+"Operating Entity": "Driver",
+"Result Operation": "Except for overtaking , vehicles must drive on the right side .",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10041.2",
+"testid": "10041.2_1",
+"Restriction": "New Jersey legal requirements",
+"Operating Entity": "Driver",
+"Outcome constraint": "Drivers should travel on the right half of the road unless traveling on a one-way street .",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10041.3",
+"testid": "10041.3_1",
+"Constraint": "Except when overtaking",
+"Operating Entity": "Vehicle",
+"Result Operation": "Get as close to the vehicle as possible",
+"Outcome constraint": "Right edge of the road or curbstone",
+"Result": "Success"
+},
+{
+"rule": "10041.3",
+"testid": "10041.3_2",
+"Constraint": "Except when overtaking",
+"Operating Entity": "Vehicle",
+"Result Operation": "Drive as close as possible to the destination",
+"Outcome constraint": "Right edge of the road or curbstone",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10042.1",
+"testid": "10042.1_1",
+"Road type": "Multi- lane road",
+"Operating Entity": "Driver",
+"Result Operation": "Drive",
+"Outcome constraint": "Unless preparing to overtake or turn left",
+"Result Constraint 2": "Available lane closest to the right edge of the road or curb",
+"Result": "Success"
+},
+{
+"rule": "10042.1",
+"testid": "10042.1_2",
+"Road type": "Multi- lane road",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Outcome constraint": "Unless preparing to overtake or turn left",
+"Result Constraint 2": "Available lane closest to the right edge of the road or curb",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10056.1",
+"testid": "10056.1_1",
+"Result Operation": "Comply",
+"Results Operation Section": "Speed Limit",
+"Result": "Success"
+},
+{
+"rule": "10056.1",
+"testid": "10056.1_2",
+"Result Operation": "Non-compliance",
+"Results Operation Section": "Speed Limit",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10057.1",
+"testid": "10057.1_1",
+"Result Operation": "Does not occupy",
+"Result Operation Section": "Park on the pedestrian crossing",
+"Result": "Success"
+},
+{
+"rule": "10057.1",
+"testid": "10057.1_2",
+"Result Operation": "Occupied",
+"Result Operation Section": "Park on the pedestrian crossing",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.1",
+"testid": "10068.1_1",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Results Operation Section": "Controlled Intersections",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10068.2",
+"testid": "10068.2_1",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Result Operation": "Comply",
+"Results Operation Section": "Traffic Lights and Sign Indication",
+"Result": "Success"
+},
+{
+"rule": "10068.2",
+"testid": "10068.2_2",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Result Operation": "Non-compliance",
+"Results Operation Section": "Traffic Lights and Sign Indication",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.3",
+"testid": "10068.3_1",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Result Operation": "Give Way",
+"Outcome Event": "Under specific circumstances",
+"Resulting intersection": "Controlled intersection",
+"Result Execution Subject": "Driver",
+"Resulting Intersection 2": "Intersection controlled by multiple parking or stop signs",
+"Result": "Success"
+},
+{
+"rule": "10068.3",
+"testid": "10068.3_2",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Result Operation": "Non- yielding",
+"Outcome Event": "Under specific circumstances",
+"Resulting intersection": "Controlled intersection",
+"Result Execution Subject": "Driver",
+"Resulting Intersection 2": "Intersection controlled by multiple parking or stop signs",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.4",
+"testid": "10068.4_1",
+"rule2": "4",
+"Result Operation": "Command",
+"Result if": "any direction at the intersection has",
+"Outcome constraint": "Traffic lights and signs",
+"Result Operation Subject": "Traffic Police",
+"Result": "Success"
+},
+{
+"rule": "10068.4",
+"testid": "10068.4_2",
+"rule2": "4",
+"Result Operation": "Non- Command",
+"Result if": "any direction at the intersection has",
+"Outcome constraint": "Traffic lights and signs",
+"Result Operation Subject": "Traffic Police",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.5",
+"testid": "10068.5_1",
+"Result Operation": "Courtesy",
+"Results Operation Section": "Other Vehicles Already Stopped at the Intersection",
+"Result": "Success"
+},
+{
+"rule": "10068.5",
+"testid": "10068.5_2",
+"Result Operation": "Disrespect",
+"Results Operation Section": "Other Vehicles Already Stopped at the Intersection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.6",
+"testid": "10068.6_1",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Result Operation": "Give Way",
+"Outcome Event": "Under specific circumstances",
+"Resulting intersection": "Controlled intersection",
+"Result Execution Subject": "Driver",
+"Resulting Intersection 2": "Intersection controlled by yield signs",
+"Result": "Success"
+},
+{
+"rule": "10068.6",
+"testid": "10068.6_2",
+"Any direction at the intersection": "has traffic lights and signs",
+"Operating Entity": "Traffic Police",
+"Operation": "Command",
+"Result Operation": "Non- yielding",
+"Outcome Event": "Under specific circumstances",
+"Resulting intersection": "Controlled intersection",
+"Result Execution Subject": "Driver",
+"Resulting Intersection 2": "Intersection controlled by yield signs",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.7",
+"testid": "10068.7_1",
+"rule2": "6",
+"Result Operation": "Command",
+"Result if": "any direction at the intersection has",
+"Outcome constraint": "Traffic lights and signs",
+"Result Operation Subject": "Traffic Police",
+"Result": "Success"
+},
+{
+"rule": "10068.7",
+"testid": "10068.7_2",
+"rule2": "6",
+"Result Operation": "Non- Command",
+"Result if": "any direction at the intersection has",
+"Outcome constraint": "Traffic lights and signs",
+"Result Operation Subject": "Traffic Police",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10068.8",
+"testid": "10068.8_1",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10068.8",
+"testid": "10068.8_2",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10072.1",
+"testid": "10072.1_1",
+"Constraint": "Road Intersection",
+"has traffic lights": "or has traffic control facilities",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result": "Success"
+},
+{
+"rule": "10072.1",
+"testid": "10072.1_2",
+"Constraint": "Road Intersection",
+"has traffic lights": "or has traffic control facilities",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10072.2",
+"testid": "10072.2_1",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Result Operation 2": "Drive Out",
+"Result Operation 3": "Give Way",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Success"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_2",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Result Operation 2": "Drive Out",
+"Result Operation 3": "Non- Yielding",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_3",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Result Operation 2": "Non- exit",
+"Result Operation 3": "Give Way",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_4",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Result Operation 2": "Non- exit",
+"Result Operation 3": "Non- Yielding",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_5",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Result Operation 2": "Drive Out",
+"Result Operation 3": "Give Way",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_6",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Result Operation 2": "Drive Out",
+"Result Operation 3": "Non- Yielding",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_7",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Result Operation 2": "Non- exit",
+"Result Operation 3": "Give Way",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.2",
+"testid": "10072.2_8",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Result Operation 2": "Non- exit",
+"Result Operation 3": "Non- Yielding",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "Uncontrolled intersection",
+"Results Operation Section 2": "Private Roads",
+"Result Operation Object 2": "All vehicles on the main road",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10072.3",
+"testid": "10072.3_1",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Result Operation 2": "Turn off",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "No Traffic Lights",
+"Result or": "Other Faults",
+"Result Operation Section 2": "Traffic Lights",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10072.3",
+"testid": "10072.3_2",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Driving",
+"Result Operation 2": "Non- extinguishing",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "No Traffic Lights",
+"Result or": "Other Faults",
+"Result Operation Section 2": "Traffic Lights",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.3",
+"testid": "10072.3_3",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Result Operation 2": "Turn off",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "No Traffic Lights",
+"Result or": "Other Faults",
+"Result Operation Section 2": "Traffic Lights",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10072.3",
+"testid": "10072.3_4",
+"Event": "None",
+"Operating Entity": "Driver",
+"Result Operation": "Non- driving",
+"Result Operation 2": "Non- extinguishing",
+"Results Operation Section": "Uncontrolled Intersections",
+"Result Operation Object": "No Traffic Lights",
+"Result or": "Other Faults",
+"Result Operation Section 2": "Traffic Lights",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10072.4",
+"testid": "10072.4_1",
+"rule2": "4",
+"Result if": "Event is",
+"Result Constraints": "None",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10072.5",
+"testid": "10072.5_1",
+"rule2": "5",
+"Result if": "Event is",
+"Result Constraints": "None",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10083.1",
+"testid": "10083.1_1",
+"Result Operation": "Avoid",
+"Result Operation Section": "Bring to a complete stop within the acceleration lane",
+"Result": "Success"
+},
+{
+"rule": "10083.1",
+"testid": "10083.1_2",
+"Result Operation": "Non-Avoidance",
+"Result Operation Section": "Bring to a complete stop within the acceleration lane",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10085.1",
+"testid": "10085.1_1",
+"Result Operation": "Use",
+"Result Operation Section": "Turn Signal",
+"Result": "Success"
+},
+{
+"rule": "10085.1",
+"testid": "10085.1_2",
+"Result Operation": "Not Used",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10090.1",
+"testid": "10090.1_1",
+"Result Operation": "Comply",
+"Results Operation Section": "Recommended Speed Limits on Deceleration Lanes",
+"Result": "Success"
+},
+{
+"rule": "10090.1",
+"testid": "10090.1_2",
+"Result Operation": "Non-compliance",
+"Results Operation Section": "Recommended Speed Limits on Deceleration Lanes",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10091.1",
+"testid": "10091.1_1",
+"Result Operation": "Use",
+"Result Operation Section": "Turn Signal",
+"Result": "Success"
+},
+{
+"rule": "10091.1",
+"testid": "10091.1_2",
+"Result Operation": "Not Used",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10092.1",
+"testid": "10092.1_1",
+"Result Action": "Avoid stopping in the exit lane",
+"Result": "Success"
+},
+{
+"rule": "10092.1",
+"testid": "10092.1_2",
+"Result Operation": "Non-avoid stopping in the exit lane",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10093.1",
+"testid": "10093.1_1",
+"Result Operation": "Decelerate to",
+"Results Operation Section": "Entrance /Exit Lane Speed Matching",
+"Result": "Success"
+},
+{
+"rule": "10093.1",
+"testid": "10093.1_2",
+"Result Operation": "Non-deceleration to",
+"Results Operation Section": "Entrance /Exit Lane Speed Matching",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10095.1",
+"testid": "10095.1_1",
+"Action": "Missed",
+"Operations Section": "Exit",
+"Result Operation": "Continue driving to",
+"Results Operation Section": "Next Exit",
+"Result": "Success"
+},
+{
+"rule": "10095.1",
+"testid": "10095.1_2",
+"Action": "Missed",
+"Operations Section": "Exit",
+"Result Operation": "Do not continue driving to",
+"Results Operation Section": "Next Exit",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10096.1",
+"testid": "10096.1_1",
+"Operation Section": "Exit Ramp or Deceleration Lane",
+"Result Operation": "Reversing is strictly prohibited",
+"Result": "Success"
+},
+{
+"rule": "10096.1",
+"testid": "10096.1_2",
+"Operation Section": "Exit Ramp or Deceleration Lane",
+"Result Operation": "Reversing is not strictly prohibited",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10105.1",
+"testid": "10105.1_1",
+"Result Action": "Drive away if possible",
+"Result Operation 2": "Stop",
+"Results Operation Section": "Main Lane",
+"Result Operation Section 2": "Road Shoulder",
+"Result": "Success"
+},
+{
+"rule": "10105.1",
+"testid": "10105.1_2",
+"Result Action": "Drive away if possible",
+"Result Operation 2": "Non-Stop",
+"Results Operation Section": "Main Lane",
+"Result Operation Section 2": "Road Shoulder",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10105.1",
+"testid": "10105.1_3",
+"Result Action": "Depart if possible, but not as far as possible",
+"Result Operation 2": "Stop",
+"Results Operation Section": "Main Lane",
+"Result Operation Section 2": "Road Shoulder",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10105.1",
+"testid": "10105.1_4",
+"Result Action": "Depart if possible, but not as far as possible",
+"Result Operation 2": "Non-Stop",
+"Results Operation Section": "Main Lane",
+"Result Operation Section 2": "Road Shoulder",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10105.2",
+"testid": "10105.2_1",
+"Result Action": "Drive away if possible",
+"Result Operation 2": "Stop",
+"Results Operation Section": "Main Lane",
+"Results Operation Section 2": "Central Median",
+"Result": "Success"
+},
+{
+"rule": "10105.2",
+"testid": "10105.2_2",
+"Result Action": "Drive away if possible",
+"Result Operation 2": "Non-Stop",
+"Results Operation Section": "Main Lane",
+"Results Operation Section 2": "Central Median",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10105.2",
+"testid": "10105.2_3",
+"Result Action": "Depart if possible, but not as far as possible",
+"Result Operation 2": "Stop",
+"Results Operation Section": "Main Lane",
+"Results Operation Section 2": "Central Median",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10105.2",
+"testid": "10105.2_4",
+"Result Action": "Depart if possible, but not as far as possible",
+"Result Operation 2": "Non-Stop",
+"Results Operation Section": "Main Lane",
+"Results Operation Section 2": "Central Median",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10106.1",
+"testid": "10106.1_1",
+"Result Operation": "Enable",
+"Results Operation Section": "Emergency Flasher",
+"Result": "Success"
+},
+{
+"rule": "10106.1",
+"testid": "10106.1_2",
+"Result Operation": "Disabled",
+"Results Operation Section": "Emergency Flasher",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10107.1",
+"testid": "10107.1_1",
+"Operation": "Open",
+"Operating Section": "Engine Hood",
+"Result Operation": "Indicate Request for Assistance",
+"Result": "Success"
+},
+{
+"rule": "10107.1",
+"testid": "10107.1_2",
+"Operation": "Open",
+"Operating Section": "Engine Hood",
+"Result Operation": "Non-Indicative Request for Assistance",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10109.1",
+"testid": "10109.1_1",
+"Result Action": "Dial Now",
+"Results Operation Section": "Help Call",
+"Result": "Success"
+},
+{
+"rule": "10109.1",
+"testid": "10109.1_2",
+"Result Action": "Non-immediate dialing",
+"Results Operation Section": "Help Call",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10115.1",
+"testid": "10115.1_1",
+"Operating Entity": "Driver",
+"Result Operation": "Note",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Success"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_2",
+"Operating Entity": "Driver",
+"Result Operation": "Note",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_3",
+"Operating Entity": "Driver",
+"Result Operation": "Note",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_4",
+"Operating Entity": "Driver",
+"Result Operation": "Note",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_5",
+"Operating Entity": "Driver",
+"Result Operation": "Not Noteed",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_6",
+"Operating Entity": "Driver",
+"Result Operation": "Not Noteed",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_7",
+"Operating Entity": "Driver",
+"Result Operation": "Not Noteed",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.1",
+"testid": "10115.1_8",
+"Operating Entity": "Driver",
+"Result Operation": "Not Noteed",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Results Operation Section 4": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10115.2",
+"testid": "10115.2_1",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Success"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_2",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_3",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_4",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_5",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_6",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_7",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.2",
+"testid": "10115.2_8",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10115.3",
+"testid": "10115.3_1",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Success"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_2",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_3",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_4",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_5",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_6",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_7",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.3",
+"testid": "10115.3_8",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Highway Electronic Toll Collection Lane",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10115.4",
+"testid": "10115.4_1",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Success"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_2",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_3",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_4",
+"Operating Entity": "Driver",
+"Result Operation": "Requires Attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_5",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_6",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Slow Down in Advance",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_7",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10115.4",
+"testid": "10115.4_8",
+"Operating Entity": "Driver",
+"Result Operation": "No need to pay attention",
+"Result Operation 2": "Non-Pre-Deceleration",
+"Result Operation 3": "Non-open",
+"Results Operation Section": "Toll Station Signage",
+"Result Operation Entity": "Toll Station",
+"Outcome Event": "Traffic congestion occurred .",
+"Results Operation Section 2": "Green light or specific signal indicating an open toll booth",
+"Results Operation Section 3": "Electronic Toll Collection ( EZ)",
+"Result Constraint": "Pass) Channel",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10121.1",
+"testid": "10121.1_1",
+"Result Operation": "Turn right on red light",
+"Result": "Success"
+},
+{
+"rule": "10121.1",
+"testid": "10121.1_2",
+"Result Operation": "Right turn unless red light",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10122.1",
+"testid": "10122.1_1",
+"Result Operation": "Stop and Observe",
+"Result Operation 2": "Turn Right",
+"Result Operation 3": "Start",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Success"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_2",
+"Result Operation": "Stop and Observe",
+"Result Operation 2": "Turn Right",
+"Result Operation 3": "Not Enabled",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_3",
+"Result Operation": "Stop and Observe",
+"Result Operation 2": "Non- Right Turn",
+"Result Operation 3": "Start",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_4",
+"Result Operation": "Stop and Observe",
+"Result Operation 2": "Non- Right Turn",
+"Result Operation 3": "Not Enabled",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_5",
+"Result Operation": "Non- stop Observation",
+"Result Operation 2": "Turn Right",
+"Result Operation 3": "Start",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_6",
+"Result Operation": "Non- stop Observation",
+"Result Operation 2": "Turn Right",
+"Result Operation 3": "Not Enabled",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_7",
+"Result Operation": "Non- stop Observation",
+"Result Operation 2": "Non- Right Turn",
+"Result Operation 3": "Start",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10122.1",
+"testid": "10122.1_8",
+"Result Operation": "Non- stop Observation",
+"Result Operation 2": "Non- Right Turn",
+"Result Operation 3": "Not Enabled",
+"Result distance": "100 feet",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10122.2",
+"testid": "10122.2_1",
+"Event": "Turning Point",
+"Result action": "Close",
+"Result Operation Section": "Turn Signal",
+"Result": "Success"
+},
+{
+"rule": "10122.2",
+"testid": "10122.2_2",
+"Event": "Turning Point",
+"Result Operation": "Not Closed",
+"Result Operation Section": "Turn Signal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10124.1",
+"testid": "10124.1_1",
+"Operation": "Turn right",
+"Result Operation": "Drive closer to the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result": "Success"
+},
+{
+"rule": "10124.1",
+"testid": "10124.1_2",
+"Operation": "Turn right",
+"Result Operation": "Drive away from the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10124.2",
+"testid": "10124.2_1",
+"Operation": "Turn right",
+"Result Operation": "Drive closer to the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "During the turning process",
+"Result": "Success"
+},
+{
+"rule": "10124.2",
+"testid": "10124.2_2",
+"Operation": "Turn right",
+"Result Operation": "Drive closer to the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "During non- turning process",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10124.2",
+"testid": "10124.2_3",
+"Operation": "Turn right",
+"Result Operation": "Drive away from the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "During the turning process",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10124.2",
+"testid": "10124.2_4",
+"Operation": "Turn right",
+"Result Operation": "Drive away from the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "During non- turning process",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10124.3",
+"testid": "10124.3_1",
+"rule2": "3",
+"Result if": "Operation is",
+"Result constraint": "Turn right",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10124.4",
+"testid": "10124.4_1",
+"Result Action": "Do not enter other lanes",
+"Result": "Success"
+},
+{
+"rule": "10124.4",
+"testid": "10124.4_2",
+"Result Action": "Move to another lane",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10124.5",
+"testid": "10124.5_1",
+"Operation": "Turn right",
+"Result Operation": "Drive closer to the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "Before Turning",
+"Result": "Success"
+},
+{
+"rule": "10124.5",
+"testid": "10124.5_2",
+"Operation": "Turn right",
+"Result Operation": "Drive closer to the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "After turning",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10124.5",
+"testid": "10124.5_3",
+"Operation": "Turn right",
+"Result Operation": "Drive away from the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "Before Turning",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10124.5",
+"testid": "10124.5_4",
+"Operation": "Turn right",
+"Result Operation": "Drive away from the right side of the road",
+"Result Operation Target": "Vehicles close to the curb or parked",
+"Result Time": "After turning",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10124.6",
+"testid": "10124.6_1",
+"rule2": "5",
+"Result if": "Operation is",
+"Result constraint": "Turn right",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10124.7",
+"testid": "10124.7_1",
+"Result Operation": "Reduction and Operation Section",
+"Outcome constraint": "Risk of other vehicles appearing on the right when turning",
+"Result": "Success"
+},
+{
+"rule": "10124.7",
+"testid": "10124.7_2",
+"Result Operation": "Non-decrease and operation portion",
+"Outcome constraint": "Risk of other vehicles appearing on the right when turning",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10124.9",
+"testid": "10124.9_1",
+"rule2": "7",
+"Result if": "Operation is",
+"Result constraint": "Turn right",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10126.1",
+"testid": "10126.1_1",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Ensure Safety",
+"Result Operation 2": "Turn Left",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Success"
+},
+{
+"rule": "10126.1",
+"testid": "10126.1_2",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Ensure Safety",
+"Result Operation 2": "Non- left turn",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10126.1",
+"testid": "10126.1_3",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Not Ensuring Safety",
+"Result Operation 2": "Turn Left",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10126.1",
+"testid": "10126.1_4",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Not Ensuring Safety",
+"Result Operation 2": "Non- left turn",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10126.2",
+"testid": "10126.2_1",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Ensure Safety",
+"Result Operation 2": "Turn Left",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Success"
+},
+{
+"rule": "10126.2",
+"testid": "10126.2_2",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Ensure Safety",
+"Result Operation 2": "Non- left turn",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10126.2",
+"testid": "10126.2_3",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Not Ensuring Safety",
+"Result Operation 2": "Turn Left",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10126.2",
+"testid": "10126.2_4",
+"Operating Section": "Two Vehicles",
+"Operation": "Encounter",
+"Operation Section 2": "All indicate left turn",
+"Target": "Intersection",
+"Result Operation": "Not Ensuring Safety",
+"Result Operation 2": "Non- left turn",
+"Resulting turning point": "Left side of the center of the intersection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10127.1",
+"testid": "10127.1_1",
+"Operation": "Turn left to",
+"Operation Section": "One-Way Street",
+"Result Operation": "Drive In",
+"Result Operation Object": "The left lane of the target road",
+"Result": "Success"
+},
+{
+"rule": "10127.1",
+"testid": "10127.1_2",
+"Operation": "Turn left to",
+"Operation Section": "One-Way Street",
+"Result Operation": "Non- driving In",
+"Result Operation Object": "The left lane of the target road",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10128.1",
+"testid": "10128.1_1",
+"Operation": "Turn left in both directions to",
+"Constraint": "Two-way lane",
+"Time": "Approaching the turn",
+"Result Operation": "Drive closer to the left side of the road center line",
+"Result": "Success"
+},
+{
+"rule": "10128.1",
+"testid": "10128.1_2",
+"Operation": "Turn left in both directions to",
+"Constraint": "Two-way lane",
+"Time": "Approaching the turn",
+"Result Operation": "Drive on the left side , not close to the center line of the road",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10130.1",
+"testid": "10130.1_1",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Result Operation": "As close as possible",
+"Result Operation Section": "Drive to the right of the road center line",
+"Result": "Success"
+},
+{
+"rule": "10130.1",
+"testid": "10130.1_2",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Result Operation": "Not as close as possible",
+"Result Operation Section": "Drive to the right of the road center line",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10130.2",
+"testid": "10130.2_1",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Time": "Before reaching the center of the intersection",
+"Result Operation": "Completed",
+"Result Operation Section": "Turn",
+"Result": "Success"
+},
+{
+"rule": "10130.2",
+"testid": "10130.2_2",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Time": "Before reaching the center of the intersection",
+"Result Operation": "Non-complete",
+"Result Operation Section": "Turn",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10130.3",
+"testid": "10130.3_1",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Result Operation": "Do not cross over",
+"Results Operation Section": "Lane Markings",
+"Result": "Success"
+},
+{
+"rule": "10130.3",
+"testid": "10130.3_2",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Result Operation": "Cross",
+"Results Operation Section": "Lane Markings",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10130.4",
+"testid": "10130.4_1",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Result Operation": "Drive In",
+"Result Operation Section": "The right lane of the center line of the target road (i.e., the overtaking lane of a four- lane highway )",
+"Result": "Success"
+},
+{
+"rule": "10130.4",
+"testid": "10130.4_2",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Target": "Turn",
+"Result Operation": "Non- driving In",
+"Result Operation Section": "The right lane of the center line of the target road (i.e., the overtaking lane of a four- lane highway )",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10130.6",
+"testid": "10130.6_1",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Success"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_2",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_3",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_4",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_5",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_6",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_7",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_8",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Use",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_9",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_10",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_11",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_12",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Courtesy",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_13",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_14",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Do not cross over",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_15",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Prohibit driving on turns",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10130.6",
+"testid": "10130.6_16",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Used",
+"Result Operation 2": "Dishonesty",
+"Result Operation 3": "Cross",
+"Result Operation 4": "Driving through curves not prohibited",
+"Result Operation Section": "Turn Signal",
+"Result Operation Section 2": "Opposing Traffic Flow",
+"Result Operation Section 3": "Separator Line",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10146.1",
+"testid": "10146.1_1",
+"Result Operation": "Driver's stopping position in front of the stop sign or traffic light",
+"Result": "Success"
+},
+{
+"rule": "10146.1",
+"testid": "10146.1_2",
+"Result Operation": "Parking positions of non- drivers in front of stop signs or traffic lights",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10149.1",
+"testid": "10149.1_1",
+"Location": "Railway Crossing",
+"Event": "Flashing lights , sirens , lowered barriers, or flag signals",
+"Operating Entity": "Driver",
+"Result Operation": "Parking",
+"Result distance": "At least 15 feet",
+"Result": "Success"
+},
+{
+"rule": "10149.1",
+"testid": "10149.1_2",
+"Location": "Railway Crossing",
+"Event": "Flashing lights , sirens , lowered barriers, or flag signals",
+"Operating Entity": "Driver",
+"Result Operation": "Non- stop",
+"Result distance": "At least 15 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10149.2",
+"testid": "10149.2_1",
+"Operation Section": "The above signals",
+"Operating Entity": "Driver",
+"Result Operation": "No Entry",
+"Result Operation 2": "Wait",
+"Result Operation Section": "Pass through only after the barrier rises, the alarm stops, and the flashing lights turn off .",
+"Result": "Success"
+},
+{
+"rule": "10149.2",
+"testid": "10149.2_2",
+"Operation Section": "The above signals",
+"Operating Entity": "Driver",
+"Result Operation": "No Entry",
+"Result Operation 2": "Non-Wait",
+"Result Operation Section": "Pass through only after the barrier rises, the alarm stops, and the flashing lights turn off .",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.2",
+"testid": "10149.2_3",
+"Operation Section": "The above signals",
+"Operating Entity": "Driver",
+"Result Operation": "Passage Not Strictly Prohibited",
+"Result Operation 2": "Wait",
+"Result Operation Section": "Pass through only after the barrier rises, the alarm stops, and the flashing lights turn off .",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.2",
+"testid": "10149.2_4",
+"Operation Section": "The above signals",
+"Operating Entity": "Driver",
+"Result Operation": "Passage Not Strictly Prohibited",
+"Result Operation 2": "Non-Wait",
+"Result Operation Section": "Pass through only after the barrier rises, the alarm stops, and the flashing lights turn off .",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10149.3",
+"testid": "10149.3_1",
+"Operating Entity": "Driver",
+"Operation": "Underestimation",
+"Operation Section": "Train Speed and Distance",
+"Speed": "60 mph and above",
+"Result Operation": "Required",
+"Result Operation 2": "Parking",
+"Result Distance": "Over one mile",
+"Result": "Success"
+},
+{
+"rule": "10149.3",
+"testid": "10149.3_2",
+"Operating Entity": "Driver",
+"Operation": "Underestimation",
+"Operation Section": "Train Speed and Distance",
+"Speed": "60 mph and above",
+"Result Operation": "Required",
+"Result Operation 2": "Non- stop",
+"Result Distance": "Over one mile",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.3",
+"testid": "10149.3_3",
+"Operating Entity": "Driver",
+"Operation": "Underestimation",
+"Operation Section": "Train Speed and Distance",
+"Speed": "60 mph and above",
+"Result Operation": "Not Required",
+"Result Operation 2": "Parking",
+"Result Distance": "Over one mile",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10149.3",
+"testid": "10149.3_4",
+"Operating Entity": "Driver",
+"Operation": "Underestimation",
+"Operation Section": "Train Speed and Distance",
+"Speed": "60 mph and above",
+"Result Operation": "Not Required",
+"Result Operation 2": "Non- stop",
+"Result Distance": "Over one mile",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10151.1",
+"testid": "10151.1_1",
+"Operating Section": "Some vehicles (such as school buses , public buses , or vehicles transporting hazardous materials ) .",
+"Target of Operation": "Railway Crossing",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10151.1",
+"testid": "10151.1_2",
+"Operating Section": "Some vehicles (such as school buses , public buses , or vehicles transporting hazardous materials ) .",
+"Target of Operation": "Railway Crossing",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10151.2",
+"testid": "10151.2_1",
+"Operating Entity": "Driver",
+"Operation": "Follow",
+"Operation Section": "Driving of this type of vehicle",
+"Result Operation": "Prepare to Park",
+"Outcome constraint": "Even if there is no train arrival signal",
+"Result": "Success"
+},
+{
+"rule": "10151.2",
+"testid": "10151.2_2",
+"Operating Entity": "Driver",
+"Operation": "Follow",
+"Operation Section": "Driving of this type of vehicle",
+"Result Operation": "Not Preparing to Stop",
+"Outcome constraint": "Even if there is no train arrival signal",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.1",
+"testid": "10154.1_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two- lane road",
+"Result Operation": "Parking",
+"Result distance": "At least 25 feet",
+"Result": "Success"
+},
+{
+"rule": "10154.1",
+"testid": "10154.1_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two- lane road",
+"Result Operation": "Non- stop",
+"Result distance": "At least 25 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.2",
+"testid": "10154.2_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Multi- lane highway with lanes separated only by lane markings",
+"Result Operation": "Parking",
+"Result distance": "At least 25 feet",
+"Result": "Success"
+},
+{
+"rule": "10154.2",
+"testid": "10154.2_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Multi- lane highway with lanes separated only by lane markings",
+"Result Operation": "Non- stop",
+"Result distance": "At least 25 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.3",
+"testid": "10154.3_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"": "Privately maintained roads",
+"Result Operation": "Parking",
+"Result distance": "At least 25 feet",
+"Result": "Success"
+},
+{
+"rule": "10154.3",
+"testid": "10154.3_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"": "Privately maintained roads",
+"Result Operation": "Non- stop",
+"Result distance": "At least 25 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.4",
+"testid": "10154.4_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result distance": "At least 25 feet",
+"Result": "Success"
+},
+{
+"rule": "10154.4",
+"testid": "10154.4_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result distance": "At least 25 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.5",
+"testid": "10154.5_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.5",
+"testid": "10154.5_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.6",
+"testid": "10154.6_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Limit": "10 mph",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10154.7",
+"testid": "10154.7_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.7",
+"testid": "10154.7_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.8",
+"testid": "10154.8_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.8",
+"testid": "10154.8_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.9",
+"testid": "10154.9_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.9",
+"testid": "10154.9_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.10",
+"testid": "10154.10_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.10",
+"testid": "10154.10_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.11",
+"testid": "10154.11_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.11",
+"testid": "10154.11_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.12",
+"testid": "10154.12_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.12",
+"testid": "10154.12_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.13",
+"testid": "10154.13_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.13",
+"testid": "10154.13_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.14",
+"testid": "10154.14_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.14",
+"testid": "10154.14_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.15",
+"testid": "10154.15_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.15",
+"testid": "10154.15_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.16",
+"testid": "10154.16_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.16",
+"testid": "10154.16_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.17",
+"testid": "10154.17_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.17",
+"testid": "10154.17_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.18",
+"testid": "10154.18_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.18",
+"testid": "10154.18_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.19",
+"testid": "10154.19_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.19",
+"testid": "10154.19_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.20",
+"testid": "10154.20_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.20",
+"testid": "10154.20_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.21",
+"testid": "10154.21_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.21",
+"testid": "10154.21_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.22",
+"testid": "10154.22_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.22",
+"testid": "10154.22_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.23",
+"testid": "10154.23_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.23",
+"testid": "10154.23_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.25",
+"testid": "10154.25_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.25",
+"testid": "10154.25_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.26",
+"testid": "10154.26_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.26",
+"testid": "10154.26_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.27",
+"testid": "10154.27_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.27",
+"testid": "10154.27_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.28",
+"testid": "10154.28_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.28",
+"testid": "10154.28_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.29",
+"testid": "10154.29_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.29",
+"testid": "10154.29_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10154.30",
+"testid": "10154.30_1",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10154.30",
+"testid": "10154.30_2",
+"Operating Entity": "Driver",
+"Operation": "Parking",
+"Operational Section": "State Laws and Regulations",
+"Road": "Two-way separated highway",
+"Located on": "On the other side of the safety island or central median",
+"Result Operation": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10155.1",
+"testid": "10155.1_1",
+"Operation": "Parking",
+"Operation Section": "All vehicles traveling behind and in the opposite direction",
+"Result Operation": "Parking",
+"Minimum parking distance": "At least 25 feet away",
+"Result": "Success"
+},
+{
+"rule": "10155.1",
+"testid": "10155.1_2",
+"Operation": "Parking",
+"Operation Section": "All vehicles traveling behind and in the opposite direction",
+"Result Operation": "Non- stop",
+"Minimum parking distance": "At least 25 feet away",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10155.2",
+"testid": "10155.2_1",
+"Operation": "Parking",
+"Operation Section": "All vehicles traveling behind and in the opposite direction",
+"Result Operation": "Continue Driving",
+"Outcome Event": "After the school bus signal lights are turned off",
+"Results to Note": "Children or individuals with developmental disabilities",
+"Result": "Success"
+},
+{
+"rule": "10155.2",
+"testid": "10155.2_2",
+"Operation": "Parking",
+"Operation Section": "All vehicles traveling behind and in the opposite direction",
+"Result Action": "Do not continue driving",
+"Outcome Event": "After the school bus signal lights are turned off",
+"Results to Note": "Children or individuals with developmental disabilities",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10158.2",
+"testid": "10158.2_1",
+"Operation": "Exceed",
+"Operation Section": "Ice cream trucks or frozen dessert trucks with flashing red lights and extended stop signal arms",
+"Operating Entity": "Driver",
+"Result Operation": "Must be followed",
+"Result": "Success"
+},
+{
+"rule": "10158.2",
+"testid": "10158.2_2",
+"Operation": "Exceed",
+"Operation Section": "Ice cream trucks or frozen dessert trucks with flashing red lights and extended stop signal arms",
+"Operating Entity": "Driver",
+"Result Operation": "Not mandatory",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10161.1",
+"testid": "10161.1_1",
+"Operation": "Parking",
+"Result Operation": "Drive Through",
+"Result Limitation": "Speed not exceeding 15 mph",
+"Result": "Success"
+},
+{
+"rule": "10161.1",
+"testid": "10161.1_2",
+"Operation": "Parking",
+"Result Operation": "Not Driven By",
+"Result Limitation": "Speed not exceeding 15 mph",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10162.1",
+"testid": "10162.1_1",
+"Constraint": "Two-way separated highway",
+"Trading Instrument": "The other side of the safety island or central median",
+"Result Operation": "No Stopping Required",
+"Result": "Success"
+},
+{
+"rule": "10162.1",
+"testid": "10162.1_2",
+"Constraint": "Two-way separated highway",
+"Trading Instrument": "The other side of the safety island or central median",
+"Result Operation": "Stop not required",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10165.1",
+"testid": "10165.1_1",
+"Target vehicles": "Police cars , fire trucks , ambulances , and other emergency vehicles",
+"Result Operation": "Equipped",
+"Results Operation Section": "Sirens and Red Lights",
+"Result": "Success"
+},
+{
+"rule": "10165.1",
+"testid": "10165.1_2",
+"Target vehicles": "Police cars , fire trucks , ambulances , and other emergency vehicles",
+"Result Operation": "Not Equipped",
+"Results Operation Section": "Sirens and Red Lights",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10165.3",
+"testid": "10165.3_1",
+"Operating Entity": "Driver",
+"Target of Operation": "Fire trucks performing the mission",
+"Result Operation": "Parking",
+"Result Operation 2": "Do not crush",
+"Results Operation Section": "Within 200 feet",
+"Result constraint": "Instructions from fire, emergency , or police personnel",
+"Results Operation Section 2": "Fire Hose",
+"Result": "Success"
+},
+{
+"rule": "10165.3",
+"testid": "10165.3_2",
+"Operating Entity": "Driver",
+"Target of Operation": "Fire trucks performing the mission",
+"Result Operation": "Parking",
+"Result Operation 2": "Compacting",
+"Results Operation Section": "Within 200 feet",
+"Result constraint": "Instructions from fire, emergency , or police personnel",
+"Results Operation Section 2": "Fire Hose",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10165.3",
+"testid": "10165.3_3",
+"Operating Entity": "Driver",
+"Target of Operation": "Fire trucks performing the mission",
+"Result Operation": "Non- stop",
+"Result Operation 2": "Do not crush",
+"Results Operation Section": "Within 200 feet",
+"Result constraint": "Instructions from fire, emergency , or police personnel",
+"Results Operation Section 2": "Fire Hose",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10165.3",
+"testid": "10165.3_4",
+"Operating Entity": "Driver",
+"Target of Operation": "Fire trucks performing the mission",
+"Result Operation": "Non- stop",
+"Result Operation 2": "Compacting",
+"Results Operation Section": "Within 200 feet",
+"Result constraint": "Instructions from fire, emergency , or police personnel",
+"Results Operation Section 2": "Fire Hose",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10172.1",
+"testid": "10172.1_1",
+"Result Operation": "Place in",
+"Results Operation Section": "Easy-to-use area",
+"Result": "Success"
+},
+{
+"rule": "10172.1",
+"testid": "10172.1_2",
+"Result Operation": "Not placed in",
+"Results Operation Section": "Easy-to-use area",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10173.1",
+"testid": "10173.1_1",
+"Result Operation": "Lower",
+"Result Operation Section": "Music Volume",
+"Result": "Success"
+},
+{
+"rule": "10173.1",
+"testid": "10173.1_2",
+"Result Operation": "Non- lowering",
+"Result Operation Section": "Music Volume",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10174.1",
+"testid": "10174.1_1",
+"Time": "Night",
+"Operation": "Blocked",
+"Operation 2": "Start",
+"Operating Section": "Interior Dome Light",
+"Result Operation": "Improve",
+"Result Operation 2": "Decrease",
+"Results Operation Section": "In-vehicle Visibility",
+"Results Operation Section 2": "Police Officer 's Concerns about Blind Spots",
+"Result": "Success"
+},
+{
+"rule": "10174.1",
+"testid": "10174.1_2",
+"Time": "Night",
+"Operation": "Blocked",
+"Operation 2": "Start",
+"Operating Section": "Interior Dome Light",
+"Result Operation": "Improve",
+"Result Operation 2": "Non-Decrease",
+"Results Operation Section": "In-vehicle Visibility",
+"Results Operation Section 2": "Police Officer 's Concerns about Blind Spots",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10174.1",
+"testid": "10174.1_3",
+"Time": "Night",
+"Operation": "Blocked",
+"Operation 2": "Start",
+"Operating Section": "Interior Dome Light",
+"Result Operation": "Non-Enhancement",
+"Result Operation 2": "Decrease",
+"Results Operation Section": "In-vehicle Visibility",
+"Results Operation Section 2": "Police Officer 's Concerns about Blind Spots",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10174.1",
+"testid": "10174.1_4",
+"Time": "Night",
+"Operation": "Blocked",
+"Operation 2": "Start",
+"Operating Section": "Interior Dome Light",
+"Result Operation": "Non-Enhancement",
+"Result Operation 2": "Non-Decrease",
+"Results Operation Section": "In-vehicle Visibility",
+"Results Operation Section 2": "Police Officer 's Concerns about Blind Spots",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10175.1",
+"testid": "10175.1_1",
+"Result action": "Roll down the car window",
+"Result": "Success"
+},
+{
+"rule": "10175.1",
+"testid": "10175.1_2",
+"Result Operation": "Do not roll down the window",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10176.1",
+"testid": "10176.1_1",
+"Result Operation": "Keep",
+"Result Operation 2": "Place in",
+"Results Operation Section": "Visible on both hands",
+"Result Operation Section 2": "On the Steering Wheel",
+"Result": "Success"
+},
+{
+"rule": "10176.1",
+"testid": "10176.1_2",
+"Result Operation": "Keep",
+"Result Operation 2": "Not placed in",
+"Results Operation Section": "Visible on both hands",
+"Result Operation Section 2": "On the Steering Wheel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10176.1",
+"testid": "10176.1_3",
+"Result Operation": "Non-hold",
+"Result Operation 2": "Place in",
+"Results Operation Section": "Visible on both hands",
+"Result Operation Section 2": "On the Steering Wheel",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10176.1",
+"testid": "10176.1_4",
+"Result Operation": "Non-hold",
+"Result Operation 2": "Not placed in",
+"Results Operation Section": "Visible on both hands",
+"Result Operation Section 2": "On the Steering Wheel",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10186.1",
+"testid": "10186.1_1",
+"Parking lights": "Can only be used for short periods of time (e.g., when the vehicle is parked in a permitted parking area) .",
+"Results Operation Section": "Parking Locations of Other Drivers' Vehicles",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10186.2",
+"testid": "10186.2_1",
+"Parking lights": "Can only be used for short periods of time (e.g., when the vehicle is parked in a permitted parking area) .",
+"Target": "Vehicle",
+"Operation": "Parking",
+"Location": "Non- commercial or residential area",
+"Result Operation": "Enable",
+"Resulting parking light": "Can only be used for short periods (e.g., when the vehicle is parked in a permitted parking area) .",
+"Result Operation Section": "Parking Lights",
+"Result": "Success"
+},
+{
+"rule": "10186.2",
+"testid": "10186.2_2",
+"Parking lights": "Can only be used for short periods of time (e.g., when the vehicle is parked in a permitted parking area) .",
+"Target": "Vehicle",
+"Operation": "Parking",
+"Location": "Non- commercial or residential area",
+"Result Operation": "Disabled",
+"Resulting parking light": "Can only be used for short periods (e.g., when the vehicle is parked in a permitted parking area) .",
+"Result Operation Section": "Parking Lights",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10187.1",
+"testid": "10187.1_1",
+"Operation": "Brake",
+"Result Operation": "Enable",
+"Result Operation 2": "Enhancement",
+"Result Operation Section": "Taillight",
+"Result Operation Section 2": "Vehicle Lights",
+"Result Operation Section 3": "Parking Lights",
+"Results Operation Section 4": "Taillight Brightness and Warning",
+"Outcome constraint": "The vehicle behind is slowing down or stopping .",
+"Result": "Success"
+},
+{
+"rule": "10187.1",
+"testid": "10187.1_2",
+"Operation": "Brake",
+"Result Operation": "Enable",
+"Result Operation 2": "Non-Enhanced",
+"Result Operation Section": "Taillight",
+"Result Operation Section 2": "Vehicle Lights",
+"Result Operation Section 3": "Parking Lights",
+"Results Operation Section 4": "Taillight Brightness and Warning",
+"Outcome constraint": "The vehicle behind is slowing down or stopping .",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10187.1",
+"testid": "10187.1_3",
+"Operation": "Brake",
+"Result Operation": "Disabled",
+"Result Operation 2": "Enhancement",
+"Result Operation Section": "Taillight",
+"Result Operation Section 2": "Vehicle Lights",
+"Result Operation Section 3": "Parking Lights",
+"Results Operation Section 4": "Taillight Brightness and Warning",
+"Outcome constraint": "The vehicle behind is slowing down or stopping .",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10187.1",
+"testid": "10187.1_4",
+"Operation": "Brake",
+"Result Operation": "Disabled",
+"Result Operation 2": "Non-Enhanced",
+"Result Operation Section": "Taillight",
+"Result Operation Section 2": "Vehicle Lights",
+"Result Operation Section 3": "Parking Lights",
+"Results Operation Section 4": "Taillight Brightness and Warning",
+"Outcome constraint": "The vehicle behind is slowing down or stopping .",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10187.2",
+"testid": "10187.2_1",
+"Time": "Daytime",
+"Operation": "Not enabled",
+"Operating Section": "Headlights",
+"Result Operation": "Brake",
+"Result Operation 2": "Turn On",
+"Result Operation Section": "Taillight",
+"Result": "Success"
+},
+{
+"rule": "10187.2",
+"testid": "10187.2_2",
+"Time": "Daytime",
+"Operation": "Not enabled",
+"Operating Section": "Headlights",
+"Result Operation": "Brake",
+"Result Operation 2": "Not On",
+"Result Operation Section": "Taillight",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10187.2",
+"testid": "10187.2_3",
+"Time": "Daytime",
+"Operation": "Not enabled",
+"Operating Section": "Headlights",
+"Result Operation": "Non- Brake",
+"Result Operation 2": "Turn On",
+"Result Operation Section": "Taillight",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10187.2",
+"testid": "10187.2_4",
+"Time": "Daytime",
+"Operation": "Not enabled",
+"Operating Section": "Headlights",
+"Result Operation": "Non- Brake",
+"Result Operation 2": "Not On",
+"Result Operation Section": "Taillight",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10188.1",
+"testid": "10188.1_1",
+"Operation": "Brake",
+"Result Operation": "Enhancement",
+"Result Operation 2": "Illustration",
+"Result Operation 3": "Slow down or stop",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Success"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_2",
+"Operation": "Brake",
+"Result Operation": "Enhancement",
+"Result Operation 2": "Illustration",
+"Result Operation 3": "Non-deceleration or stopping",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_3",
+"Operation": "Brake",
+"Result Operation": "Enhancement",
+"Result Operation 2": "Non-indicative",
+"Result Operation 3": "Slow down or stop",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_4",
+"Operation": "Brake",
+"Result Operation": "Enhancement",
+"Result Operation 2": "Non-indicative",
+"Result Operation 3": "Non-deceleration or stopping",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_5",
+"Operation": "Brake",
+"Result Operation": "Non-Enhanced",
+"Result Operation 2": "Illustration",
+"Result Operation 3": "Slow down or stop",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_6",
+"Operation": "Brake",
+"Result Operation": "Non-Enhanced",
+"Result Operation 2": "Illustration",
+"Result Operation 3": "Non-deceleration or stopping",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_7",
+"Operation": "Brake",
+"Result Operation": "Non-Enhanced",
+"Result Operation 2": "Non-indicative",
+"Result Operation 3": "Slow down or stop",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10188.1",
+"testid": "10188.1_8",
+"Operation": "Brake",
+"Result Operation": "Non-Enhanced",
+"Result Operation 2": "Non-indicative",
+"Result Operation 3": "Non-deceleration or stopping",
+"Results Operation Section": "Brake Lights",
+"Result Operation Section 2": "Vehicle",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10190.1",
+"testid": "10190.1_1",
+"Operating Section": "Dashboard Lights",
+"Status": "Brightness Too High",
+"Result Operation": "Adjust to",
+"Result constraint": "Dim but still visible instrument panel level",
+"Result": "Success"
+},
+{
+"rule": "10190.1",
+"testid": "10190.1_2",
+"Operating Section": "Dashboard Lights",
+"Status": "Brightness Too High",
+"Result Operation": "Not Adjusted To",
+"Result constraint": "Dim but still visible instrument panel level",
+"Result": "Unsuccessful",
+"Result Status": "Brightness Too High"
+}
+],
+[
+{
+"rule": "10191.1",
+"testid": "10191.1_1",
+"Spotlight": "Use only in emergency situations .",
+"Operating Section": "Emergency Flasher",
+"Result operation": "Not used for",
+"Result Spotlight": "Use only in emergency situations .",
+"Results Operation Section": "Normal Driving",
+"Result": "Success"
+},
+{
+"rule": "10191.1",
+"testid": "10191.1_2",
+"Spotlight": "Use only in emergency situations .",
+"Operating Section": "Emergency Flasher",
+"Result operation": "used for",
+"Result Spotlight": "Use only in emergency situations .",
+"Results Operation Section": "Normal Driving",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10194.1",
+"testid": "10194.1_1",
+"Operation": "Parking",
+"Operation 2": "Get off the vehicle",
+"Operating Entity": "Driver",
+"Result Operation": "Observation",
+"Results Operation Section": "Surrounding Traffic Conditions",
+"Result": "Success"
+},
+{
+"rule": "10194.1",
+"testid": "10194.1_2",
+"Operation": "Parking",
+"Operation 2": "Get off the vehicle",
+"Operating Entity": "Driver",
+"Result Operation": "Non- Observation",
+"Results Operation Section": "Surrounding Traffic Conditions",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10194.2",
+"testid": "10194.2_1",
+"Operation": "Open car door",
+"Operation 2": "Get off the vehicle",
+"Operating Subject": "Passenger",
+"Result Operation": "Note",
+"Result Operation Section": "Bicycles or mopeds (these vehicles are sometimes not easily spotted )",
+"Result": "Success"
+},
+{
+"rule": "10194.2",
+"testid": "10194.2_2",
+"Operation": "Open car door",
+"Operation 2": "Get off the vehicle",
+"Operating Subject": "Passenger",
+"Result Operation": "Not Noteed",
+"Result Operation Section": "Bicycles or mopeds (these vehicles are sometimes not easily spotted )",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10194.4",
+"testid": "10194.4_1",
+"Operating Subject": "Passenger",
+"Operation": "Get off the vehicle",
+"Result Operation": "Exit the vehicle on the side closest to the curb .",
+"Result": "Success"
+},
+{
+"rule": "10194.4",
+"testid": "10194.4_2",
+"Operating Subject": "Passenger",
+"Operation": "Get off the vehicle",
+"Result Operation": "Exit on the side not closest to the curb",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10194.5",
+"testid": "10194.5_1",
+"Operation": "City Street Parking",
+"Result Operation": "Read the stop sign",
+"Result Operation 2": "Understand",
+"Results Operation Section": "Restrictions or Time Limits",
+"Result": "Success"
+},
+{
+"rule": "10194.5",
+"testid": "10194.5_2",
+"Operation": "City Street Parking",
+"Result Operation": "Read the stop sign",
+"Result Operation 2": "Not Understandable",
+"Results Operation Section": "Restrictions or Time Limits",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10194.5",
+"testid": "10194.5_3",
+"Operation": "City Street Parking",
+"Result Operation": "Non- reading stop sign",
+"Result Operation 2": "Understand",
+"Results Operation Section": "Restrictions or Time Limits",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10194.5",
+"testid": "10194.5_4",
+"Operation": "City Street Parking",
+"Result Operation": "Non- reading stop sign",
+"Result Operation 2": "Not Understandable",
+"Results Operation Section": "Restrictions or Time Limits",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10194.6",
+"testid": "10194.6_1",
+"Operation": "Parking",
+"Distance from the curb": "No more than 6 inches",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10194.7",
+"testid": "10194.7_1",
+"Operation": "Parking",
+"Result Operation": "Strictly prohibited in locations obstructing traffic",
+"Result Operation 2": "Parking",
+"Result": "Success"
+},
+{
+"rule": "10194.7",
+"testid": "10194.7_2",
+"Operation": "Parking",
+"Result Operation": "Strictly prohibited in locations obstructing traffic",
+"Result Operation 2": "Non- stop",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10194.7",
+"testid": "10194.7_3",
+"Operation": "Parking",
+"Result Operation": "Not strictly prohibited in locations obstructing traffic",
+"Result Operation 2": "Parking",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10194.7",
+"testid": "10194.7_4",
+"Operation": "Parking",
+"Result Operation": "Not strictly prohibited in locations obstructing traffic",
+"Result Operation 2": "Non- stop",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10206.1",
+"testid": "10206.1_1",
+"Firefighting facilities": "Fire hydrants",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10209.1",
+"testid": "10209.1_1",
+"Result Limitation": "Within 50 feet of a stop sign",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10214.1",
+"testid": "10214.1_1",
+"Event": "Mechanical failure or other emergency",
+"Operating Entity": "Driver",
+"Result Operation": "Parking",
+"Result Operation 2": "Start",
+"Results Operation Section": "Emergency Flasher",
+"Result": "Success"
+},
+{
+"rule": "10214.1",
+"testid": "10214.1_2",
+"Event": "Mechanical failure or other emergency",
+"Operating Entity": "Driver",
+"Result Operation": "Parking",
+"Result Operation 2": "Not Enabled",
+"Results Operation Section": "Emergency Flasher",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10214.1",
+"testid": "10214.1_3",
+"Event": "Mechanical failure or other emergency",
+"Operating Entity": "Driver",
+"Result Operation": "Non- stop",
+"Result Operation 2": "Start",
+"Results Operation Section": "Emergency Flasher",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10214.1",
+"testid": "10214.1_4",
+"Event": "Mechanical failure or other emergency",
+"Operating Entity": "Driver",
+"Result Operation": "Non- stop",
+"Result Operation 2": "Not Enabled",
+"Results Operation Section": "Emergency Flasher",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10223.1",
+"testid": "10223.1_1",
+"Situation": "The above situation",
+"Operation": "Use",
+"Operation Section": "Handheld Phone",
+"Result Operation": "Keep",
+"Result Operation 2": "Provide",
+"Result Operation Section": "One hand on the steering wheel",
+"Result Execution Subject": "Driver",
+"Results and Operations Section 2": "Legitimate Use of Handheld Phone While Driving",
+"Result of fines": "First offense: $200-$400",
+"Result of Penalty Standard 2": "A second violation within 10 years: $400-$600.",
+"Result Penalty Standard 3": "A third and subsequent violation within 10 years: $600-$800.",
+"Result of Fine Standard 4": "Third and subsequent violators will be penalized with 3 points for motor vehicle traffic violations .",
+"Result of penalty standard 5": "May face a 90-day driver's license suspension .",
+"Result": "Success"
+},
+{
+"rule": "10223.1",
+"testid": "10223.1_2",
+"Situation": "The above situation",
+"Operation": "Use",
+"Operation Section": "Handheld Phone",
+"Result Operation": "Keep",
+"Result Operation 2": "Not Provided",
+"Result Operation Section": "One hand on the steering wheel",
+"Result Execution Subject": "Driver",
+"Results and Operations Section 2": "Legitimate Use of Handheld Phone While Driving",
+"Result of fines": "First offense: $200-$400",
+"Result of Penalty Standard 2": "A second violation within 10 years: $400-$600.",
+"Result Penalty Standard 3": "A third and subsequent violation within 10 years: $600-$800.",
+"Result of Fine Standard 4": "Third and subsequent violators will be penalized with 3 points for motor vehicle traffic violations .",
+"Result of penalty standard 5": "May face a 90-day driver's license suspension .",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10223.1",
+"testid": "10223.1_3",
+"Situation": "The above situation",
+"Operation": "Use",
+"Operation Section": "Handheld Phone",
+"Result Operation": "Non-hold",
+"Result Operation 2": "Provide",
+"Result Operation Section": "One hand on the steering wheel",
+"Result Execution Subject": "Driver",
+"Results and Operations Section 2": "Legitimate Use of Handheld Phone While Driving",
+"Result of fines": "First offense: $200-$400",
+"Result of Penalty Standard 2": "A second violation within 10 years: $400-$600.",
+"Result Penalty Standard 3": "A third and subsequent violation within 10 years: $600-$800.",
+"Result of Fine Standard 4": "Third and subsequent violators will be penalized with 3 points for motor vehicle traffic violations .",
+"Result of penalty standard 5": "May face a 90-day driver's license suspension .",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10223.1",
+"testid": "10223.1_4",
+"Situation": "The above situation",
+"Operation": "Use",
+"Operation Section": "Handheld Phone",
+"Result Operation": "Non-hold",
+"Result Operation 2": "Not Provided",
+"Result Operation Section": "One hand on the steering wheel",
+"Result Execution Subject": "Driver",
+"Results and Operations Section 2": "Legitimate Use of Handheld Phone While Driving",
+"Result of fines": "First offense: $200-$400",
+"Result of Penalty Standard 2": "A second violation within 10 years: $400-$600.",
+"Result Penalty Standard 3": "A third and subsequent violation within 10 years: $600-$800.",
+"Result of Fine Standard 4": "Third and subsequent violators will be penalized with 3 points for motor vehicle traffic violations .",
+"Result of penalty standard 5": "May face a 90-day driver's license suspension .",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10226.1",
+"testid": "10226.1_1",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Result Operation": "Not Used",
+"Results Operation Section": "Handheld Mobile Phone",
+"Result": "Success"
+},
+{
+"rule": "10226.1",
+"testid": "10226.1_2",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Result Operation": "Use",
+"Results Operation Section": "Handheld Mobile Phone",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10226.2",
+"testid": "10226.2_1",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Result Operation": "Not Used",
+"Results Operation Section": "Hands-free Mobile Phone",
+"Result": "Success"
+},
+{
+"rule": "10226.2",
+"testid": "10226.2_2",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Result Operation": "Use",
+"Results Operation Section": "Hands-free Mobile Phone",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10226.4",
+"testid": "10226.4_1",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Event": "Emergency Situation",
+"Result Operation": "Use",
+"Results Operation Section": "Hands-free Mobile Phone",
+"Result": "Success"
+},
+{
+"rule": "10226.4",
+"testid": "10226.4_2",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Event": "Emergency Situation",
+"Result Operation": "Not Used",
+"Results Operation Section": "Hands-free Mobile Phone",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10226.5",
+"testid": "10226.5_1",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Incident": "School bus stopped in a safe area outside the highway",
+"Result Operation": "Use",
+"Results Operation Section": "Handheld Mobile Phone",
+"Result": "Success"
+},
+{
+"rule": "10226.5",
+"testid": "10226.5_2",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Incident": "School bus stopped in a safe area outside the highway",
+"Result Operation": "Not Used",
+"Results Operation Section": "Handheld Mobile Phone",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10226.6",
+"testid": "10226.6_1",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Incident": "School bus stopped in a safe area outside the highway",
+"Result Operation": "Use",
+"Results Operation Section": "Hands-free Mobile Phone",
+"Result": "Success"
+},
+{
+"rule": "10226.6",
+"testid": "10226.6_2",
+"Occupation": "School bus driver",
+"Time": "While driving the school bus",
+"Incident": "School bus stopped in a safe area outside the highway",
+"Result Operation": "Not Used",
+"Results Operation Section": "Hands-free Mobile Phone",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10036.1",
+"testid": "10036.1_1",
+"Line type": "Double solid line",
+"Result Operation": "Disable",
+"Result Operation 2": "Overtaking",
+"Result": "Success"
+},
+{
+"rule": "10036.1",
+"testid": "10036.1_2",
+"Line type": "Double solid line",
+"Result Operation": "Disable",
+"Result Operation 2": "Non- overtaking",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10036.1",
+"testid": "10036.1_3",
+"Line type": "Double solid line",
+"Result Operation": "Not Forbidden",
+"Result Operation 2": "Overtaking",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10036.1",
+"testid": "10036.1_4",
+"Line type": "Double solid line",
+"Result Operation": "Not Forbidden",
+"Result Operation 2": "Non- overtaking",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10073.42",
+"testid": "10073.42_1",
+"Intersection": "has traffic lights",
+"Operating Entity": "Police",
+"Operation": "Command",
+"Result Status": "Controlled intersection",
+"Result Driver": "Must comply with signal and sign regulations",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10077.4",
+"testid": "10077.4_1",
+"Constraint": "Road Intersection",
+"Constraint 2": "Whether or not there are traffic lights",
+"Event": "None",
+"Operation": "Approach",
+"Operation Section": "Before Arriving at the Crossroads",
+"Result Operation": "Warning sign present",
+"Result": "Success"
+},
+{
+"rule": "10077.4",
+"testid": "10077.4_2",
+"Constraint": "Road Intersection",
+"Constraint 2": "Whether or not there are traffic lights",
+"Event": "None",
+"Operation": "Approach",
+"Operation Section": "Before Arriving at the Crossroads",
+"Result Operation": "No Warning Sign",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10077.6",
+"testid": "10077.6_1",
+"Constraint": "Road Intersection",
+"Constraint 2": "Whether or not there are traffic lights",
+"Event": "None",
+"Operating Entity": "The driver exiting from a private road or driveway",
+"Result Operation": "Give Way",
+"Results Operation Section": "All vehicles on the main road",
+"Result": "Success"
+},
+{
+"rule": "10077.6",
+"testid": "10077.6_2",
+"Constraint": "Road Intersection",
+"Constraint 2": "Whether or not there are traffic lights",
+"Event": "None",
+"Operating Entity": "The driver exiting from a private road or driveway",
+"Result Operation": "Non- yielding",
+"Results Operation Section": "All vehicles on the main road",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10136.1",
+"testid": "10136.1_1",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Approximate",
+"Result Operation 2": "Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "Before reaching the center of the intersection",
+"Result": "Success"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_2",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Approximate",
+"Result Operation 2": "Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "After reaching the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_3",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Approximate",
+"Result Operation 2": "Not Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "Before reaching the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_4",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Approximate",
+"Result Operation 2": "Not Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "After reaching the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_5",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Close",
+"Result Operation 2": "Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "Before reaching the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_6",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Close",
+"Result Operation 2": "Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "After reaching the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_7",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Close",
+"Result Operation 2": "Not Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "Before reaching the center of the intersection",
+"Result": "Unsuccessful"
+},
+{
+"rule": "10136.1",
+"testid": "10136.1_8",
+"Operation": "Turn left from both directions onto a four- lane highway",
+"Result Operation": "Not Close",
+"Result Operation 2": "Not Completed",
+"Result constraint": "Right side of the road centerline",
+"Result Operation Section": "Turn Point",
+"Result Operation Section 2": "Turn",
+"Result Time": "After reaching the center of the intersection",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10155.1",
+"testid": "10155.1_1",
+"Location": "Railway Crossing",
+"Signal": "Red light flashing",
+"Operating Entity": "Driver",
+"Result Operation": "Parking",
+"Result distance": "At least 15 feet",
+"Result": "Success"
+},
+{
+"rule": "10155.1",
+"testid": "10155.1_2",
+"Location": "Railway Crossing",
+"Signal": "Red light flashing",
+"Operating Entity": "Driver",
+"Result Operation": "Non- stop",
+"Result distance": "At least 15 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10161.1",
+"testid": "10161.1_1",
+"Event": "When the school bus stopped",
+"Result Operation": "Parking",
+"Result distance": "At least 25 feet",
+"Result": "Success"
+},
+{
+"rule": "10161.1",
+"testid": "10161.1_2",
+"Event": "When the school bus stopped",
+"Result Operation": "Non- stop",
+"Result distance": "At least 25 feet",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10167.1",
+"testid": "10167.1_1",
+"Operation": "Parking",
+"Result Operation": "Drive Through",
+"Result Limitation": "Speed not exceeding 15 mph",
+"Result": "Success"
+},
+{
+"rule": "10167.1",
+"testid": "10167.1_2",
+"Operation": "Parking",
+"Result Operation": "Not Driven By",
+"Result Limitation": "Speed not exceeding 15 mph",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10173.6",
+"testid": "10173.6_1",
+"Region": "New Jersey",
+"Operating Entity": "Driver",
+"Operation": "Approach",
+"Operation Section": "Stationary authorized emergency vehicles , tow trucks , highway maintenance vehicles , or other emergency service vehicles ( these vehicles are displaying flashing , blinking , or alternating red , blue , amber, or yellow lights, or a combination of any of the above colors ) .",
+"Operation Section 2": "Changing lanes is unsafe",
+"Result Operation": "Decrease to",
+"Results Operation Section": "Reasonable and Appropriate Speed Below the Speed Limit",
+"Result": "Success"
+},
+{
+"rule": "10173.6",
+"testid": "10173.6_2",
+"Region": "New Jersey",
+"Operating Entity": "Driver",
+"Operation": "Approach",
+"Operation Section": "Stationary authorized emergency vehicles , tow trucks , highway maintenance vehicles , or other emergency service vehicles ( these vehicles are displaying flashing , blinking , or alternating red , blue , amber, or yellow lights, or a combination of any of the above colors ) .",
+"Operation Section 2": "Changing lanes is unsafe",
+"Result Operation": "Non-degradation",
+"Results Operation Section": "Reasonable and Appropriate Speed Below the Speed Limit",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10175.3",
+"testid": "10175.3_1",
+"Event": "Visibility drops to 500 feet or below",
+"Operation": "Use",
+"Operating Section": "Windshield Wipers",
+"Time": "Rainy, snowy, and icy weather",
+"Event 2": "Encountering fog , mist , smoke , or other conditions that reduce visibility .",
+"Result Operation": "Use",
+"Result Operation Section": "Headlights",
+"Result": "Success"
+},
+{
+"rule": "10175.3",
+"testid": "10175.3_2",
+"Event": "Visibility drops to 500 feet or below",
+"Operation": "Use",
+"Operating Section": "Windshield Wipers",
+"Time": "Rainy, snowy, and icy weather",
+"Event 2": "Encountering fog , mist , smoke , or other conditions that reduce visibility .",
+"Result Operation": "Not Used",
+"Result Operation Section": "Headlights",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10189.11",
+"testid": "10189.11_1",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10189.11",
+"testid": "10189.11_2",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Not Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10189.12",
+"testid": "10189.12_1",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10189.12",
+"testid": "10189.12_2",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Not Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10189.26",
+"testid": "10189.26_1",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10189.26",
+"testid": "10189.26_2",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Not Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10189.28",
+"testid": "10189.28_1",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10189.28",
+"testid": "10189.28_2",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Not Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10189.33",
+"testid": "10189.33_1",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10189.33",
+"testid": "10189.33_2",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Not Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10189.46",
+"testid": "10189.46_1",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Success"
+},
+{
+"rule": "10189.46",
+"testid": "10189.46_2",
+"Operation": "Parking",
+"Operation 2": "Placement",
+"Operations Section": "Vehicles",
+"Result Operation": "Not Illegal",
+"Result Execution Subject": "Driver",
+"Result": "Unsuccessful"
+}
+]
+]

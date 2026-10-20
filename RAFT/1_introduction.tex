@@ -1,0 +1,107 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Software in regulated domains such as finance, automotive, and power must
+conform to extensive regulations, standards, and internal
+policies~\cite{badrzadeh2015challenges,tabani2019assessing,xue2024llm4fin,zhang2025comprehensive}.
+Regulatory compliance testing provides a final opportunity to detect
+violations before deployment~\cite{sommerville2005ingenieria}. Yet producing
+these tests remains largely manual: experts must interpret regulatory
+documents, formalize implicit conditions, and connect test cases to
+system interfaces~\cite{castellanos2022compliance,jain2025complexity}.
+Regulations also contain cross-rule dependencies and context-sensitive
+terminology rather than isolated requirements. A usable workflow must therefore
+preserve source provenance, represent pre- and post-operation states, and
+compose related rules into structured test scenarios.
+
+Model-based approaches derive tests from domain models, graphs, or formal
+representations and offer interpretability and controllability, but adapting
+their artifacts can require substantial engineering
+effort~\cite{wang2022automatic,stefani2025automated,zyberaj2025genai,yang2025llmcfg}.
+LLM-based approaches automate more of the process through prompting,
+retrieval-augmented generation, or multi-agent
+collaboration~\cite{lewis2020retrieval,castellanos2022compliance,boukhlif2024towards,korraprolu2025test,hasan2025automatic,masuda2026generating},
+but can produce hallucinated or inconsistent outputs. Hybrid methods guide
+LLMs with ontologies, schemas, or formal specifications, improving structure
+while still depending on manually constructed domain
+knowledge~\cite{xue2024llm4fin,chen2024automated,sun2025compliance,shrestha2025less}.
+
+The bottleneck therefore shifts from test generation to reusable knowledge
+construction. The challenge is not simply a lack of domain facts. Direct
+generation collapses rule interpretation, representation choice, and test
+design into one opaque output, making errors difficult to localize and
+improvements difficult to reuse. At the other extreme, manually engineered
+artifacts improve control but must be rebuilt and maintained for each domain.
+We therefore need an explicit boundary between authoritative rule semantics and
+reusable generation guidance. This raises two questions: which intermediate representation is
+structured enough for downstream testing, and how can its supporting domain
+knowledge be obtained without recreating the same manual burden? We use formal
+requirements because they balance expressiveness, machine interpretability,
+and testability~\cite{gropler2021nlp,yang2025requirements}.
+
+We address this bottleneck with \ourtool, a framework for
+\underline{R}equirements \underline{A}uto-\underline{F}ormalization and
+Compliance \underline{T}est Generation. \ourtool\ separates two knowledge
+layers. The input regulation remains authoritative for rule-level obligations,
+thresholds, and exceptions. Implicit regulatory knowledge in LLMs is explicated
+into three reusable meta-level artifacts: a domain meta-model, a requirements
+representation, and testability constraints. A small construction
+corpus of documents and historical tests is optional and supplies evidence
+about scope, terminology, granularity, and output format. \ourtool\ injects
+these artifacts at the corresponding stages to formalize regulations, assess
+testability, and generate compliance test cases. The meta-model
+defines domain concepts, relations, operations, and state fields; the
+requirements representation defines a constrained \textit{KEY-OP-VALUE}
+grammar; and the testability artifact defines OCL-style decision predicates.
+Generated formal requirements retain source-rule evidence and explicitly
+encode their pre- and post-operation states. Knowledge construction is
+completed and frozen before evaluation documents enter the generation phase,
+preventing held-out rule content from leaking into the reusable artifacts.
+This layered design makes errors attributable to vocabulary, formalization,
+testability, or generation and permits artifact inspection and correction
+without changing the authoritative rule text.
+
+\ourtool\ constructs candidates with multiple LLMs and applies an \strategy\
+strategy. Purification retains majority-supported meta-model elements, whereas
+aggregation preserves complementary representation and testability knowledge.
+The assignment follows artifact-specific failure costs: unsupported meta-model
+elements can corrupt downstream stages, while deleting valid representation or
+testability knowledge reduces coverage. Artifacts and provenance are retained
+for inspection.
+
+We evaluate \ourtool\ on 11 financial, road-traffic, and power datasets. The
+controlled E2E baseline matches backends and documents but omits explicit
+artifacts. On six financial datasets, \ourtool\ achieves 91.7\% F1/87.1\% BSC,
+23.6 F1 points above the strongest automated baseline and higher on every
+dataset; HITL reaches 96.2\% F1. Automated \ourtool, HITL, and experts require
+2.53 elapsed hours, 5.03 elapsed hours (7.16 person-hours), and 42.56
+person-hours. Secondary analyses show 90.2\% corpus-free F1, gains from explicit
+artifacts and operator assignment, wins on 10 of 11 backbones, and
+re-instantiated F1 of 92.7\%/87.2\% in road traffic/power.
+
+Beyond the metric gains, \ourtool\ turns transient model outputs into reusable
+engineering assets. Explicit artifact contracts make knowledge inspectable and
+traceable, support targeted revision before generation, and provide stable
+interfaces across changing regulations, models, and domains. This design
+supports repeated compliance workflows and incremental maintenance. Because the
+artifacts are decoupled from individual rules, teams can reuse them across
+document revisions and compare outputs across LLM backbones. Their shared
+structure also gives engineers and domain experts a common review surface.
+
+Together, these results show the practical value of reusable, inspectable
+artifacts for compliance test generation.
+
+The contributions of this paper are:
+\begin{enumerate}[leftmargin=*,align=left,label=(\arabic*), itemsep=0pt, parsep=0pt, nosep]
+    \item \textbf{Automated Compliance-Test Framework.}
+    \ourtool\ separates authoritative rule semantics from reusable artifacts
+    for traceable formalization, testability assessment, and test generation.
+
+    \item \textbf{Risk-Adaptive Knowledge Explication.}
+    Our \strategy\ strategy assigns purification or aggregation by artifact type
+    to consolidate three complementary artifacts from multiple LLM outputs.
+
+    \item \textbf{Cross-Domain Evaluation.}
+    We evaluate three domains with ablations, expert review, step-level and
+    backbone analyses, and a shared cost, time, and run-variation protocol.
+\end{enumerate}

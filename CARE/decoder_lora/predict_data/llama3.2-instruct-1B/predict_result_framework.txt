@@ -1,0 +1,1724 @@
+使用transformers.trainer.predict()进行评估
+
+0
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本日交易:00至在于交易牌状态时，得交易后交易价交易。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 日15:00 and 交易 is 停牌
+then 操作 is 不进行盘 �交易类型 is 盘后定价交易<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:当日15:00仍处于停牌状态的，不进行盘后定价交易。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 当日15:00 and 事件 is 停牌
+then 操作 is 不进行 and 交易方式 is 盘后定价交易<|eot_id|><|end_of_text|>
+
+
+1
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本范围的在定为交易释风险价的发生足条件，应当方应向时向乙交交易进行。。应的交易押交易购交易押申的。。交易除限售。续。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 业务协议定 and 操作 is约�定
+ 时间事件 is 解除限售事件 and足 and
+ 操作主体 is 甲方
+ �事件 is 股票质押回购质then 操作 is 求 and 操作部分 is 上市公司 and 操作 is申请申请 and and 操作主 is 相�押标的证券 and解除限售手续<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:业务协议应当约定，在解除限售事件满足时，甲方应当及时要求上市公司申请办理相应股票质押回购质押标的证券的解除限售手续。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 业务协定 and 操作 is 约定 and 事件 is 解除限售事件满足时 and 操作主体 is 甲方 and 业务 is 股票质押回购
+then 操作 is 要求 and 操作部分 is 上市公司 and 操作 is 申请办理 and 操作部分 is 质押标的证券的解除限售手续<|eot_id|><|end_of_text|>
+
+
+2
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本客户成定客户的的证券转换的可配方式交方式进行，笔交易日，交易:00至9:30的交易盘时间，配成。且:30至9:00为11:30至15:00、成续成配时间。9:58至16:00为结盘集合匹配时间。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易对象种 is 不�不特定对象发行的可转债
+ �交易方式 is 匹配成交方式then 盘集合匹配时间 is 个交易日的9:15至9:25 and 续匹配时间 is 9:30至11:30、13:00至14:57、 收盘集合匹配时间 is 14:57至15:00<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:向不特定对象发行的可转债采用匹配成交方式的，每个交易日的9:15至9:25为开盘集合匹配时间，9:30至11:30、13:00至14:57为连续匹配时间，14:57至15:00为收盘集合匹配时间。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 向不特定对象发行的可转债 and 交易方式 is 匹配成交
+then 开盘集合匹配时间 is 每个交易日的9:15至9:25 and 连续匹配时间 is 9:30至11:30、13:00至14:57 and 收盘集合匹配时间 is 14:57至15:00<|eot_id|><|end_of_text|>
+
+
+3
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本范围的在定为交易释风险价的发生足条件，应当方应向时向乙交交易进行。。应的交易押交易购交易押申的。。交易除限售。续。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 业务协议 and 操作 is约�定
+ 时间事件 is 解除限售事件 and足时
+ �甲 is 票质押回购质 操作主体 is 甲方
+then 操作 is 求 and 操作部分体 is 上市公司 and 操作 is申请申请 and and 操作部分 is 相�押标的证券的解除限售手续<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:业务协议应当约定，在解除限售事件满足时，甲方应当及时要求上市公司申请办理相应股票质押回购质押标的证券的解除限售手续。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 业务协议 and 操作 is 约定 and 事件 is 解除限售事件满足时 and 业务 is 股票质押回购 and 操作主体 is 甲方
+then 操作 is 要求 and 操作主体 is 上市公司 and 操作 is 申请办理 and 操作部分 is 质押标的证券的解除限售手续<|eot_id|><|end_of_text|>
+
+
+4
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本证券》》规定在定为的在本公司的申前收回的且规定规规定证券券会规定的则规定证券相关则以及的，非，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 《客户协议》 and 操作 is约�定
+ 操作主体 is 户
+then 操作 is is 证券公司 and 操作 is 提申请 and 操作部分 is 提前购回 andrule 2
+if 操作部分 is 《客户协议》 and 操作 is 约定 and 操作主体 is 客户
+ �业务 is法律律法规、证监会部门规章、业务规则禁止的then 操作 is 可<|eot_id|><|eot_id|> 操作部分 is 提前购回 and<|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:《客户协议》应当约定客户可以向证券公司申请提前购回，法律法规、证监会部门规章、业务规则禁止的除外。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 《客户协议》 and 操作 is 约定 and 操作主体 is 客户
+then 操作对象 is 证券公司 and 操作 is 申请 and 操作部分 is 提前购回
+rule 2
+if 操作部分 is 《客户协议》 and 操作 is 约定 and 操作主体 is 客户 and 事件 is 法律法规、证监会部门规章、业务规则禁止
+then 操作 is 不得申请 and 操作部分 is 提前购回<|eot_id|><|end_of_text|>
+
+
+5
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本遇交易购，交易方应向销或管权。得向回回交易结交易户交易、更、操作。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if � is待�购回期间 and 操作主体 is 甲方
+then 操作 is撤得撤销托 操作部分 is托�管关系 andrule 2
+if 时间 is 待购回期间 and 操作主体 is 甲方
+then 操作 is 不得进行户 andrule 3
+if 时间 is 待购回期间 and 操作主体 is 甲方
+then 操作 is 不得证券账户号变更
+rule relation:1,2,3<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:待购回期间，甲方不得撤销托管关系，不得进行销户、证券账户号变更等操作。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 待购回期间 and 操作主体 is 甲方
+then 操作 is 不得撤销 and 操作部分 is 托管关系
+rule 2
+if 时间 is 待购回期间 and 操作主体 is 甲方
+then 操作 is 不得销户
+rule 3
+if 时间 is 待购回期间 and 操作主体 is 甲方
+then 操作 is 不得证券账户号变更
+or relation:1,2,3<|eot_id|><|end_of_text|>
+
+
+6
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本日交易外为1交所上盘前，，，，后的申金交易的所的可以停交易交易应交易段的续交易交易入申报。且当联时段的后，再接受复。当可可以相出申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间��作主 is 当日额度 in � is联交所开市前时段
+ �交易 is 使用完毕 and 操作主体 is 本所证券交易服务公司
+then 操作 is 暂停接受 and � is 时应时段后 操作部分 is 后续的买入申报 andrule 2
+if 操作部分 is 当日额度 and 时间 is 联交所开市前时段 and 事件 is 使用完毕 and 操作主体 is 本所证券交易服务公司
+then � is 后该时段结束前 and 操作 is 不再恢复 andrule 3
+if 操作部分 is 当日额度 and 时间 is 联交所开市前时段 and 事件 is 使用完毕 and 操作主体 is 本所证券交易服务公司
+then 操作 is 接受 and 时间��作部分卖�出申报
+<|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:当日额度在联交所开市前时段使用完毕的，本所证券交易服务公司暂停接受相应时段后续的买入申报，且在该时段结束前不再恢复，但仍然接受卖出申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 当日额度 and 时间 is 联交所开市前时段 and 事件 is 使用完毕 and 操作主体 is 本所证券交易服务公司
+then 操作 is 暂停接受 and 时间 is 相应时段 and 操作部分 is 后续的买入申报
+rule 2
+if 操作部分 is 当日额度 and 时间 is 联交所开市前时段 and 事件 is 使用完毕 and 操作主体 is 本所证券交易服务公司
+then 时间 is 该时段结束前 and 操作 is 不再恢复
+rule 3
+if 操作部分 is 当日额度 and 时间 is 联交所开市前时段 and 事件 is 使用完毕 and 操作主体 is 本所证券交易服务公司
+then 操作 is 接受 and 操作 is 卖出申报<|eot_id|><|end_of_text|>
+
+
+7
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本非日为为交易销，，的价格品券的申期盘价为其息日价。除息参考价为当收盘价-1金除的利息。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if  is 除息日 andthen 时行情中显示的该债券的前收盘价为 除息参考价
+ 除息参考价 = 前收盘价 -本次支付的利息<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:除息日即时行情中显示的该债券的前收盘价为除息参考价，其中除息参考价=前收盘价-本次支付的利息。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 除息日
+then 即时行情中显示的该债券的前收盘价 is 除息参考价 and 除息参考价 = 前收盘价-本次支付的利息<|eot_id|><|end_of_text|>
+
+
+8
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本境款公司�证的中国公司接受市的所其币为交易价币币，且价价为1元笔”存托凭证””。交易报价格为低为动为为1币，.01，。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易品种 is 中国存托凭证
+ 操作主体 is 本所
+ 操作 is 上市交易
+then �价货币 is人民民币 and 计价单位 is 每份中国存托凭证价格 and 申报价格最小变动单位 is 人民币0.01元<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:中国存托凭证在本所上市交易，以人民币为计价货币，计价单位为“每份中国存托凭证价格”，申报价格最小变动单位为人民币0.01元。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 中国存托凭证 and 操作主体 is 本所 and 操作 is 上市交易
+then 计价货币 is 人民币 and 计价单位 is 每份中国存托凭证价格 and 申报价格最小变动单位 is 人民币0.01元<|eot_id|><|end_of_text|>
+
+
+9
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司公司在其所的的申额申购的交易报�的，，应当在本所报的。且本所的署的。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is基金金管理人 and �联操作 is体 is 本所
+ ��作 is 办理 and �业务品种 is基金金份额认 操作部分 is 认购 and andthen 操作 is is 本所 and 操作 is 提交 and 操作部分 is 申请 and �联部分主体 is 本所 and 操作 is 签署 and 操作部分 is �议<|eot_id|>rule 2
+if 操作主体 is 基金管理人 and 关联操作主体 is 本所 and 操作 is 办理 and 交易品种 is 基金份额 and 操作部分 is 申赎业务
+then 操作对象 is 本所 and 操作 is 提交 and 操作部分 is 申请 and 关联操作主体 is 本所 and 操作 is 签署 and 操作部分 is 协议<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:基金管理人通过本所办理基金份额认购和申赎业务的，应当向本所提交申请，并和本所签署协议。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 基金管理人 and 关联操作主体 is 本所 and 操作 is 办理 and 交易品种 is 基金份额 and 操作部分 is 认购业务
+then 操作对象 is 本所 and 操作 is 提交 and 操作部分 is 申请 and 关联操作主体 is 本所 and 操作 is 签署 and 操作部分 is 协议
+rule 2
+if 操作主体 is 基金管理人 and 关联操作主体 is 本所 and 操作 is 办理 and 交易品种 is 基金份额 and 操作部分 is 申赎业务
+then 操作对象 is 本所 and 操作 is 提交 and 操作部分 is 申请 and 关联操作主体 is 本所 and 操作 is 签署 and 操作部分 is 协议<|eot_id|><|end_of_text|>
+
+
+10
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本的交易时，应所方应暂其中国规》规定定方式方式进行：当一）向前终回，（二）提�交易回；（三）撤止交易回；（四）其他度所的定的其他方式定。。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �事件 is发生生异常情况
+ 操作 is体 is 交易各方
+then �束 is _业务协议》约定的 and and 操作 is �前购回 andrule 2
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 《业务协议》约定的方式 and 操作 is 延期购回
+rule 3
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 《业务协议》约定的方式 and 操作 is 终止购回
+rule 4
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 深业务协议》约定的方式 and 操作 is 深交所认可的其他约定方式<|eot_id|>or relation:1,2,3,4<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:发生异常情况的，交易各方可以按《业务协议》约定的以下方式处理:（一）提前购回；（二）延期购回；（三）终止购回；（四）深交所认可的其他约定方式。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 《业务协议》约定的方式 and 操作 is 提前购回
+rule 2
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 《业务协议》约定的方式 and 操作 is 延期购回
+rule 3
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 《业务协议》约定的方式 and 操作 is 终止购回
+rule 4
+if 事件 is 发生异常情况 and 操作主体 is 交易各方
+then 约束 is 《业务协议》约定的方式 and 操作 is 深交所认可的其他约定方式
+or relation:1,2,3,4<|eot_id|><|end_of_text|>
+
+
+11
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本的配交易，匹交价格为最方式则为最1)成用成化交量的成;(二)可价可价格的成方价格报价成于该价格的卖出申报的撤交；(三)可该价格的的成入或卖方不成条成成交。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交价格 is 集合匹配 andthen �交价格的 可实现最大成交量的价格
+ � is于该交价格的 成��作 is is 买入申报 and � is低于 成交价格 and 操作部分 is �出申报 and 抶态 is 成部成交
+ � is同的交部分 is 操作部分体 is 买方 or卖方 and �束 is 最少有一方全部 抶态 is 全部成交<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:集合匹配时，成交价格的确定原则为:(一)可实现最大成交量的价格；(二)高于该价格的买入申报与低于该价格的卖出申报全部成交；(三)与该价格相同的买方或者卖方至少有一方全部成交。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 成交方式 is 集合匹配
+then 成交价格 is 可实现最大成交量的价格 and 价格 高于 成交价格 and 操作部分 is 买入申报 and 价格 低于 成交价格 and 操作部分 is 卖出申报 and 状态 is 全部成交 and 价格 相同 成交价格 and 操作主体 is 买方或者卖方 and 约束 is 至少有一方 and 状态 is 全部成交<|eot_id|><|end_of_text|>
+
+
+12
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本非的1息申为的入的除每权（息）日价的交易价幅幅的的参考准价金为有规定。除权。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if  is 除权（息）日证券 证券品种 is 证券 and 操作主 买卖
+then �算涨跌幅度 is基准 is 除权（息）参考价 and<|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:除权（息）日证券买卖，按除权（息）参考价作为计算涨跌幅度的基准，本所另有规定的除外。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 除权（息）日 and 交易品种 is 证券 and 操作 is 买卖
+then 计算涨跌幅度的基准 is 除权（息）参考价<|eot_id|><|end_of_text|>
+
+
+13
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本范围的在定为且成价格购，的证券的及的境交易收的并的，应当方应向前向回标<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 业务协议定 and 操作 is约�定
+ � is待�购 and期间 and �交易品种 is 标的证券 and 操作主 �及 and 操作主 is 跨市场吸收合并的 操作 is体 is 甲方
+then 操作 is 提前购回 and<|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:业务协议应当约定，待购回期间标的证券涉及跨市场吸收合并的，甲方应当提前购回。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 业务协定 and 操作 is 约定 and 时间 is 待回购期间 and 交易品种 is 标的证券 and 操作 is 涉及 and 操作部分 is 跨市场吸收合并 and 操作主体 is 甲方
+then 操作 is 提前购回<|eot_id|><|end_of_text|>
+
+
+14
+### pred
+Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本员可以资申用申交易户的使用融交易卖。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 会员融券专用证券账户
+then 操作 is 得
+ and 操作主 is 证券买卖<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:会员融券专用证券账户不得用于证券买卖。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 会员融券专用证券账户
+then 操作 is 不得用于 and 操作部分 is 证券买卖<|eot_id|><|end_of_text|>
+
+
+15
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本融交通证券的证券的，笔申，深公司交易上申券交易额为上的时未停所申停停券的出，所暂在其交所向交易所的进行停卖的证券股通标的证券的保申出申。报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主 深�于深 操作主 is 深股通标的证券 and 操作 is is 单只证券
+ 操作 is is 本所 and and 枍券余量达到�到规定�定比例 and 操作 is体 is 本所 and 操作 is �停融 操作部分 is 融券 and出 and 操作 is体 is 联所 andthen 操作 is 要求 and 操作部分体 is 联交所证券交易服务公司 and 操作部分 暂停 and and 操作部分 is 本该深股通标的证券担保卖空交易申报<|eot_id|><|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:属于深股通标的证券的单只证券，在本所市场的融券余量达到规定比例而被本所暂停融券卖出的，本所可以要求联交所证券交易服务公司暂停提交该深股通标的证券担保卖空交易申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作 is 属于 and 操作部分 is 深股通标的证券 and 操作部分 is 单只证券 and 操作对象 is 本所市场 and 融券余量 达到 规定比例 and 操作主体 is 本所 and 操作 is 暂停 and 操作部分 is 融券卖出 and 操作主体 is 本所
+then 操作 is 要求 and 操作主体 is 联交所证券交易服务公司 and 操作 is 暂停提交 and 操作部分 is 该深股通标的证券担保卖空交易申报<|eot_id|><|end_of_text|>
+
+
+16
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本员可以到交易币申行的托的且向保交易的足够的用资金员币。。其他品<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 会员 and 操作 is 接受 and �度股交易种 is �股通交易 操作部分 is 户 and委托
+then 操作 is 确保 and 操作部分 is 客户有足额可用的人民币资金或者rule 2
+if 操作主体 is 会员 and 操作 is 接受 and 深港通品种 is 港股通 and 操作部分 is 客户交易委托
+then 操作 is 确保 and 操作部分 is 客户有足额可用证券<|eot_id|>or rule:1,2<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:会员接受客户港股通交易委托，应当确保客户有足额可用的人民币资金或者证券。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 会员 and 操作 is 接受 and 深港通品种 is 港股通 and 操作部分 is 客户交易委托
+then 操作 is 确保 and 操作部分 is 客户有足额可用的人民币资金
+rule 2
+if 操作主体 is 会员 and 操作 is 接受 and 深港通品种 is 港股通 and 操作部分 is 客户交易委托
+then 操作 is 确保 and 操作部分 is 客户有足额可用的证券
+or relation:1,2<|eot_id|><|end_of_text|>
+
+
+17
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本出证券份额的，应额应时0额，，应向性向报，出，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 �出 and �交易品种 is基金金份额
+ �余额不足足 100份
+部分
+then 操作 is 次性申报卖出<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:卖出基金份额时，余额不足100份的部分，应当一次性申报卖出。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作 is 卖出 and 交易品种 is 基金份额 and 余额 不足 100份的部分
+then 操作 is 一次性申报卖出<|eot_id|><|end_of_text|>
+
+
+18
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易的在其定价格回的证券的的价成交易一交易，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主体 is 证券公司 and �交易 is 约定购回式证券交易实then 操作 is集中中统一管理<|eot_id|><|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:证券公司应当对约定购回式证券交易实行集中统一管理。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 证券公司 and 业务 is 约定购回式证券交易
+then 操作 is 集中统一管理<|eot_id|><|end_of_text|>
+
+
+19
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本股融的时个项目投资益的，且该设施项目的股公司，其控制者，权益人，其子属公司人原始联人，有的权的201一交易日起至再于10%交易的全部份额。则。，向再于60公司交易份行的额的60%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 基业务 is 基础设施项目 and �事件 is 多多个原始权益人的
+ 操作主 is 原础设施项目控股股东 or 操作主体 is 原始权益人 orthen �有期限自上市之日起不少于60个月的基金份额原低于 本次基金发售总量的20%rule 2
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目控股股东 and 操作主体 is 原同一控制下的关联方
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%rule 3
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目控控制人 and 操作主体 is 其始权益人
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%rule 4
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目控控制人 and 操作主体 is 其同一控制下的关联方
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%
+<|eot_id|><|end_of_text|>atrix
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:基础设施项目有多个原始权益人的，作为基础设施项目控股股东或实际控制人的原始权益人或其同一控制下的关联方持有期限自上市之日起不少于60个月的基金份额原则上应当不低于本次基金发售总量的20%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目控股股东 and 操作主体 is 原始权益人
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%
+rule 2
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目控股股东 and 操作主体 is 其同一控制下的关联方
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%
+rule 3
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目实际控制人 and 操作主体 is 原始权益人
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%
+rule 4
+if 业务 is 基础设施项目 and 事件 is 有多个原始权益人 and 操作角色 is 基础设施项目实际控制人 and 操作主体 is 其同一控制下的关联方
+then 持有期限自上市之日起不少于60个月的基金份额 不低于 本次基金发售总量的20%<|eot_id|><|end_of_text|>
+
+
+20
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易释申押方式的申结部分境算交易证券公司的其交所的的交易交成，部分质笔交易额质算时，部分解除质押。的。。部分成�息。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if � is质分解除质押日日终 and 操作主体 is 中国结算深圳分公司
+then �束 is 深交所确认的成交数据 and � is �进行逐笔全额结算时
+ 操作 is 分解除质 操作部分 is质�押标的证券或其孳息<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:部分解除质押日日终，中国结算深圳分公司根据深交所确认的成交数据，在进行逐笔全额结算时，部分解除质押标的证券或其孳息。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 部分解除质押日日终 and 操作主体 is 中国结算深圳分公司
+then 约束 is 深交所确认的成交数据 and 时间 is 在进行逐笔全额结算时 and 操作 is 部分解除 and 操作部分 is 质押标的证券或其孳息<|eot_id|><|end_of_text|>
+
+
+21
+### pred
+Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本盘交易的配的超过的盘集合的收收收盘的匹配的交易此日收收用换的收交易交易配价交所收收价格收笔的的交易配成交的收交价格为上成价为收盘价。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交 is is 收盘集合匹配 and 操作部分 产生 and and 操作部分 is 收盘价
+then �盘价 is 当日该可转债最后一笔匹配成交（含）前一分钟内所有匹配成交的成交量加权平均价
+rule 2
+if 操作 is 进行 and �交方式 is 收盘集合匹配 andthen �盘价 is 当日该可转债最后一笔匹配成交（含）前一分钟内所有匹配成交的成交量加权平均价<|eot_id|><|end_of_text|>__)
+
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:收盘集合匹配不能产生收盘价或者未进行收盘集合匹配的，以当日该可转债最后一笔匹配成交（含）前一分钟内所有匹配成交的成交量加权平均价为收盘价。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 成交方式 is 收盘集合匹配 and 操作 is 不能产生 and 操作部分 is 收盘价
+then 收盘价 is 当日该可转债最后一笔匹配成交（含）前一分钟内所有匹配成交的成交量加权平均价
+rule 2
+if 操作 is 未进行 and 成交方式 is 收盘集合匹配
+then 收盘价 is 当日该可转债最后一笔匹配成交（含）前一分钟内所有匹配成交的成交量加权平均价<|eot_id|><|end_of_text|>
+
+
+22
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本配融的的额交易算时，应当算方式后，次日日的为向销的的成一盘价为为前份公司所的布的且其所报的前份额的值的其价值的R个五入为最.01））并次确的为基金份人确认。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �金 is种 is 分级基金 and �交易 is 生 and额折算 and � is �算完成后次一交易日
+then �时行情显示的前收盘价调整-adjust金管理人最近公布并向本所提供的基金份额净值或者参考净值（四舍五入至0.001元） and ��作主 is 基准确性由 操作 is体 is 基金管理人<|eot_id|> 操作 is 负责<|eot_id|><|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:分级基金发生份额折算的，折算完成后次一交易日即时行情显示的前收盘价调整为基金管理人最近公布并向本所提供的基金份额净值或者参考净值（四舍五入至0.001元），其准确性由基金管理人负责。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 基金品种 is 分级基金 and 事件 is 发生份额折算 and 时间 is 折算完成后次一交易日
+then 即时行情显示的前收盘价 is 基金管理人最近公布并向本所提供的基金份额净值或者参考净值（四舍五入至0.001元） and 操作部分 is 其准确性 and 操作主体 is 基金管理人 and 操作 is 负责<|eot_id|><|end_of_text|>
+
+
+23
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本的配交易，成交的证券品报，应当向交易续交易配，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if � is �合匹配期间未 操作 is is 未成交的交易申报
+then 操作 is 自动进入连 操作部分 is 连续匹配<|eot_id|><|end_of_text|>�
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:集合匹配期间未成交的交易申报，自动进入连续匹配。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 集合匹配期间 and 操作部分 is 未成交的交易申报
+then 操作 is 自动进入 and 操作部分 is 连续匹配<|eot_id|><|end_of_text|>
+
+
+24
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本体出的，应金价市价种的交易交易市交易，即简称为准）市品）<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is is 主做市商 andthen 操作 is is 基准做市品种 and 操作 is 发展 and 操作部分 is 基�续做市业务<|eot_id|><|end_of_text|>__)
+
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:主做市商对基准做市品种开展持续做市业务（以下简称基准做市业务）。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 主做市商
+then 操作对象 is 基准做市品种 and 操作 is 开展 and 操作部分 is 持续做市业务<|eot_id|><|end_of_text|>
+
+
+25
+### pred
+<|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本范围的在定为�方的应交易押的购的�始价格价格后应交易交易�交易押回质回除质押、的并交易。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 业务协议 and 操作主约�定 and 操作主体 is 丙方
+ �业务 is 股票质押回购�then 操作 is is 相�始交易 and相应的补充质押、部分解除质押 and 操作 is 合并管理<|eot_id|><|end_of_text|>�
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:业务协议应当约定丙方对股票质押回购初始交易及相应的补充质押、部分解除质押进行合并管理。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 业务协议 and 操作 is 约定 and 操作主体 is 丙方 and 业务 is 股票质押回购
+then 操作部分 is 初始交易及相应的补充质押、部分解除质押 and 操作 is 合并管理<|eot_id|><|end_of_text|>
+
+
+26
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本.当换申押的的有品的，，证券出质保品的户中的证券金为均质方的价的购的的行的保的证券押券。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is �方 and �交易品 is 回价回购 and andthen �约品保 is质押物 is �入质押券保管库中的证券 andrule 2
+if 操作主体 is 乙方 and 交易类型 is 报价回购交易
+then 履约担保的质押物 is 转入担保资金账户中的现金
+<|end_of_text|><|start_header_id|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:2．转入质押券保管库中的证券和转入担保资金账户中的现金，作为乙方报价回购交易履约担保的质押物。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 乙方 and 交易类型 is 报价回购交易
+then 履约担保的质押物 is 转入质押券保管库中的证券
+rule 2
+if 操作主体 is 乙方 and 交易类型 is 报价回购交易
+then 履约担保的质押物 is 转入担保资金账户中的现金<|eot_id|><|end_of_text|>
+
+
+27
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本保公司出申申报时间为超过于申品的价格的申价格交价。且申申成交的申申报价格不得低于该上一盘价。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 申 is担�保卖空 andthen 申报价格不得得低于标该标的证券的最新成交价
+rule 2
+if 业务 is 担保卖空
+  is 当天
+ 申 is 没有成交
+then 申报价格 不得低于其前收盘价<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:担保卖空的申报价格不得低于该标的证券的最新成交价；当天没有成交的，申报价格不得低于其前收盘价。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 业务 is 担保卖空
+then 申报价格 不得低于 该标的证券的最新成交价
+rule 2
+if 业务 is 担保卖空 and 时间 is 当天 and 事件 is 没有成交
+then 申报价格 不得低于 其前收盘价<|eot_id|><|end_of_text|>
+
+
+28
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本期日回的为当交易日，前购期购回的为一一个交易日为交易期购回日的<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if to期购回日 is 非交易日
+then to期购回日后 后期购回日后第一个交易日<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:到期购回日为非交易日的，到期购回日后第一个交易日为到期购回日。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 到期购回日 is 非交易日
+then 到期购回日 is 到期购回日后第一个交易日<|eot_id|><|end_of_text|>
+
+
+29
+### pred
+Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本方为中国，，，乙还的金额利为其收红进行，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主体 is 甲方 and 操作 is is 个人客户
+ 操作 is is 纔还
+红利
+then 约束 is税�后金额 and 操作 is 计算<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:甲方为个人客户的，返还的红利按照税后金额计算。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 甲方 and 操作角色 is 个人客户 and 操作部分 is 返还的红利
+then 约束 is 税后金额 and 操作 is 计算<|eot_id|><|end_of_text|>
+
+
+30
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本的证券的牌后，得其交易押的购的的<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易品种 is 标的证券 and �交易 is 停牌
+then 不��作 is 不影响 and 操作部分 is 股票质押回购交易<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:标的证券停牌的，不影响股票质押回购交易。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 标的证券 and 事件 is 停牌
+then 操作 is 不影响 and 操作部分 is 股票质押回购交易<|eot_id|><|end_of_text|>
+
+
+31
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司的证券的申资方式额为融额户余保额质值为其融市价格转通市值的比例为低至0%。。，公司将向其日交易日起复其上资余入的且其上布。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易品种 is 标的股票 and 融资余额或者信用账户担保物市值占其上市可流通市值的比例降�低至 20%
+ 
+ 操作主体 is 本所
+then � is 次一交易日 and 操作 is 恢复 and 操作部分 is �融资买入 and 操作 is is 市场 and 操作 is 公布<|eot_id|><|end_of_text|>�
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:该标的股票的融资余额或者信用账户担保物市值占其上市可流通市值的比例降低至20%以下时，本所可以在次一交易日恢复其融资买入，并向市场公布。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 标的股票 and 融资余额或者信用账户担保物市值占其上市可流通市值的比例 降低至 20%以下 and 操作主体 is 本所
+then 时间 is 次一交易日 and 操作 is 恢复 and 操作部分 is 其融资买入 and 操作对象 is 市场 and 操作 is 公布<|eot_id|><|end_of_text|>
+
+
+32
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本时间的，次交易布行的证券的上一后次起一在投资的证券，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易品种 is 股册制下首次公开发行的股票 andthen � is 上上市首日起 and �的证券 is 标册制下首次公开发行的股票<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:注册制下首次公开发行的股票自上市首日起可以作为标的证券。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 注册制下首次公开发行的股票
+then 时间 is 自上市首日起 and 标的证券 is 注册制下首次公开发行的股票<|eot_id|><|end_of_text|>
+
+
+33
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本非所交易次交易，除客户成定证券的的证券转换的申为幅幅不为为10%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if  is 上除上市首日外
+ �交易品种 is 不�不特定对象发行的可转债
+then 涨跌幅限制比例 is 20%<|eot_id|><|end_of_text|>�
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:除上市首日外，向不特定对象发行的可转债的价格涨跌幅限制比例为20%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 除上市首日外 and 交易品种 is 向不特定对象发行的可转债
+then 价格涨跌幅限制比例 is 20%<|eot_id|><|end_of_text|>
+
+
+34
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易低交易价为，则个交易价，则报，，且最顺先顺则申交。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 最且 is 最优出价 and多笔应价申报 andthen �束 is 时间优先原则 and 操作 is 成交<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:若最优出价存在多笔应价申报的，按时间优先原则成交。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 事件 is 最优出价存在多笔应价申报
+then 约束 is 时间优先原则 and 操作 is 成交<|eot_id|><|end_of_text|>
+
+
+35
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易证券的的市条件的，按照出其价格的的交易入价格报时间计成为该该价格以下的申出申报累计数量之和为小的价格为该交价。且入申报数量计数量的差最为冲对的，则，取盘价的配的，该小近的时成情的的成一盘价为成为成交价。且后成时收牌申牌申匹配时取最接近即的交价的价格为成交价。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 事件 is 两个以上价格符合上述事件的then �交价 = 最该价格以上的买入申报累计数量与在该价格以下的卖出申报累计数量之差最小的价格
+rule 2
+if 事件 is 买卖申报累计数量之差仍存在相等情况
+ � is 开盘集合匹配
+then 最交价 is 最接近即时行情显示的前收盘价的价格
+rule 3
+if 事件 is 买卖申报累计数量之差仍存在相等情况 and 时间 is 盘中临时停牌复牌集合匹配
+then 成交价 is 最接近最近成交价的价格
+<|end_of_text|><|start_header_id|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:两个以上价格符合上述事件的，取在该价格以上的买入申报累计数量与在该价格以下的卖出申报累计数量之差最小的价格为成交价；买卖申报累计数量之差仍存在相等情况的，开盘集合匹配时取最接近即时行情显示的前收盘价的价格为成交价，盘中临时停牌复牌集合匹配时取最接近最近成交价的价格为成交价。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 事件 is 两个以上价格符合上述事件
+then 成交价 is 在该价格以上的买入申报累计数量与在该价格以下的卖出申报累计数量之差最小的价格
+rule 2
+if 事件 is 买卖申报累计数量之差仍存在相等情况 and 时间 is 开盘集合匹配
+then 成交价 is 最接近即时行情显示的前收盘价的价格
+rule 3
+if 事件 is 买卖申报累计数量之差仍存在相等情况 and 时间 is 盘中临时停牌复牌集合匹配
+then 成交价 is 最接近最近成交价的价格<|eot_id|><|end_of_text|>
+
+
+36
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本回的为前交易交易牌交易，得交易回的的，。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if � is 购回日标 �证券品种 is 的证券
+ �交易 is 停牌
+then 操作 is 不影响 and 操作部分 is 购回交易的进行<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:购回日标的证券停牌的，不影响购回交易的进行。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is 购回日 and 交易品种 is 标的证券 and 事件 is 停牌
+then 操作 is 不影响 and 操作部分 is 购回交易的进行<|eot_id|><|end_of_text|>
+
+
+37
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本配方式交的为时交易牌的，暂报申可以申销申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易方式 is �配成交方式 时间 is 临时停牌
+
+then 操作 is 申报 andrule 2
+if 交易方式 is 匹配成交 and 时间 is 临时停牌期间
+then 操作 is 撤销申报<|eot_id|>or relation:1,2<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:匹配成交方式临时停牌期间，可以申报，也可以撤销申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易方式 is 匹配成交 and 时间 is 临时停牌期间
+then 操作 is 申报
+rule 2
+if 交易方式 is 匹配成交 and 时间 is 临时停牌期间
+then 操作 is 撤销申报
+or relation:1,2<|eot_id|><|end_of_text|>
+
+
+38
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易方为向方提供使其述权利，则，乙向时向乙方发送并。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 甲方 and 操作 is �要 and 操作部分体 is 乙方 and 操作 is 行使 and 操作部分 is 上述权利
+then 操作 is is 乙方 and 操作 is 提出申请 操作部分 is 提申请<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:若甲方需要乙方行使上述权利的，应当及时向乙方提出申请。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 甲方 and 操作 is 需要 and 操作主体 is 乙方 and 操作 is 行使 and 操作部分 is 上述权利
+then 操作对象 is 乙方 and 操作 is 提出 and 操作部分 is 申请<|eot_id|><|end_of_text|>
+
+
+39
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司额的购的本%元为100倍数份为，报，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is基金金份额
+ 操作部分 认购
+then �量 is 1000 and and其整数倍 and 操作 is 申报<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:基金份额认购以1000份或者其整数倍进行申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 基金份额 and 操作 is 认购
+then 数量 is 1000份或者其整数倍 and 操作 is 申报<|eot_id|><|end_of_text|>
+
+
+40
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司的对可以，品投资币债股品风险不存在的风险效的时应当向以暂前。且向绝交易该交易托。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所会员 and 操作 is 发现 and 操作部分 is 投资者的 and股通交易 and 操作 is �在或者 操作部分 is 市场失当行为
+then 操作 is 予以提醒 and 操作部分 可�绝接受 and 操作部分 is 委托<|eot_id|>rule 2
+if 操作主体 is 本所会员 and 操作 is 发现 and 操作部分 is 投资者的港股通交易 and 操作 is �能存在 and 操作部分 is 市场失当行为
+then 操作 is 予以提醒 and 操作 is 拒绝接受 and 操作部分 is 其委托<|eot_id|><|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本所会员发现投资者的港股通交易存在或者可能存在市场失当行为，应当予以提醒，并可以拒绝接受其委托。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所会员 and 操作 is 发现 and 操作部分 is 投资者的港股通交易 and 操作 is 存在 and 操作部分 is 市场失当行为
+then 操作 is 予以提醒 and 操作 is 拒绝接受 and 操作部分 is 其委托
+rule 2
+if 操作主体 is 本所会员 and 操作 is 发现 and 操作部分 is 投资者的港股通交易 and 操作 is 可能存在 and 操作部分 is 市场失当行为
+then 操作 is 予以提醒 and 操作 is 拒绝接受 and 操作部分 is 其委托<|eot_id|><|end_of_text|>
+
+
+41
+### pred
+<|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本境算银行中国结算的交易规割时间，中国内结算的者在的算。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 中国结算 andthen �束 is 结结算香港的交收结果 and �联操作主体 is �内结算参与人 and 操作 is 结成结算<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:中国结算根据中国结算香港的交收结果，与境内结算参与人完成结算。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 中国结算
+then 约束 is 中国结算香港的交收结果 and 关联操作主体 is 境内结算参与人 and 操作 is 完成结算<|eot_id|><|end_of_text|>
+
+
+42
+### pred
+Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本100幅幅的的交易报人不效。报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 超过过涨�跌幅限制
+ 操作 is is 申报
+then 抶态 is 无效申<|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:超过涨跌幅限制的申报为无效申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 价格 超过 涨跌幅限制 and 操作部分 is 申报
+then 状态 is 无效<|eot_id|><|end_of_text|>
+
+
+43
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易的在据其的证券的本和证券资资金的质和融购证券限、回方融保、条件素进行证券确定证券的证券的价格押价。限。标质押率上限为超过10%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主体 is 证券公司 andthen �束 is 的证券资质、融入方资信、回购期限、第三方担保等因素 and 操作 is 确定和调整
+ 操作部分 is 标的证券的质押率上限 and �票质押率上限不得得超过6060%<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:证券公司应当依据标的证券资质、融入方资信、回购期限、第三方担保等因素确定和调整标的证券的质押率上限，其中股票质押率上限不得超过60%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 证券公司
+then 约束 is 标的证券资质、融入方资信、回购期限、第三方担保等因素 and 操作 is 确定和调整 and 操作部分 is 标的证券的质押率上限 and 股票质押率上限 不得超过 60%<|eot_id|><|end_of_text|>
+
+
+44
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本的证券证券的其他价基金管理计划可以投资资证券，证券应当一融资产的计划的定向资产管理客户的融一融股的的押的，为超过100公司的股的本数量比例%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is �合资产管理计划 or or 操作 is is 定��出方
+ 操作部分体 is 定一集合资产管理计划 or andthen �受单只A股股票质押的数量不得得超过该该股票A股股本的 %rule 2
+if 操作主体 is 定向资产管理客户 and 操作角色 is 融出方 and 操作主体 is 单一集合资产管理计划客户
+then 接受单只A股股票质押的数量 不得超过 该股票A股股本的15%
+<|eot_id|><|end_of_text|>__)
+
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:集合资产管理计划或定向资产管理客户作为融出方的，单一集合资产管理计划或定向资产管理客户接受单只A股股票质押的数量不得超过该股票A股股本的15%。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 集合资产管理计划客户 and 操作角色 is 融出方 and 操作主体 is 单一集合资产管理计划客户
+then 接受单只A股股票质押的数量 不得超过 该股票A股股本的15%
+rule 2
+if 操作主体 is 定向资产管理客户 and 操作角色 is 融出方 and 操作主体 is 单一集合资产管理计划客户
+then 接受单只A股股票质押的数量 不得超过 该股票A股股本的15%<|eot_id|><|end_of_text|>
+
+
+45
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本出证券额为的元的，，应向性向报，出，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主 �出 and 余额不足足 100 
+部分
+then 操作 is once次性申报卖出<|eot_id|><|end_of_text|>�
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:卖出余额不足100份的部分，应当一次性申报卖出。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作 is 卖出 and 余额 不足 100份的部分
+then 操作 is 一次性申报卖出<|eot_id|><|end_of_text|>
+
+
+46
+### pred
+<|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本本金形式交易押方式的，申申的算方式为0.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �押物 is 现金 andthen 标准券折算率 is 1<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:以现金作为质押物的，标准券折算率为1。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 质押物 is 现金
+then 标准券折算率 is 1<|eot_id|><|end_of_text|>
+
+
+47
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本期申配的后，申其未余的盘，可�守剩规先的则，交易量的配。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 初成 and 操作部分 is 初次分配 and �事件 is �剩余尾量
+then �束 is 时间优先原则 and 操作 is 尾量分配<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:初次分配完成后，若有剩余尾量，则遵循时间优先原则进行尾量分配。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作 is 完成 and 操作部分 is 初次分配 and 事件 is 有剩余尾量
+then 约束 is 时间优先原则 and 操作 is 尾量分配<|eot_id|><|end_of_text|>
+
+
+48
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本后交易价为报价格申笔申报数量为超过100个元。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易品 is 盘后定价申
+ 操作部分 申报
+then 单笔申报数量不得得超过 100 万股<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:盘后定价申报的单笔申报数量不得超过100万股。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易方式 is 盘后定价交易 and 操作 is 申报
+then 单笔申报数量 不得超过 100万股<|eot_id|><|end_of_text|>
+
+
+49
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本者可以交易资交易，出融融所证券部分的证券的户的得的证券其所有券的账的的证券所报价格出应证券的，为按照足其所的。不出前入本的申申外。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主体 is 投资者 and � is 融券期间 and ��作 is �出 and ��作部分 is 通过其所有或者控制的证券账户所持有 with其融入证券相同证券的 操作 is is 其申报卖出该证券的价格
+then 操作 is满�足前 操作部分 is 前款要求 butrule 2
+if 操作主体 is 投资者 and 时间 is 融券期间 and 操作 is 卖出 and 操作部分 is 通过其所有或者控制的证券账户所持有与其融入证券相同证券 and �量 is 超出融券数量的 操作部分 is 出融券数量的部分
+报卖出该证券的价格
+then 操作 is �满足 and 操作部分 is 前款要求<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:投资者在融券期间卖出通过其所有或者控制的证券账户所持有与其融入证券相同证券的，其申报卖出该证券的价格应当满足前款要求，但超出融券数量的部分除外。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 投资者 and 时间 is 融券期间 and 操作 is 卖出 and 操作部分 is 通过其所有或者控制的证券账户所持有与其融入证券相同证券 and 操作部分 is 其申报卖出该证券的价格
+then 操作 is 满足 and 操作部分 is 前款要求
+rule 2
+if 操作主体 is 投资者 and 时间 is 融券期间 and 操作 is 卖出 and 操作部分 is 通过其所有或者控制的证券账户所持有与其融入证券相同证券 and 数量 is 超出融券数量 and 操作部分 is 超出融券数量的部分申报卖出该证券的价格
+then 操作 is 不满足 and 操作部分 is 前款要求<|eot_id|><|end_of_text|>
+
+
+50
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司的的交易融的让的报的申为当日交易日的:00至9:00。12:00至15:00、且让申报的日的。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主体 is 本所 and 操作 is 接受 and �交易品种 is 资产支持证券 and 操作部分 is 转让申报
+then 时间 is 每个交易日9:15至11:30、13:00至15:30 andrule 2
+if 操作主 is 转让申报 andthen 时间 is 每日 and 抶态 is �有效<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本所接受资产支持证券转让申报的时间为每个交易日9:15至11:30、13:00至15:30，转让申报当日有效。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所 and 操作 is 接受 and 交易品种 is 资产支持证券 and 操作部分 is 转让申报
+then 时间 is 每个交易日9:15至11:30、13:00至15:30
+rule 2
+if 操作部分 is 转让申报
+then 时间 is 当日 and 状态 is 有效<|eot_id|><|end_of_text|>
+
+
+51
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司的的客户定客户的的证券转换的让的报的为当日交易日的前:00至9:00。12:00至15:00、且让申报时间日的。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if ��作主体 is 本所 and 操作 is 接受 and �交易品种 is 可�特定对象发行的可转债 and 操作部分 is 转让申报时间then 时间 is 每个交易日的9:15至11:30、13:00至15:30 andrule 2
+if 操作主 is 转让申报 andthen 时间 is 每日 and 抶态 is 有效<|eot_id|><|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本所接受向特定对象发行的可转债转让申报时间为每个交易日的9:15至11:30、13:00至15:30，转让申报当日有效。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所 and 操作 is 接受 and 交易品种 is 向特定对象发行的可转债 and 操作部分 is 转让申报
+then 时间 is 每个交易日的9:15至11:30、13:00至15:30
+rule 2
+if 操作部分 is 转让申报
+then 时间 is 当日 and 状态 is 有效<|eot_id|><|end_of_text|>
+
+
+52
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司的应的证券的让的购的让价格费续的转取方式为每0。的含）万元）；笔转.1%，收100万元则转笔转元。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所 and �交易品种 is 对产支持证券
+ 操作 is is 转让
+then 操作 is 收取 and 操作部分 is 转让经手费 and 收费标准 is 100万元以下（含100万）每笔0.1元 and �费方式 is 过100万元的每笔10元<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本所对资产支持证券转让收取转让经手费，收费标准为100万元以下（含100万）每笔0.1元，超过100万元的每笔10元。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所 and 交易品种 is 资产支持证券 and 操作部分 is 转让
+then 操作 is 收取 and 操作部分 is 转让经手费 and 收费标准 is 100万元以下（含100万）每笔0.1元 and 收费标准 is 超过100万元的每笔10元<|eot_id|><|end_of_text|>
+
+
+53
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本.当每额交易前收回的提额提购购约的应方应在规定定价格交易前购付，甲则甲甲方应权拒绝提方的提。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 ��额提前购回 or 操作部分体 is 甲方
+then �定 is 挦定 and 操作 is �前预约 and �事件 is 不�
+
+ 操作 is体 is 乙方
+ 操作 is 权拒绝
+ 操作 is is 甲方的申请<|eot_id|>rule 2
+if 操作 is is 巨额不再续做 and 操作主体 is 甲方
+then 约束 is 约定 and 操作 is 提前预约 and 事件 is 否则 and 操作主体 is 乙方 and 操作 is 有权拒绝 and 操作部分 is 甲方的申请<|eot_id|><|end_of_text|>__)
+
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:3．对于巨额提前购回或巨额不再续做，甲方应按约定进行提前预约，否则，乙方有权拒绝甲方的申请。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作 is 巨额提前购回 and 操作主体 is 甲方
+then 约束 is 约定 and 操作 is 提前预约 and 事件 is 否则 and 操作主体 is 乙方 and 操作 is 有权拒绝 and 操作部分 is 甲方的申请
+rule 2
+if 操作部分 is 巨额不再续做 and 操作主体 is 甲方
+then 约束 is 约定 and 操作 is 提前预约 and 事件 is 否则 and 操作主体 is 乙方 and 操作 is 有权拒绝 and 操作部分 is 甲方的申请<|eot_id|><|end_of_text|>
+
+
+54
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司的规定性后顺序，待的定证券的的证券转换的让，报，，交，。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所 and �事件品种 is 可�向定对象 and的可转债 andthen �束 is 时间先后顺序 and 操作 is is 对�让申报 and 操作 is 成交确认<|eot_id|><|end_of_text|>__)
+
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本所按照时间先后顺序对向特定对象发行的可转债转让申报进行成交确认。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 本所 and 交易品种 is 向特定对象发行的可转债
+then 约束 is 时间先后顺序 and 操作部分 is 转让申报 and 操作 is 成交确认<|eot_id|><|end_of_text|>
+
+
+55
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本限期证券的，申用换的交易盘日次起可申出，无售期要求的可转债，在市交易的在其足条件除限制价期条件的，向规定规的规定，转结。限的的。且当除限售后，交易日内，�露。。信息。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易品种 is 无限售期要求的可转债 and � is 挂牌首日
+then 操作 is 转让 andrule 2
+if 交易品种 is 无有限售期要求的可转债 and 时间��作 is体 is 上市公司
+ 时间交易 is 解�足解除限售相关事件
+
+then �束 is 所相关规定 and 操作 is 申请 and and 操作部分 is 解除限售业务 and � is 解解除限售前三个交易日内 and 操作 is 披露提示 操作部分 is 提示性公告<|eot_id|><|end_of_text|>‬
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:无限售期要求的可转债，在挂牌首日即可以转让；有限售期要求的可转债，上市公司可以在满足解除限售相关事件后，按照本所相关规定申请办理解除限售业务，并在解除限售前三个交易日内披露提示性公告。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 交易品种 is 无限售期要求的可转债 and 时间 is 挂牌首日
+then 操作 is 转让
+rule 2
+if 交易品种 is 有限售期要求的可转债 and 操作主体 is 上市公司 and 事件 is 满足解除限售相关事件后
+then 约束 is 本所相关规定 and 操作 is 申请办理 and 操作部分 is 解除限售业务 and 时间 is 在解除限售前三个交易日内 and 操作 is 披露 and 操作部分 is 提示性公告<|eot_id|><|end_of_text|>
+
+
+56
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本员可以交易客户提供的约的出的，应向客户进行交易信息进行债债状况、交易持期保的、、进行评估，<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 会员 and 操作 is is 客户 and 操作 is 办理 and 操作部分 is 合约 and期前then 操作部分 is 户的信用状况、负债情况、维持担保比例水平等<|eot_id|> 操作 is 评估<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:会员在为客户办理合约展期前，应当对客户的信用状况、负债情况、维持担保比例水平等进行评估。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 会员 and 操作对象 is 客户 and 操作 is 办理 and 操作部分 is 合约展期
+then 操作部分 is 客户的信用状况、负债情况、维持担保比例水平等 and 操作 is 评估<|eot_id|><|end_of_text|>
+
+
+57
+### pred
+<|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本利�的的款账�证的红币为单位价币币，红价价为1一笔”托凭证””且报价格为低为动为为1.01元。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 红筹公司 and �交易品种 is存�托凭证 andthen �价货币 is 人民币 and 计价单位 is 每份存托凭证价格 and 申报价格最小变动单位 is 0.01元<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:红筹公司存托凭证以人民币为计价货币，计价单位为“每份存托凭证价格”，申报价格最小变动单位为0.01元。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 红筹公司 and 交易品种 is 存托凭证
+then 计价货币 is 人民币 and 计价单位 is 每份存托凭证价格 and 申报价格最小变动单位 is 0.01元<|eot_id|><|end_of_text|>
+
+
+58
+### pred
+Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:+前申结交易股算交易其外交易交易的的交易交量购，交易相关交易日的按照结交易投资交易交易算。且中国内证券算公司者进行的算申。向境结算结交易清割数据令。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if � is T日 and终 and 操作主体 is 中国结算 andthen �束 is 中国�内证券公司提供的成交回报及其他非交易数据 and 操作 is is 证券与资金的 操作 is 清算 and 操作主 is �内结算香港人 and 操作 is 发送 and 操作部分 is 清算数据 and 操作 is is 中国结算香港 and 操作 is 发送<|eot_id|> 操作部分 is 交收指令<|eot_id|><|end_of_text|>===
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:T日日终，中国结算根据境内证券公司提供的成交回报及其他非交易数据，进行证券与资金的清算，向境内结算参与人发送清算数据，并向中国结算香港发送交收指令。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 时间 is T日日终 and 操作主体 is 中国结算
+then 约束 is 境内证券公司提供的成交回报及其他非交易数据 and 操作部分 is 证券与资金 and 操作 is 清算 and 操作对象 is 境内结算参与人 and 操作 is 发送 and 操作部分 is 清算数据 and 操作对象 is 中国结算香港 and 操作 is 发送 and 操作部分 is 交收指令<|eot_id|><|end_of_text|>
+
+
+59
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本公司为在证券公司则的2条1.1条规定第3.1.1条的第5.2.5条规定规定规定。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主 is 本该数量 andthen 操作 is 符合 and �用 is 本规则第3.3.4条、第4.2.4条及第4.2.5条<|eot_id|> 操作 is is 关规定<|eot_id|><|end_of_text|>__)
+
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:该数量应当符合本规则第3.3.4条、第4.2.4条及第4.2.5条的相关规定。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作部分 is 该数量
+then 操作 is 符合 and 引用 is 本规则第3.3.4条、第4.2.4条及第4.2.5条 and 操作部分 is 相关规定<|eot_id|><|end_of_text|>
+
+
+60
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本幅幅的，上其一盘价的差不下期报价、内限、下限的前准价格之差、比例对不不于或报价格的低价动幅的比例本收盘价为前准价格之幅幅单位报价格的小变动单位为为对的的<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �跌幅限制价格与前收盘价之差、且于申申报价格最小变动单位
+then 应价格 = 前收盘价、减一个申报价格最小变动单位的rule 2
+if 有效申报价格范围上限或下限与基准价格之差的绝对值低低于 申报价格最小变动单位
+then 相应价格 is 前准价格增减一个申报价格最小变动单位
+<|end_of_text|>atrix
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:涨跌幅限制价格与前收盘价之差、有效申报价格范围上限或下限与基准价格之差的绝对值低于申报价格最小变动单位的，以前收盘价、基准价格增减一个申报价格最小变动单位计算相应价格。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 涨跌幅限制价格与前收盘价之差 低于 申报价格最小变动单位
+then 相应价格 is 前收盘价增减一个申报价格最小变动单位
+rule 2
+if 有效申报价格范围上限或下限与基准价格之差的绝对值 低于 申报价格最小变动单位
+then 相应价格 is 基准价格增减一个申报价格最小变动单位<|eot_id|><|end_of_text|>
+
+
+61
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本价价格购的申期日回的，按照的向再申报。报前回回的，证券公司不申其所申报。前购回交易。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �交易 is报价回购的 �交易方式 is to期购回交易
+ 操作主体 is 证券公司
+then 操作 is 不需申报 andrule 2
+if 业务 is 提价回购 and 交易类型 is 提前购回交易 and 操作主体 is 证券公司
+then 操作 is is 交易系统 and 操作 is 申报
+<|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:报价回购的到期购回交易，证券公司不需申报；提前购回交易，证券公司应当向交易系统申报提前购回交易。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 业务 is 报价回购 and 交易类型 is 到期购回交易 and 操作主体 is 证券公司
+then 操作 is 不需申报
+rule 2
+if 业务 is 报价回购 and 交易类型 is 提前购回交易 and 操作主体 is 证券公司
+then 操作对象 is 交易系统 and 操作 is 申报<|eot_id|><|end_of_text|>
+
+
+62
+### pred
+<|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|><|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本可以应前提回的证券应为未弃交易先购定的。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 客户 and 操作 is 提提前购回
+then 操作 is 视为放弃优 操作部分 is 优先认购权<|eot_id|><|end_of_text|><|begin_of_text|>
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:客户不提前购回的，视为放弃优先认购权。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 操作主体 is 客户 and 操作 is 不提前购回
+then 操作 is 视为放弃 and 操作部分 is 优先认购权<|eot_id|><|end_of_text|>
+
+
+63
+### pred
+<|begin_of_text|>Tagssystem<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:本交易额申申报�申申其份的相关份募规书的的申低申赎数量为申最数倍为申�。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if �金合同种 is ETF
+额 and ��作部分 申赎
+then �量 is 最金合同的基金招募说明书规定的最小申赎单位 or其整数倍<|eot_id|> 操作 is申申报<|eot_id|><|end_of_text|>̃
+
+### label
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+你是一个金融科技领域的专家。给出一条规则，请你抽取其中的规则元素并组合成R规则的形式。如果组合后的R规则存在冲突，则将其分成多条不冲突的R规则。<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+规则:ETF份额的申赎，按基金合同和基金招募说明书规定的最小申赎单位或者其整数倍进行申报。<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+rule 1
+if 基金品种 is ETF份额 and 操作 is 申赎
+then 数量 is 基金合同和基金招募说明书规定的最小申赎单位或者其整数倍 and 操作 is 申报<|eot_id|><|end_of_text|>
+
+
+{'test_loss': 0.8856810331344604, 'test_char_wise_accuracy': 0.4232151473643128, 'test_word_wise_accuracy': 0.49711627124706204, 'test_bleu': 0.4743322736041139, 'test_rouge_f1': 0.5932119180441963, 'test_runtime': 5.122, 'test_samples_per_second': 12.495, 'test_steps_per_second': 12.495}

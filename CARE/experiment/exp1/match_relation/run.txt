@@ -1,0 +1,16 @@
+s = 0.98, dataset1: Precision: 1.0, Recall: 0.9955257270693513, F1: 0.9977578475336324
+s = 0.97, dataset1: Precision: 1.0, Recall: 0.9955257270693513, F1: 0.9977578475336324
+s = 0.99, dataset1: Precision: 1.0, Recall: 0.9955257270693513, F1: 0.9977578475336324
+s = 0.96, dataset1: Precision: 1.0, Recall: 0.9955257270693513, F1: 0.9977578475336324
+s = 0.98, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.97, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.99, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.96, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.94, dataset1: Precision: 1.0, Recall: 1.0, F1: 1.0
+s = 0.95, dataset1: Precision: 1.0, Recall: 0.9955257270693513, F1: 0.9977578475336324
+s = 0.92, dataset1: Precision: 1.0, Recall: 1.0, F1: 1.0
+s = 0.93, dataset1: Precision: 1.0, Recall: 1.0, F1: 1.0
+s = 0.94, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.95, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.92, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193
+s = 0.93, dataset2: Precision: 1.0, Recall: 0.8599221789883269, F1: 0.9246861924686193

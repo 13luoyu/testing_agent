@@ -1,0 +1,8 @@
+python split_annotate_data.py
+python data_augment.py
+python generate_data_for_chatglm3.py
+python generate_data_for_glm4.py
+python generate_data_for_internlm2.py
+python generate_data_for_llama3.py
+python generate_data_for_qwen2.py
+

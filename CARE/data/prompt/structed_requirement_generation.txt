@@ -1,0 +1,210 @@
+You are an expert in the fintech domain. Your task is to transform financial business rules into a structured format.
+
+## **Task Description**
+
+This task requires converting natural language financial business rules into structured rules. The structured rules must follow a strict if–then logical format and use a predefined tag system to accurately represent conditions and constraints. The transformation must preserve the complete semantics of the original rules while ensuring machine interpretability, making them applicable to scenarios such as requirements analysis, automated code generation, and automated test case generation.
+
+To improve reasoning accuracy, you must follow a Chain-of-Thought (CoT) process, which includes:
+
+1. Element Extraction
+2. Label Assignment
+3. Requirement Construction
+4. Self-Reflection and Validation
+
+## **Input**
+
+* **Type**: One or more financial business rules described in natural language.
+* **Example**:
+
+  ```
+  For bond transactions using the matching trading method, the declared quantity must be in units of RMB 100,000 face value or integer multiples thereof.
+  ```
+* **Requirements**:
+
+  * The input must be complete Chinese sentences.
+  * It may include financial terms related to temporal conditions, state descriptions, and operational constraints.
+  * It may contain conjunctions (e.g., “and”, “or”) or nested logic.
+
+## **CoT Reasoning Process**
+
+### **Step 1: Element Extraction**
+- Identify all key semantic elements from the rule, including:
+   - actors, actions, objects, conditions, constraints, time, quantities, etc.
+- Extract elements as concise phrases (remove redundant modifiers).
+- Output format:
+```
+Elements:
+- element1
+- element2
+...
+```
+
+### **Step 2: Label Assignment**
+- Map each extracted element to a predefined tag.
+- If no suitable tag exists, follow the Flexible Tag Extension Principles.
+- Output format:
+```
+Labeled Elements:
+- label1: element1
+- label2: element2
+```
+
+### **Step 3: Requirement Construction**
+- Construct structured rules using *if–then* format.
+- Combine labeled elements into triples:
+```
+label is value
+```
+- use `and` to connect multiple triples.
+- Split into multiple rules if necessary.
+
+
+## **Output Format**
+
+### **1. Basic Structure**
+
+```
+rule [ID]\nif [condition clause]\nthen [constraint clause]
+```
+
+* **Condition clause (if)**: Describes the triggering conditions of the rule, composed of `key is value` triples connected by `and`.
+* **Constraint clause (then)**: Describes the constraints when conditions are satisfied, using the same triple structure.
+* **Multiple rule decomposition**: When the natural language rule contains parallel logic or complex semantics, split it into multiple rules (e.g., `rule 1`, `rule 2`).
+
+### **2. Triple Structure**
+
+```
+key is value
+```
+
+* **key**: Must be selected from the predefined label set (see table below), or flexibly extended based on context.
+* **value**: Extracted from the natural language input (redundant modifiers should be removed).
+
+### **3. Predefined Label Set**
+
+| Tag         | Meaning             | Example Values                         |
+| ----------- | ------------------- | -------------------------------------- |
+| Operator    | Actor               | Investor, Broker                       |
+| Action      | Action performed    | Buy, Sell, Cancel                      |
+| Target      | Object              | Security, Account                      |
+| Target Part | Component of object | Principal, Interest                    |
+| Business    | Business type       | Margin, Options                        |
+| Product     | Product category    | Stock, Bond, ETF                       |
+| Method      | Execution method    | Market order, Limit order, After-hours |
+| Trade Type  | Trade category      | Spot, Repo, Derivatives                |
+| Time        | Time condition      | T+1, Before 15:00                      |
+| Quantity    | Quantity constraint | ≥ 100 shares                           |
+| Price       | Price constraint    | ≥ 10%, ±2%                             |
+| State       | Current state       | Held, Suspended                        |
+| Event       | Triggering event    | Ex-rights, Default                     |
+
+### **4. Flexible Tag Extension Principles**
+
+When predefined tags are insufficient, follow these priority rules:
+
+1. **Semantic reduction**: Map new terms to the closest existing tag (e.g., “block trade” → Method).
+2. **Contextual inference**: Create tags based on financial domain knowledge (e.g., “volatility” → a Price attribute).
+3. **Generic tag**: Use the tag `"Constraint"` when no suitable match exists.
+
+### **5. Multi-rule Decomposition Scenarios**
+
+* **Parallel conditions**: Split when natural language contains “and” / “or”.
+
+  ```
+  Natural language:
+  When the price increases by more than 5% or the trading volume exceeds 10,000 lots, a circuit breaker is triggered.
+  ```
+
+  ```
+  Structured:
+  rule 1\nif Price is increase > 5%\nthen Event is circuit breaker triggered
+  rule 2\nif Quantity is volume > 10,000 lots\nthen Event is circuit breaker triggered
+  ```
+* **Nested logic**: Complex conditions should be decomposed into independent rule chains.
+
+
+## Self-Reflection (Critical Step)
+After generating the rules, you MUST perform a self-check:
+- Checklist
+   - Are all original conditions fully covered?
+   - Is any semantic information lost or incorrectly added?
+   - Are all labels correctly assigned and consistent?
+   - Does each rule contain at least one if and one then?
+   - Are there duplicated keys within a rule?
+   - Are rule splits logically correct?
+- Refinement
+   - If any issue is found, revise the rules.
+   - Output only the final corrected structured rules.
+
+
+## **Notes**
+
+1. **Semantic fidelity**:
+
+   * Do not add or remove core constraints from the original rules (e.g., “not allowed” must be represented as `Action is not allowed`).
+   * Normalize time expressions (e.g., “before market close” → “before 15:00 of the trading day”).
+
+2. **Tag selection guidelines**:
+
+   * Prefer predefined tags; avoid excessive extension.
+   * Do not assign the same value to multiple different tags (e.g., “after-hours pricing” should only map to Method).
+
+3. **Special value handling**:
+
+   * Negation: Express within the value (e.g., `Action is not allowed`), without introducing new tags.
+   * Ranges: Preserve original comparison operators (e.g., `Price is >= 10 RMB`).
+
+4. **Financial terminology standards**:
+
+   * Use standard terminology (e.g., “suspension” instead of “halt trading”).
+   * Use full institutional names (e.g., “China Securities Depository and Clearing Corporation Limited” instead of abbreviations).
+
+5. **Output validation checklist**:
+
+   * Each rule must contain at least one `if` triple and one `then` triple.
+   * The same key must not appear repeatedly within a single rule.
+   * All conditions in the original rule must be covered by the resulting structured rules.
+
+## **Complete Example**
+
+**Input**:
+
+```
+Unless otherwise specified by the exchange, bond transactions are subject to the following quantity rules: (1) For matching transactions, the declared quantity of spot bonds shall be 100,000 RMB face value or integer multiples thereof; if selling less than 100,000 RMB face value, it must be declared in a single order; for pledged repo transactions, the declared quantity shall be 1,000 RMB face value or integer multiples thereof; (2) For click trading, the declared quantity shall be 100,000 RMB face value or integer multiples thereof; (3) For inquiry trading or auction trading, the declared quantity shall not be less than 100,000 RMB and must be in integer multiples of 1,000 RMB face value; (4) For negotiated trading, the declared quantity of spot bonds shall not be less than 1,000 RMB and must be in integer multiples of 100 RMB face value; for pledged repo transactions, it shall be 1,000 RMB face value or integer multiples thereof.
+```
+
+**Output**:
+
+```
+rule 1
+if Operator is Exchange and Method is Matching Trading and Product is Spot Bond
+then Quantity is 100,000 RMB face value or integer multiples thereof
+
+rule 2
+if Operator is Exchange and Method is Matching Trading and Product is Spot Bond and Action is Sell and Remaining Quantity is less than 100,000 RMB face value
+then Action is single-order declaration
+
+rule 3
+if Operator is Exchange and Method is Matching Trading and Product is Pledged Repo
+then Quantity is 1,000 RMB face value or integer multiples thereof
+
+rule 4
+if Operator is Exchange and Product is Bond and Method is Click Trading
+then Quantity is 100,000 RMB face value or integer multiples thereof
+
+rule 5
+if Operator is Exchange and Product is Bond and Method is Inquiry Trading
+then Quantity is >= 100,000 RMB and Quantity is integer multiples of 1,000 RMB face value
+
+rule 6
+if Operator is Exchange and Product is Bond and Method is Auction Trading
+then Quantity is >= 100,000 RMB and Quantity is integer multiples of 1,000 RMB face value
+
+rule 7
+if Operator is Exchange and Method is Negotiated Trading and Product is Spot Bond
+then Quantity is >= 1,000 RMB and Quantity is integer multiples of 100 RMB face value
+
+rule 8
+if Operator is Exchange and Method is Negotiated Trading and Product is Pledged Repo
+then Quantity is 1,000 RMB face value or integer multiples thereof
+```

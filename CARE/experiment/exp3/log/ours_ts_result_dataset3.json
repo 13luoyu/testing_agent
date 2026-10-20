@@ -1,0 +1,11 @@
+{
+    "dataset3": {
+        "change": 0.21153846153846154,
+        "precision_testcase": 0.7758620689655172,
+        "precision_changed_testcase": 0.7818181818181819,
+        "recall_testcase": 0.734375,
+        "recall_changed_testcase": 0.7333333333333333,
+        "f1_testcase": 0.7545486978237602,
+        "f1_changed_testcase": 0.7568
+    }
+}

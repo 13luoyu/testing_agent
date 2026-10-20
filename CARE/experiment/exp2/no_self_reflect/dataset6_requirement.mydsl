@@ -1,0 +1,298 @@
+rule 2.1
+sourceId 2
+if 时间 is 上午
+then 操作 is 不举行 and 操作部分 is 集会
+
+rule 2.2
+sourceId 2
+if 时间 is 下午 and 交易品种 is 国债证券
+then 操作 is 不进行 and 操作部分 is 立会
+
+rule 2.3
+sourceId 2
+if 时间 is 下午
+then 时间 is 从下午0点30分到3点30分
+
+rule 2.4
+sourceId 2
+if 时间 is 下午 and 交易品种 is 国债证券
+then 时间 is 从下午0点30分到2点
+
+rule 3.1
+sourceId 3
+if 操作主体 is 本交易所
+then 操作 is 将 and 操作部分 is 以下各号所列的日期 and 操作 is 作为 and 操作部分 is 休息日 and 时间 is 周日
+
+rule 3.2
+sourceId 3
+if 操作主体 is 本交易所
+then 操作 is 将 and 操作部分 is 国民节日 and 操作 is 作为 and 操作部分 is 休息日
+
+rule 3.3
+sourceId 3
+if 操作主体 is 本交易所 and 国民的节日相当于星期日 is 那之后不是离那一天最近的国民节日的日子
+then 操作 is 将 and 操作部分 is 那之后不是离那一天最近的国民节日的日子 and 操作 is 作为 and 操作部分 is 休息日
+
+rule 3.4
+sourceId 3
+if 操作主体 is 本交易所
+then 操作 is 将 and 操作部分 is 前一天和第二天是国民节日的日子 and 操作 is 作为 and 操作部分 is 休息日
+
+rule 3.5
+sourceId 3
+if 操作主体 is 本交易所
+then 操作 is 将 and 操作部分 is 周六 and 操作 is 作为 and 操作部分 is 休息日
+
+rule 3.6
+sourceId 3
+if 操作主体 is 本交易所
+then 操作 is 将 and 操作部分 is 年初3天 and 操作 is 作为 and 操作部分 is 休息日
+
+rule 3.7
+sourceId 3
+if 操作主体 is 本交易所
+then 操作 is 将 and 操作部分 is 12月31日 and 操作 is 作为 and 操作部分 is 休息日
+
+rule 4.1
+sourceId 4
+if 操作主体 is 本交易所 and 事件 is 认为有必要时
+then 操作 is 临时停止 and 操作部分 is 全部或部分买卖委员会
+
+rule 4.2
+sourceId 4
+if 操作主体 is 本交易所 and 事件 is 认为有必要时
+then 操作 is 临时取消 and 操作部分 is 全部或部分买卖委员会
+
+rule 5.1
+sourceId 5
+if 操作主体 is 本所 and 操作 is 决定 and 操作部分 is 临时停业日 and 操作 is 通知 and 操作对象 is 交易参加者
+then
+
+rule 5.2
+sourceId 5
+if 操作主体 is 本所 and 操作 is 决定 and 操作部分 is 买卖委员会临时停止 and 操作 is 通知 and 操作对象 is 交易参加者
+then
+
+rule 5.3
+sourceId 5
+if 操作主体 is 本所 and 操作 is 决定 and 操作部分 is 临时举行 and 操作 is 通知 and 操作对象 is 交易参加者
+then
+
+rule 9.1
+sourceId 9
+if 操作主体 is 买卖委员会 and 交易品种 is 债券、可转换债券型新股认购权公司债券及可交换债券
+then 交易类型 is 当日结算交易
+
+rule 9.2
+sourceId 9
+if 操作主体 is 买卖委员会 and 交易品种 is 债券、可转换债券型新股认购权公司债券及可交换债券
+then 交易类型 is 普通交易
+
+rule 9.3
+sourceId 9
+if 操作主体 is 买卖委员会 and 交易品种 is 利率转换公司债券型新股预约权付公司债券 and 操作 is 除外 and 交易品种 is 债券、可转换债券型新股认购权公司债券及可交换债券
+then 交易类型 is 当日结算交易
+
+rule 9.4
+sourceId 9
+if 操作主体 is 买卖委员会 and 交易品种 is 利率转换公司债券型新股预约权付公司债券 and 操作 is 除外 and 交易品种 is 债券、可转换债券型新股认购权公司债券及可交换债券
+then 交易类型 is 普通交易
+
+rule 9.5
+sourceId 9
+if 操作主体 is 买卖委员会 and 交易品种 is 利率转换公司债券 and 交易品种 is 债券、可转换债券型新股认购权公司债券及可交换债券
+then 交易类型 is 当日结算交易
+
+rule 10.1
+sourceId 10
+if 交易类型 is 竞争买卖 and 事件 is 在买卖委员会开始的约定价格确定之前 and 操作部分 is 所有呼价
+then 操作 is 分别视为 and 操作部分 is 同时进行
+
+rule 10.2
+sourceId 10
+if 交易类型 is 竞争买卖 and 事件 is 在买卖委员会开始的约定价格确定之前 and 操作主体 is 买卖双方
+then 操作 is 分别视为 and 操作部分 is 同时进行
+
+rule 10.3
+sourceId 10
+if 交易类型 is 竞争买卖 and 事件 is 在买卖委员会开始的约定价格确定之前 and 操作主体 is 买卖双方
+then 操作 is 分别视为 and 操作部分 is 同时进行
+
+rule 10.4
+sourceId 10
+if 交易类型 is 竞争买卖 and 事件 is 在买卖委员会开始的约定价格确定之前 and 操作主体 is 买卖双方
+then 操作 is 分别视为 and 操作部分 is 同时进行
+
+rule 10.5
+sourceId 10
+if 交易类型 is 竞争买卖 and 事件 is 在买卖委员会开始的约定价格确定之前 and 操作主体 is 买卖双方
+then 操作 is 分别视为 and 操作部分 is 同时进行
+
+rule 12.1
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会开始的约定价格
+
+rule 12.2
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 根据本所规定，对特定品种的交易被中断时的中断后最初的约定价格
+
+rule 12.3
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会结束时的约定价格
+
+rule 12.4
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 除上述各号规定的内容外，根据本所规定的地方进行了气象显示时的约定价格及本所根据呼值的状况认为有必要时的约定价格
+
+rule 12.5
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会开始的约定价格
+
+rule 12.6
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 根据本所规定，对特定品种的交易被中断时的中断后最初的约定价格
+
+rule 12.7
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会结束时的约定价格
+
+rule 12.8
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 除上述各号规定的内容外，根据本所规定的地方进行了气象显示时的约定价格及本所根据呼值的状况认为有必要时的约定价格
+
+rule 12.9
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值与买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会开始的约定价格
+
+rule 12.10
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值与买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 根据本所规定，对特定品种的交易被中断时的中断后最初的约定价格
+
+rule 12.11
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值与买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会结束时的约定价格
+
+rule 12.12
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值与买呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 该价格
+then 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 除上述各号规定的内容外，根据本所规定的地方进行了气象显示时的约定价格及本所根据呼值的状况认为有必要时的约定价格
+
+rule 12.13
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 各号中所示的卖呼值的合计数量与买呼值的合计数量以一定的价格一致 and 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会开始的约定价格
+then
+
+rule 12.14
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 各号中所示的卖呼值的合计数量与买呼值的合计数量以一定的价格一致 and 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 根据本所规定，对特定品种的交易被中断时的中断后最初的约定价格
+then
+
+rule 12.15
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 各号中所示的卖呼值的合计数量与买呼值的合计数量以一定的价格一致 and 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 买卖委员会结束时的约定价格
+then
+
+rule 12.16
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 卖呼值的竞争 and 事件 is 最低价格的卖呼值与最高价格的买呼值一致 and 操作部分 is 各号中所示的卖呼值的合计数量与买呼值的合计数量以一定的价格一致 and 操作 is 将该价格作为约定价格 and 操作 is 按照第10条第2项中规定的呼值的顺序 and 操作 is 在对应的呼值之间 and 操作 is 成立买卖 and 操作部分 is 除上述各号规定的内容外，根据本所规定的地方进行了气象显示时的约定价格及本所根据呼值的状况认为有必要时的约定价格
+then
+
+rule 12.17
+sourceId 12
+if 交易方式 is 个别竞争买卖 and 事件 is 除了以下各号中规定的约定价格的情况以外 and 交易方式 is 买呼值的
+
+rule 13.1
+sourceId 13
+if 操作主体 is 本所 and 事件 is 因有过失的订单而买卖 and 操作 is 成立 and 操作部分 is 结算 and 事件 is 有可能混乱
+then 约束 is 本所规定的地方 and 操作 is 取消 and 操作部分 is 本所规定的买卖
+
+rule 14.1
+sourceId 14
+if 交易品种 is 认购权 and 交易品种 is 债券
+then 单位 is 各债券的金额 and 单位 is 每百元人民币1分钱
+
+rule 14.2
+sourceId 14
+if 交易品种 is 可转换公司债券型新股认购权公司债券及可交换公司债券
+then 面值 is 每百元人民币5分钱
+
+rule 14.3
+sourceId 14
+if 操作部分 is 呼值 and 超过 本所根据规则规定的价宽限度的价格 is and 约束 is 不超过
+then 操作 is 不以超过 and 操作部分 is 本所认为特别需要而决定的价格幅度 and 操作 is 不申报
+
+rule 14.4
+sourceId 14
+if 交易品种 is 债券 and 操作部分 is 关于债券的要价 and 超过 本所根据规则规定的价宽限度的价格 is and 约束 is 不超过
+then 操作 is 不申报
+
+rule 15.1
+sourceId 15
+if 交易品种 is 债券 and 交易品种 is 国债证券 and 买卖单位 is 1000万日元
+then 交易品种 is 债券 and 买卖单位 is 1000万日元
+
+rule 15.2
+sourceId 15
+if 交易品种 is 债券 and 交易品种 is 国债证券 and 买卖单位 is 100万日元
+then 交易品种 is 债券 and 买卖单位 is 100万日元
+
+rule 15.3
+sourceId 15
+if 交易品种 is 债券 and 交易品种 is 国债证券 and 买卖单位 is 10万日元
+then 交易品种 is 债券 and 买卖单位 is 10万日元
+
+rule 15.4
+sourceId 15
+if 交易品种 is 债券 and 交易品种 is 国债证券
+then 交易品种 is 债券 and 面值 is 5万日元
+
+rule 16.1
+sourceId 16
+if 基准价格 is 日本证券业协会公布的买卖参考统计值 and 事件 is 该协会未公布该买卖参考统计值
+then 操作主体 is 该交易所 and 操作 is 每次都规定
+
+rule 16.2
+sourceId 16
+if 基准价格 is 日本证券业协会公布的买卖参考统计值 and 操作主体 is 该交易所 and 事件 is 认为根据该买卖参考统计值不合适
+then 操作 is 规定
+
+rule 29.1
+sourceId 29
+if 操作主体 is 本所 and 事件 is 对债券或可转换债券型新股认购权公司债券进行抽奖偿还 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+then 约束 is 本所的规定 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+
+rule 29.2
+sourceId 29
+if 操作主体 is 本所 and 事件 is 在产生有可能对投资者的投资判断产生重大影响的信息的情况下 and 事件 is 该信息的内容不明确 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+then 约束 is 本所的规定 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+
+rule 29.3
+sourceId 29
+if 操作主体 is 本所 and 事件 is 在产生有可能对投资者的投资判断产生重大影响的信息的情况下 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+then 约束 is 本所的规定 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+
+rule 29.4
+sourceId 29
+if 操作主体 is 本所 and 事件 is 在买卖系统的运转发生故障的情况下 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+then 约束 is 本所的规定 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+
+rule 29.5
+sourceId 29
+if 操作主体 is 本所 and 事件 is 在与有价证券的买卖有关的本交易所的设施发生故障的情况等下 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+then 约束 is 本所的规定 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+
+rule 29.6
+sourceId 29
+if 操作主体 is 本所 and 事件 is 认为有必要告知有可能进行买卖取消的情况 and 操作 is 停止 and 操作部分 is 有价证券的买卖
+then 约束 is 本所的规定 and 操作 is 停止 and 操作部分 is 有价证券的买卖

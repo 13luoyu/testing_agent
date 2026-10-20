@@ -1,0 +1,1850 @@
+[
+[
+{
+"rule": "3.1.1",
+"testid": "3.1.1_1",
+"Minimum Order Quantity": "Purchase one option contract at a price of $00  .",
+"Trading Instrument": "Underlying Foreign Currency Options",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum increment of result": "0.01 USD",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "3.1.2",
+"testid": "3.1.2_1",
+"Minimum Order Quantity": "Purchase one option contract at a price of $00  .",
+"Trading Instrument": "Underlying Foreign Currency Options",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum increment of result": "0.01 USD",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "3.2",
+"testid": "3.2_1",
+"Trading Instruments": "Foreign Currency Options",
+"Operations Section": "All Buys or Sells",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Direction 2": "Sell",
+"Result operation": "representation",
+"Minimum number of results submitted": 0,
+"Result Constraint": "Amount in US dollars per unit of the target foreign currency",
+"Result": "Success"
+},
+{
+"rule": "3.2",
+"testid": "3.2_2",
+"Trading Instruments": "Foreign Currency Options",
+"Operations Section": "All Buys or Sells",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Direction 2": "Sell",
+"Result operation": "representation",
+"Minimum number of results to be submitted": "2",
+"Result Constraint": "Amount in US dollars per unit of the target foreign currency",
+"Result": "Unsuccessful"
+},
+{
+"rule": "3.2",
+"testid": "3.2_3",
+"Trading Instruments": "Foreign Currency Options",
+"Operations Section": "All Buys or Sells",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Direction 2": "Sell",
+"Result operation": "NOT representation",
+"Minimum number of results submitted": 0,
+"Result Constraint": "Amount in US dollars per unit of the target foreign currency",
+"Result": "Unsuccessful"
+},
+{
+"rule": "3.2",
+"testid": "3.2_4",
+"Trading Instruments": "Foreign Currency Options",
+"Operations Section": "All Buys or Sells",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Direction 2": "Sell",
+"Result operation": "NOT representation",
+"Minimum number of results to be submitted": "3",
+"Result Constraint": "Amount in US dollars per unit of the target foreign currency",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "1.1.1",
+"testid": "1.1.1_1",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "1",
+"Result Price": 325,
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Success"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_2",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "1",
+"Result Price": 325,
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_3",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "1",
+"Result Price": "2",
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_4",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "1",
+"Result Price": "3",
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_5",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "2",
+"Result Price": 325,
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_6",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "3",
+"Result Price": 325,
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_7",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "2",
+"Result Price": "3",
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.1",
+"testid": "1.1.1_8",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Minimum number of results to be submitted": "3",
+"Result Price": "4",
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "1.1.2",
+"testid": "1.1.2_1",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "1",
+"Result Price": 325,
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Success"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_2",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "1",
+"Result Price": 325,
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_3",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "1",
+"Result Price": "2",
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_4",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "1",
+"Result Price": "3",
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_5",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "2",
+"Result Price": 325,
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_6",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "3",
+"Result Price": 325,
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_7",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "2",
+"Result Price": "3",
+"Result Operation": "Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+},
+{
+"rule": "1.1.2",
+"testid": "1.1.2_8",
+"Minimum Quantity Required": "1 copy",
+"Trading Instrument": "A $70 option premium",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Minimum number of results to be submitted": "3",
+"Result Price": "4",
+"Result Operation": "Non -Payment",
+"Results Operation Section": "Bid of $325",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "1001.1.1",
+"testid": "1001.1.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.1.2",
+"testid": "1001.1.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.2.1",
+"testid": "1001.2.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.2.2",
+"testid": "1001.2.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.3.1",
+"testid": "1001.3.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Operating Entity": "Relevant Counterparty",
+"Operation": "Submit",
+"Operation Section 3": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.3.2",
+"testid": "1001.3.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Operating Entity": "Relevant Counterparty",
+"Operation": "Submit",
+"Operation Section 3": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.4.1",
+"testid": "1001.4.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Operating Entity": "Relevant Counterparty",
+"Operation": "Submit",
+"Operation Section 3": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.4.2",
+"testid": "1001.4.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operation Section 2": "All Quotes",
+"Operating Entity": "Relevant Counterparty",
+"Operation": "Submit",
+"Operation Section 3": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.5.1",
+"testid": "1001.5.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.5.2",
+"testid": "1001.5.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.6.1",
+"testid": "1001.6.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.6.2",
+"testid": "1001.6.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.7.1",
+"testid": "1001.7.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.7.2",
+"testid": "1001.7.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.8.1",
+"testid": "1001.8.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.8.2",
+"testid": "1001.8.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.9.1",
+"testid": "1001.9.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.9.2",
+"testid": "1001.9.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.10.1",
+"testid": "1001.10.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.10.2",
+"testid": "1001.10.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.11.1",
+"testid": "1001.11.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.11.2",
+"testid": "1001.11.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.12.1",
+"testid": "1001.12.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.12.2",
+"testid": "1001.12.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.13.1",
+"testid": "1001.13.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.13.2",
+"testid": "1001.13.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.14.1",
+"testid": "1001.14.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.14.2",
+"testid": "1001.14.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.15.1",
+"testid": "1001.15.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.15.2",
+"testid": "1001.15.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.16.1",
+"testid": "1001.16.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.16.2",
+"testid": "1001.16.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.17.1",
+"testid": "1001.17.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.17.2",
+"testid": "1001.17.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.18.1",
+"testid": "1001.18.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.18.2",
+"testid": "1001.18.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.19.1",
+"testid": "1001.19.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.19.2",
+"testid": "1001.19.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.20.1",
+"testid": "1001.20.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.20.2",
+"testid": "1001.20.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.21.1",
+"testid": "1001.21.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.21.2",
+"testid": "1001.21.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.22.1",
+"testid": "1001.22.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.22.2",
+"testid": "1001.22.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.23.1",
+"testid": "1001.23.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.23.2",
+"testid": "1001.23.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.24.1",
+"testid": "1001.24.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.24.2",
+"testid": "1001.24.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.25.1",
+"testid": "1001.25.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.25.2",
+"testid": "1001.25.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.26.1",
+"testid": "1001.26.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.26.2",
+"testid": "1001.26.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.27.1",
+"testid": "1001.27.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.27.2",
+"testid": "1001.27.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.28.1",
+"testid": "1001.28.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.28.2",
+"testid": "1001.28.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.29.1",
+"testid": "1001.29.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.29.2",
+"testid": "1001.29.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.30.1",
+"testid": "1001.30.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.30.2",
+"testid": "1001.30.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.31.1",
+"testid": "1001.31.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.31.2",
+"testid": "1001.31.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.32.1",
+"testid": "1001.32.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.32.2",
+"testid": "1001.32.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.33.1",
+"testid": "1001.33.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.33.2",
+"testid": "1001.33.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.34.1",
+"testid": "1001.34.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.34.2",
+"testid": "1001.34.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.35.1",
+"testid": "1001.35.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.35.2",
+"testid": "1001.35.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.36.1",
+"testid": "1001.36.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.36.2",
+"testid": "1001.36.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBO",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.37.1",
+"testid": "1001.37.1_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "1001.37.2",
+"testid": "1001.37.2_1",
+"Operations Section": "Applicable Option Series",
+"Event": "All valid trades occur in at least one other options trade .",
+"Operating Entity": "Counterparty",
+"Operation": "Submit",
+"Operation Section 2": "Quotation",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Price": "Last NBB",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_2",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_2",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "5.00.1.1",
+"testid": "5.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Outcome Constraints": "Above US$10.00, up to US$ 1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "5.00.1.2",
+"testid": "5.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Outcome Constraints": "Above US$10.00, up to US$ 1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Amount": "2.5",
+"Outcome constraint": "USD",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_2",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Amount": "2.0",
+"Outcome constraint": "USD",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Amount": "2.5",
+"Outcome constraint": "USD",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_2",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Amount": "2.0",
+"Outcome constraint": "USD",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Outcome Constraint": "Above USD 50.00",
+"Result constraint 2": "$ 3.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "20.00.1.2",
+"testid": "20.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Outcome Constraint": "Above USD 50.00",
+"Result constraint 2": "$ 3.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_2",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_2",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "5.00.1.1",
+"testid": "5.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Outcome Constraint": "Above USD 10.00",
+"Result constraint 2": "$0.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "5.00.1.2",
+"testid": "5.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Outcome Constraint": "Above USD 10.00",
+"Result constraint 2": "$0.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results submitted": "0.0",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_2",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results submitted": "0.0",
+"Result": "Success"
+},
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_2",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Trading Instrument": "US Dollar",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Outcome constraint": "Up to $ 50.00",
+"Results Operation Section": "$ 1.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "20.00.1.2",
+"testid": "20.00.1.2_1",
+"Trading Instrument": "US Dollar",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Outcome constraint": "Up to $ 50.00",
+"Results Operation Section": "$ 1.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.1",
+"testid": "2.00.1.1_2",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "5.0",
+"Result": "Success"
+},
+{
+"rule": "2.00.1.2",
+"testid": "2.00.1.2_2",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Minimum number of results to be submitted": "2.0",
+"Result": "Unsuccessful"
+}
+],
+[
+{
+"rule": "5.00.1.1",
+"testid": "5.00.1.1_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Outcome Constraints": "Above US$10.00, up to US$ 1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "5.00.1.2",
+"testid": "5.00.1.2_1",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Outcome Constraints": "Above US$10.00, up to US$ 1.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.1",
+"testid": "10.00.1.1_1",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Outcome Constraint": "USD 20.00",
+"Results Operation Section": "$ 2.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "10.00.1.2",
+"testid": "10.00.1.2_1",
+"Constraint": "Above US$ 20.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Outcome Constraint": "USD 20.00",
+"Results Operation Section": "$ 2.00",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "20.00.1.1",
+"testid": "20.00.1.1_1",
+"Constraint": "Above US$ 50.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Buy",
+"Trading Instrument": "Options",
+"Result Fee": "$ 2.50",
+"Result": "Success"
+}
+],
+[
+{
+"rule": "20.00.1.2",
+"testid": "20.00.1.2_1",
+"Constraint": "Above US$ 50.00",
+"Trading Markets": "Nasdaq Stock Exchange",
+"Trading Direction": "Sell",
+"Trading Instrument": "Options",
+"Result Fee": "$ 2.50",
+"Result": "Success"
+}
+]
+]

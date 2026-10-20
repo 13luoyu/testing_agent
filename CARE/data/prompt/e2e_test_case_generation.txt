@@ -1,0 +1,158 @@
+You are an expert in financial software testing and quality assurance. Your task is to intelligently update and reuse an existing JSON-formatted test case repository when financial business requirements change.
+
+## **Task Description**
+
+This task requires intelligently updating an existing JSON-based test case repository based on changes in financial business requirements. The system must analyze the differences between the original requirements document and the new requirements document, and accurately identify newly added, modified, or deleted business rules.
+
+For business rules that remain unchanged (identified by the `rule` field), their corresponding test cases should be directly reused. For business rules that have changed, new test cases must be generated to accurately validate the updated rules, replacing the old ones. The overall objective is to maximize the reuse of testing assets while ensuring that the test case repository remains fully consistent with the latest business requirements, thereby guaranteeing the correctness and stability of financial trading systems.
+
+## **Input**
+
+* **Type**: A data package containing three core components:
+
+  1. **Original Requirements Document**: A document describing the original financial business rules of the system (e.g., business rule documents or Software Requirements Specification (SRS)).
+  2. **New Requirements Document**: A document describing revised or newly introduced financial business rules.
+  3. **Original Test Case Repository**: A JSON array in which each object represents a test case. Each test case object contains multiple key–value pairs describing test inputs, operations, and expected results. Key fields include `rule` (associated business rule ID), `testid` (unique test case identifier), and other fields describing the business scenario and outcomes (e.g., “actor”, “trading market”, “result state”).
+
+## **Output**
+
+* **Type**: An updated JSON-formatted test case repository.
+
+  * The output must be a JSON array with a structure identical to the input repository.
+  * Test cases corresponding to unchanged rules (identified via the `rule` field) must be preserved exactly as they are, including all key–value pairs.
+  * Test cases associated with modified, newly added, or deleted rules must be handled as follows:
+
+    * **Modified / Added**: Generate new test case objects. The `rule` field must reference the new or updated rule ID, and `testid` must be assigned a new unique identifier. Other fields must be populated according to the updated rules to accurately reflect the new business logic and expected outcomes.
+    * **Deleted**: Test cases associated with deleted rules must not appear in the final output array.
+  * The output repository must fully cover all valid business rules in the new requirements document.
+
+## **Requirements**
+
+* **Accuracy**: Newly generated test cases must precisely reflect all details of the new requirements. All key–value pairs must strictly conform to the updated business rules.
+* **Traceability**: The `rule` field of each test case must accurately map to its corresponding requirement/rule ID, ensuring bidirectional traceability between requirements and tests.
+* **Efficiency**: Unaffected test cases must be reused preferentially without any modification. Only test cases related to changed rules should be regenerated and replaced, with updated `testid` values to distinguish them.
+* **Format Consistency**: The output test case repository must strictly follow the input JSON format, including the outer array structure and inner object keys, ensuring compatibility with existing test automation frameworks or test management systems.
+* **Completeness**: For modified rules, a sufficient number of test cases must be generated to cover positive cases, negative cases, and boundary conditions, ensuring adequate test coverage.
+
+---
+
+## **Reasoning and Alignment Enhancement (CoT-Guided with Cascading Impact Awareness)**
+
+To improve the quality and robustness of test case updates, the system should adopt a **Chain-of-Thought (CoT) reasoning paradigm** to explicitly guide the process of **rule–test alignment, change identification, and test case updating**, while considering **potential cascading impacts across related rules and test cases**.
+
+### **1. Rule–Test Alignment Reasoning**
+
+* Explicitly map each test case to its corresponding business rule via the `rule` field.
+* Verify whether the semantic content of the test case is fully consistent with the rule definition.
+* Detect implicit dependencies between rules (e.g., shared conditions, same product types, or overlapping states).
+
+### **2. Change Identification Reasoning**
+
+* Perform a structured comparison between original and new requirements:
+
+  * Identify **unchanged rules** → mark for direct reuse.
+  * Identify **modified rules** → analyze *what exactly changed* (e.g., product type, state, constraint).
+  * Identify **added rules** → mark for new test generation.
+  * Identify **deleted rules** → mark related test cases for removal.
+* Decompose changes into fine-grained dimensions (e.g., condition changes, constraint changes).
+
+### **3. Cascading Impact Analysis**
+
+* Analyze whether a rule change affects:
+
+  * Other rules with shared attributes (e.g., same market, product, or state).
+  * Existing test cases that partially overlap in logic.
+* If cascading impacts exist:
+
+  * Update not only directly affected test cases, but also indirectly impacted ones.
+  * Ensure consistency across the entire test suite.
+
+### **4. Test Case Update Reasoning**
+
+* For each affected rule:
+
+  * Generate test cases covering:
+
+    * **Positive scenarios** (valid behavior)
+    * **Negative scenarios** (invalid operations)
+    * **Boundary conditions** (edge values, limits)
+* Ensure that updated test cases:
+
+  * Reflect the exact delta of rule changes.
+  * Maintain logical consistency with related test cases.
+
+### **5. Output Consistency Check**
+
+* After generation, verify:
+
+  * Full coverage of all new rules.
+  * No residual test cases linked to deleted rules.
+  * No semantic inconsistency among test cases.
+
+---
+
+## **Example**
+
+### **Input Example**
+
+**1. Original Requirements Document (Excerpt):**
+
+> Rule 3.2.9.1.1.1: A client places a securities buy order on the Shanghai Stock Exchange. When the order is in the “unsubmitted” state, a “cancel” operation can be performed. After the operation, the order state becomes “canceled,” and the operation succeeds.
+
+**2. New Requirements Document (Excerpt):**
+
+> Rule 3.2.9.1.1.1 (Modified): A client places a **fund** buy order on the Shanghai Stock Exchange. When the order is in the “unsubmitted” state, a “cancel” operation can be performed. After the operation, the order state becomes “canceled,” and the operation succeeds.
+> Rule 3.2.9.1.1.2 (Added): A client places a fund sell order on the Shenzhen Stock Exchange. When the order is in the “partially filled” state, a “cancel” operation can be performed. After the operation, the unfilled portion of the order becomes “canceled,” and the operation succeeds.
+
+**3. Original Test Case Repository (JSON):**
+
+```json
+[
+  {
+    "rule": "3.2.9.1.1.1",
+    "testid": "3.2.9.1.1.11",
+    "actor": "client",
+    "trading_market": "Shanghai Stock Exchange",
+    "trade_direction": "buy",
+    "product_type": "security",
+    "state": "unsubmitted",
+    "result_action": "cancel",
+    "result_action_part": "unfilled portion of the order",
+    "result_state": "canceled",
+    "result": "success"
+  }
+]
+```
+
+### **Output Example**
+
+```json
+[
+  {
+    "rule": "3.2.9.1.1.1",
+    "testid": "3.2.9.1.1.13",
+    "actor": "client",
+    "trading_market": "Shanghai Stock Exchange",
+    "trade_direction": "buy",
+    "product_type": "fund",
+    "state": "unsubmitted",
+    "result_action": "cancel",
+    "result_action_part": "unfilled portion of the order",
+    "result_state": "canceled",
+    "result": "success"
+  },
+  {
+    "rule": "3.2.9.1.1.2",
+    "testid": "3.2.9.1.1.21",
+    "actor": "client",
+    "trading_market": "Shenzhen Stock Exchange",
+    "trade_direction": "sell",
+    "product_type": "fund",
+    "state": "partially filled",
+    "result_action": "cancel",
+    "result_action_part": "unfilled portion of the order",
+    "result_state": "canceled",
+    "result": "success"
+  }
+]
+```
