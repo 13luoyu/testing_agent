@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RegTest Agent · 法规测试智能体</title>
+<link rel="stylesheet" href="/styles.css">
+<script src="/vendor/cytoscape.min.js"></script>
+<script src="/vendor/dagre.min.js"></script>
+<script src="/vendor/cytoscape-dagre.js"></script>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="logo">RT</div>
+      <div><div class="name">RegTest Agent</div><div class="sub">LLM4Fin · RAFT · CARE</div></div>
+    </div>
+    <button id="newThread" class="btn primary block">＋ 新建任务</button>
+    <div class="side-title">会话</div>
+    <ul id="threads"></ul>
+    <div class="side-foot">
+      <div id="health" class="health">检查服务…</div>
+    </div>
+  </aside>
+
+  <section id="chat">
+    <header class="chat-head">
+      <div id="threadTitle" class="title" contenteditable="false">请选择或新建一个任务</div>
+      <div class="status-pill" id="threadStatus"></div>
+      <button id="stopBtn" class="btn ghost hidden">⏹ 停止</button>
+    </header>
+    <div id="messages"></div>
+    <form id="composer">
+      <div id="attachments"></div>
+      <div class="compose-row">
+        <label class="btn ghost attach" title="上传 pdf / txt / md / docx / json">📎<input id="fileInput" type="file" multiple accept=".pdf,.txt,.md,.docx,.json" hidden></label>
+        <textarea id="input" rows="2" placeholder="例如：根据这份证券交易规则生成测试用例；或上传原规则、新规则和原测试用例让我复用测试…"></textarea>
+        <button class="btn primary" id="sendBtn" type="submit">发送</button>
+      </div>
+      <div class="hints">
+        <span class="chip" data-text="根据上传的规则文档生成测试用例">生成测试</span>
+        <span class="chip" data-text="规则修订了，帮我复用并更新原来的测试用例">测试复用</span>
+        <span class="chip" data-text="为这份文档所属领域做知识工程，构建元模型和需求表示">知识工程</span>
+        <span class="chip" data-text="记住：RAFT 判定为不可测的需求直接丢弃，不用问我">记住偏好</span>
+      </div>
+    </form>
+  </section>
+
+  <section id="workspace">
+    <nav id="tabs">
+      <button data-tab="process" class="active">流程</button>
+      <button data-tab="trace">级联图</button>
+      <button data-tab="reqs">规则·需求</button>
+      <button data-tab="tests">测试用例</button>
+      <button data-tab="knowledge">知识</button>
+      <button data-tab="changes">变更</button>
+      <button data-tab="audit">审计</button>
+      <button data-tab="memory">记忆</button>
+    </nav>
+    <div id="runBar"><select id="runSelect"></select><span id="runInfo"></span></div>
+    <div id="panes">
+      <div class="pane active" id="pane-process">
+        <div id="planHeader"></div>
+        <div class="graph-box"><div class="box-title">执行流程（SOP 步骤 · 工具调用）<span class="muted" style="font-weight:400">　点击步骤查看详情；滚轮缩放、拖动平移</span></div><div id="processGraph" class="cy proc"></div></div>
+        <div class="box" id="stepDetail" style="margin-top:12px"><div class="box-title">步骤详情</div><div class="muted">点击流程图中的步骤查看工具、来源、参数与输出摘要</div></div>
+        <div class="box" style="margin-top:12px"><div class="box-title">智能体图（LangGraph）<span class="muted" style="font-weight:400">　橙色为人机交互（interrupt）节点，虚线为条件边，蓝色为当前/最近执行的节点</span></div><div id="agentGraph" class="cy agent"></div></div>
+        <div id="verifyBox"></div>
+      </div>
+      <div class="pane" id="pane-trace">
+        <div class="toolbar">
+          <span class="legend"><i class="lg rule"></i>规则 <i class="lg req"></i>需求 <i class="lg scn"></i>场景 <i class="lg tc"></i>测试用例</span>
+          <span id="statusLegend" class="legend"></span>
+          <input id="traceSearch" placeholder="搜索节点编号/文本…">
+          <button id="traceReset" class="btn ghost">重置视图</button>
+          <span id="traceInfo" class="muted"></span>
+        </div>
+        <div class="split">
+          <div class="graph-box grow"><div id="traceGraph" class="cy tall"></div></div>
+          <div class="side-col"><div class="box" id="nodeDetail"><div class="box-title">节点详情</div><div class="muted">点击节点查看内容；双击聚焦其上下游</div></div></div>
+        </div>
+      </div>
+      <div class="pane" id="pane-reqs"><div id="reqsBody"></div></div>
+      <div class="pane" id="pane-tests"><div id="testsBody"></div></div>
+      <div class="pane" id="pane-knowledge"><div id="knowledgeBody"></div></div>
+      <div class="pane" id="pane-changes"><div id="changesBody"></div></div>
+      <div class="pane" id="pane-audit"><div id="auditBody"></div></div>
+      <div class="pane" id="pane-memory"><div id="memoryBody"></div></div>
+    </div>
+  </section>
+</div>
+<div id="modal" class="hidden"><div class="modal-card"><div class="modal-head"><span id="modalTitle"></span><button class="btn ghost" id="modalClose">✕</button></div><div id="modalBody"></div></div></div>
+<script src="/graphs.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
